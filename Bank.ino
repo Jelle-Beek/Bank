@@ -9,7 +9,7 @@ MFRC522 mfrc522(SS_PIN, RST_PIN);   // Create MFRC522 instance.
 const byte ROWS = 4; 
 const byte COLS = 4;
 byte rowPins[ROWS] = {4, 5, 6, 7}; //begin kant van ster 
-byte colPins[COLS] = {8, 9, 10, 11};
+byte colPins[COLS] = {A4, A3, A2, A1};
 
 char keyMap [ROWS] [COLS] = { 
   {'1', '2', '3', 'A'},
@@ -20,7 +20,11 @@ char keyMap [ROWS] [COLS] = {
 
 Keypad myKeypad = Keypad( makeKeymap(keyMap), rowPins, colPins, ROWS, COLS);
 
-String content;
+String content = "";
+String password;
+
+String input;
+int pos = 0;
  
 void setup() 
 {
@@ -32,11 +36,13 @@ void setup()
 
 }
 void loop() {
-  if(content.equals(null)){
+  if(content == ""){
     RFID();
   } else {
-    getPassword();
-    keypadLezen();
+    if (content.substring(1) == "1A FD F3 0B"){
+      getPassword();
+      keypadLezen();
+    }
   }
   
  
@@ -45,13 +51,13 @@ void loop() {
 
 
 void getPassword(){
-  //database stuff
+  // ----------------------------------database stuff
+  password = "1234";
 }
 
 
 void keypadLezen(){
-  String input;
-  int pos = 0; 
+ 
 
   char whichKey = myKeypad.getKey(); 
     if (whichKey) {
@@ -62,22 +68,29 @@ void keypadLezen(){
     
         case '#':
           if (password != input){
-              //-------------------------------foute pincode
+              Serial.println("fout");
+              //-------------------------actie voor fout
             }
             else {
-              //-------------------------------goede pincode
+              Serial.println("goed");
+              //------------------------actie voor goed
             }
         break;
     
         default:
-          input[pos] = whichKey;
-          pos++;
+          input+= whichKey;
+
+          Serial.println(input);
         break;    
     }
   }
 
 }
 
+
+void reset() {
+  input = "";
+}
 
 
 void RFID(){
@@ -96,8 +109,9 @@ void RFID(){
   byte letter;
   for (byte i = 0; i < mfrc522.uid.size; i++) 
   {
-//     Serial.print(mfrc522.uid.uidByte[i] < 0x10 ? " 0" : " ");
-//     Serial.print(mfrc522.uid.uidByte[i], HEX);
+     Serial.print(mfrc522.uid.uidByte[i] < 0x10 ? " 0" : " ");
+     Serial.print(mfrc522.uid.uidByte[i], HEX);
+     Serial.println();
      content.concat(String(mfrc522.uid.uidByte[i] < 0x10 ? " 0" : " "));
      content.concat(String(mfrc522.uid.uidByte[i], HEX));
   }
