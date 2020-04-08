@@ -1,5 +1,6 @@
 #include <SPI.h>
 #include <MFRC522.h>
+#include <Keypad.h>
  
 #define SS_PIN 10
 #define RST_PIN 9
@@ -31,7 +32,7 @@ void setup()
 
 }
 void loop() {
-  if(ccontent == null){
+  if(content.equals(null)){
     RFID();
   } else {
     getPassword();
