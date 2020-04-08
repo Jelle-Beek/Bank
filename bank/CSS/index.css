@@ -1,0 +1,58 @@
+body {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    background-image: url("../Pictures/test.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff500;
+}
+
+.buttons {
+    margin: 0;
+    padding: 0;
+    height: 15vh;
+}
+
+.main {
+    margin: 0;
+    padding: 0;
+    height: 85vh;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h3 {
+    font-size: 25px;
+    color: red;
+}
+
+section{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.language {
+    height: 100%;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    height: 70%;
+    float: left;
+    background-color: Transparent;
+    border: none;
+}
