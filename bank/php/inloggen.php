@@ -19,10 +19,9 @@ if (mysqli_connect_error()) {
         $result = mysqli_query($conn, $sql);
 
     if (mysqli_num_rows($result) == 1) {
-        echo "Gebruiker is aangemaakt";
+        echo "Gebruiker gevonden";
     } else {
         echo "Bestaat niet";
     }
-    $conn->close();
 }
 ?>
