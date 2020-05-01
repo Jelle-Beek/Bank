@@ -1,5 +1,5 @@
 <?php
-
+include 'index.php';
 
 $host = "localhost";
 $dbUsername = "root";
