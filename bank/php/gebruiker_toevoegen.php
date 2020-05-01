@@ -1,5 +1,5 @@
 <?php
-$voornaam = ucfirst($_POST["voornaam"]);
+/*$voornaam = ucfirst($_POST["voornaam"]);
 $tussenvoegsel = $_POST["tussenvoegsel"];
 $achternaam = ucfirst($_POST["achternaam"]);
 $gebroorte_datum = $_POST["geboorte_datum"];
@@ -10,13 +10,15 @@ $telefoonnummer = $landcode . " " . $nummer;
 $emailadres = $_POST["emailadres"];
 
 if (!empty($voornaam) || !empty($tussenvoegsel) || !empty($achternaam) || !empty($gebroorte_datum) || !empty($geslacht) || !empty($telefoonnummer) || !empty($emailadres)) {
-    $host = "localhost";
+    $host = "145.24.222.43/phpmyadmin/";
     $dbUsername = "root";
-    $dbPassword = "";
+    $dbPassword = "Bank@Y44n72";
     $dbName = "batbank";
 
-//create connection
+    //create connection
     $conn = new mysqli($host, $dbUsername, $dbPassword, $dbName);
+
+    //check connection
     if (mysqli_connect_error()) {
         die('Connect Error(' . mysqli_connect_errno() . ')' . mysqli_connect_error());
     } else {
@@ -43,15 +45,15 @@ if (!empty($voornaam) || !empty($tussenvoegsel) || !empty($achternaam) || !empty
     die();
 }
 
-header("location: ../index.html");
+header("location: ../index.html");*/
 
 
-/*$host = "localhost";
+$host = "145.24.222.43";
 $dbUsername = "root";
-$dbPassword = "";
+$dbPassword = "Bank@Y44n72";
 $dbName = "batbank";
-// Create connection
 
+// Create connection
 $conn = new mysqli($host, $dbUsername, $dbPassword, $dbName);
 
 // Check connection
@@ -59,5 +61,5 @@ if (mysqli_connect_error()) {
     die('Connect Error(' . mysqli_connect_errno() . ')' . mysqli_connect_error());
 } else {
     echo "Connected successfully";
-}*/
+}
 ?>

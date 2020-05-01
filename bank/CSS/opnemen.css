@@ -44,6 +44,14 @@ section {
     width: 900px;
 }
 
+.background {
+    background-color: black;
+    opacity: 50%;
+    height: 1000px;
+    width: 900px;
+    border-radius: 10%;
+}
+
 .home_button {
     height: 100%;
     float: right;
@@ -59,7 +67,7 @@ section {
 }
 
 .keuze_button {
-    height: 75%;
+    height: 60%;
     float: left;
 }
 

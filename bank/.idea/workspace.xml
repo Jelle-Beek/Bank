@@ -11,9 +11,7 @@
     <option name="done" value="true" />
   </component>
   <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -48,7 +46,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -57,9 +54,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="C:/xampp/php/php.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../../xampp/php/php.exe" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -200,28 +197,6 @@
       </method>
     </configuration>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="GlassFish Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="GlassFish Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-            </expand>
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -245,11 +220,17 @@
       <workItem from="1586094134302" duration="3405000" />
       <workItem from="1586159369493" duration="12001000" />
       <workItem from="1586338335892" duration="1598000" />
+      <workItem from="1587388397278" duration="127000" />
+      <workItem from="1587388607465" duration="2951000" />
+      <workItem from="1587547673616" duration="72000" />
+      <workItem from="1587892711812" duration="2534000" />
+      <workItem from="1588064374211" duration="4081000" />
+      <workItem from="1588325555234" duration="692000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="354" y="294" key="#CLI_Interpreters" timestamp="1586172112790">
@@ -284,49 +265,64 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="377" y="484" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1586168448486" />
+    <state x="343" y="469" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1587388404829">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="343" y="469" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1587388404829" />
     <state x="473" y="436" key="FileChooserDialogImpl" timestamp="1586168862219">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="473" y="436" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1586168862219" />
-    <state width="854" height="395" key="GridCell.Tab.0.bottom" timestamp="1586341823959">
+    <state width="844" height="388" key="GridCell.Tab.0.bottom" timestamp="1588072230081">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="854" height="395" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1586341823959" />
-    <state width="854" height="395" key="GridCell.Tab.0.center" timestamp="1586341823959">
+    <state width="844" height="388" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1588072230081" />
+    <state width="844" height="388" key="GridCell.Tab.0.center" timestamp="1588072230081">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="854" height="395" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1586341823959" />
-    <state width="854" height="395" key="GridCell.Tab.0.left" timestamp="1586341823959">
+    <state width="844" height="388" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1588072230081" />
+    <state width="844" height="388" key="GridCell.Tab.0.left" timestamp="1588072230081">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="854" height="395" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1586341823959" />
-    <state width="854" height="395" key="GridCell.Tab.0.right" timestamp="1586341823959">
+    <state width="844" height="388" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1588072230081" />
+    <state width="844" height="388" key="GridCell.Tab.0.right" timestamp="1588072230081">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="854" height="395" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1586341823959" />
-    <state x="331" y="518" key="NewPhpClassDialog" timestamp="1586090074872">
+    <state width="844" height="388" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1588072230081" />
+    <state x="331" y="518" key="NewPhpClassDialog" timestamp="1587391457119">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="331" y="518" key="NewPhpClassDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1586090074872" />
-    <state x="476" y="627" key="NewPhpFileDialog" timestamp="1586171739498">
+    <state x="331" y="518" key="NewPhpClassDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1587391457119" />
+    <state x="476" y="627" key="NewPhpFileDialog" timestamp="1588325762863">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="476" y="627" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1586171739498" />
-    <state x="274" y="282" key="SettingsEditor" timestamp="1586338359306">
+    <state x="476" y="627" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1588325762863" />
+    <state x="274" y="282" key="SettingsEditor" timestamp="1588064474995">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="274" y="282" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1586338359306" />
+    <state x="274" y="282" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1588064474995" />
     <state x="0" y="0" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog" timestamp="1586172108460">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="0" y="0" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1586172108460" />
-    <state x="305" y="333" key="run.anything.popup" timestamp="1586170984960">
+    <state x="305" y="333" key="run.anything.popup" timestamp="1588071006028">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="305" y="333" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1586170984960" />
+    <state x="305" y="333" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1588071006028" />
     <state x="303" y="320" width="672" height="678" key="search.everywhere.popup" timestamp="1586169246175">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="303" y="320" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1586169246175" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/php/gebruiker_toevoegen.php</url>
+          <line>18</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
