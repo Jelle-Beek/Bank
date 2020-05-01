@@ -1,5 +1,6 @@
 <?php
 include 'index.php';
+$pincode = $_POST["pincode"];
 
 $host = "localhost";
 $dbUsername = "root";
@@ -13,6 +14,15 @@ $conn = new mysqli($host, $dbUsername, $dbPassword, $dbName);
 if (mysqli_connect_error()) {
     die('Connect Error(' . mysqli_connect_errno() . ')' . mysqli_connect_error());
 } else {
-    echo "Connected successfully";
+        $sql = "SELECT Pincode FROM rekeningen WHERE Pasnummer = '$pasnummer' AND Pincode = '$pincode'";
+
+        $result = mysqli_query($conn, $sql);
+
+    if (mysqli_num_rows($result) == 1) {
+        echo "Gebruiker is aangemaakt";
+    } else {
+        echo "Bestaat niet";
+    }
+    $conn->close();
 }
 ?>

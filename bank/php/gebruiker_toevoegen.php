@@ -1,5 +1,5 @@
 <?php
-/*$voornaam = ucfirst($_POST["voornaam"]);
+$voornaam = ucfirst($_POST["voornaam"]);
 $tussenvoegsel = $_POST["tussenvoegsel"];
 $achternaam = ucfirst($_POST["achternaam"]);
 $gebroorte_datum = $_POST["geboorte_datum"];
@@ -45,9 +45,9 @@ if (!empty($voornaam) || !empty($tussenvoegsel) || !empty($achternaam) || !empty
     die();
 }
 
-header("location: ../index.html");*/
+header("location: ../index.html");
 
-
+/*
 $host = "localhost";
 $dbUsername = "root";
 $dbPassword = "";
@@ -62,4 +62,5 @@ if (mysqli_connect_error()) {
 } else {
     echo "Connected successfully";
 }
+*/
 ?>
