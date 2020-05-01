@@ -13,8 +13,9 @@
     </button>
 
     <button>
-        <a href="html/engels/index.html"><img src="Pictures/Flag_of_the_United_States.JPEG" alt="Flag of the United States"
-                                               class="language"></a>
+        <a href="html/engels/index.html"><img src="Pictures/Flag_of_the_United_States.JPEG"
+                                              alt="Flag of the United States"
+                                              class="language"></a>
         <h3>B</h3>
     </button>
 
@@ -28,7 +29,15 @@
 <div class="main">
     <section>
         <h1>Batbank</h1>
-        <h2><a href="html/nederlands/pin_invoeren.html">Pas</a> invoegen a.u.b.</h2>
+        <h2>Pas invoegen a.u.b.</h2>
+
+        <form action="php/index.php" method="post">
+            <input type="password" class="input_pin" name="pasnummer" placeholder="pasnummer" required/>
+            <br>
+            <input type="submit" class="input_ok" value="A   OK">
+            <input type="reset" class="input_corr" value="B   CORR">
+        </form>
+
     </section>
 </div>
 </body>

@@ -48,9 +48,9 @@ if (!empty($voornaam) || !empty($tussenvoegsel) || !empty($achternaam) || !empty
 header("location: ../index.html");*/
 
 
-$host = "145.24.222.43";
+$host = "localhost";
 $dbUsername = "root";
-$dbPassword = "Bank@Y44n72";
+$dbPassword = "";
 $dbName = "batbank";
 
 // Create connection
