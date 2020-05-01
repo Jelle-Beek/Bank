@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="e3dfe9a6-f9fc-4457-b689-b78444ff284d" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+=======
+    <list default="true" id="e3dfe9a6-f9fc-4457-b689-b78444ff284d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/php/inloggen.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/inloggen.php" afterDir="false" />
+    </list>
+>>>>>>> a4d0ce4e10897f89e5053d8910c79cfa9c7aeaeb
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +50,9 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1ZJjr6SVAB0GI7QNkxb0dVzDPn6" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -55,19 +63,28 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Pictures/engels" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/html/engels" />
+>>>>>>> a4d0ce4e10897f89e5053d8910c79cfa9c7aeaeb
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+<<<<<<< HEAD
       <recent name="C:\Users\jelle\Desktop\HR\jaar 1\Periode 3\Project 3-4\Github\bank\Pictures\algemeen" />
       <recent name="C:\Users\jelle\Desktop\HR\jaar 1\Periode 3\Project 3-4\Github\bank\Pictures\nederlands" />
       <recent name="C:\Users\jelle\Desktop\HR\jaar 1\Periode 3\Project 3-4\Github\bank\Pictures\engels" />
       <recent name="C:\Users\jelle\Desktop\HR\jaar 1\Periode 3\Project 3-4\Github\bank\Pictures\duits" />
+=======
+      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\html\nederlands" />
+>>>>>>> a4d0ce4e10897f89e5053d8910c79cfa9c7aeaeb
       <recent name="C:\Users\ziwez\Desktop\school\Projecten\Project 34 - Bank\project bank\php" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+<<<<<<< HEAD
       <recent name="C:\Users\jelle\Desktop\HR\jaar 1\Periode 3\Project 3-4\Github\bank\Pictures\engels" />
       <recent name="C:\Users\jelle\Desktop\HR\jaar 1\Periode 3\Project 3-4\Github\bank\html\duits" />
       <recent name="C:\Users\ziwez\Desktop\school\Projecten\Project 34 - Bank\project bank\html" />
@@ -84,6 +101,11 @@
         </RuleState>
       </list>
     </option>
+=======
+      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\html\engels" />
+      <recent name="C:\Users\ziwez\Desktop\school\Projecten\Project 34 - Bank\project bank\html" />
+    </key>
+>>>>>>> a4d0ce4e10897f89e5053d8910c79cfa9c7aeaeb
   </component>
   <component name="RunManager">
     <configuration name="GlassFish 5.0.1" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.0.1" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
@@ -243,7 +265,11 @@
       <workItem from="1587892711812" duration="2534000" />
       <workItem from="1588064374211" duration="4081000" />
       <workItem from="1588325555234" duration="692000" />
+<<<<<<< HEAD
       <workItem from="1588326946559" duration="1739000" />
+=======
+      <workItem from="1588326648124" duration="2012000" />
+>>>>>>> a4d0ce4e10897f89e5053d8910c79cfa9c7aeaeb
     </task>
     <servers />
   </component>
@@ -322,10 +348,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="331" y="518" key="NewPhpClassDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1587391457119" />
-    <state x="476" y="627" key="NewPhpFileDialog" timestamp="1588325762863">
+    <state x="476" y="627" key="NewPhpFileDialog" timestamp="1588328353375">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="476" y="627" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1588325762863" />
+    <state x="476" y="627" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1588328353375" />
     <state x="274" y="282" key="SettingsEditor" timestamp="1588064474995">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
