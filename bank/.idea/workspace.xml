@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3dfe9a6-f9fc-4457-b689-b78444ff284d" name="Default Changelist" comment="" />
+    <list default="true" id="e3dfe9a6-f9fc-4457-b689-b78444ff284d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/html/nederlands/saldo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/nederlands/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/nederlands/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/nederlands/pin_invoeren.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/nederlands/pin_invoeren.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/inloggen.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/inloggen.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -249,10 +257,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="240" y="359" key="#Inspections/0.0.2560.1400@0.0.2560.1400" timestamp="1586097172475" />
-    <state x="356" y="291" key="#PHP" timestamp="1586172082523">
+    <state x="356" y="291" key="#PHP" timestamp="1588332994636">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="356" y="291" key="#PHP/0.0.2560.1400@0.0.2560.1400" timestamp="1586172082523" />
+    <state x="356" y="291" key="#PHP/0.0.2560.1400@0.0.2560.1400" timestamp="1588332994636" />
     <state x="240" y="359" key="#SQL_Dialects" timestamp="1586096770420">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -269,34 +277,38 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="343" y="469" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1587388404829" />
+    <state x="1011" y="448" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588332810729">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1011" y="448" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1588332810729" />
     <state x="473" y="436" key="FileChooserDialogImpl" timestamp="1586168862219">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="473" y="436" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1586168862219" />
-    <state width="844" height="388" key="GridCell.Tab.0.bottom" timestamp="1588072230081">
+    <state width="1741" height="400" key="GridCell.Tab.0.bottom" timestamp="1588331776219">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="844" height="388" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1588072230081" />
-    <state width="844" height="388" key="GridCell.Tab.0.center" timestamp="1588072230081">
+    <state width="1741" height="400" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1588331776219" />
+    <state width="1741" height="400" key="GridCell.Tab.0.center" timestamp="1588331776218">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="844" height="388" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1588072230081" />
-    <state width="844" height="388" key="GridCell.Tab.0.left" timestamp="1588072230081">
+    <state width="1741" height="400" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1588331776218" />
+    <state width="1741" height="400" key="GridCell.Tab.0.left" timestamp="1588331776218">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="844" height="388" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1588072230081" />
-    <state width="844" height="388" key="GridCell.Tab.0.right" timestamp="1588072230081">
+    <state width="1741" height="400" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1588331776218" />
+    <state width="1741" height="400" key="GridCell.Tab.0.right" timestamp="1588331776219">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="844" height="388" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1588072230081" />
+    <state width="1741" height="400" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1588331776219" />
     <state x="331" y="518" key="NewPhpClassDialog" timestamp="1587391457119">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="331" y="518" key="NewPhpClassDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1587391457119" />
-    <state x="476" y="627" key="NewPhpFileDialog" timestamp="1588325762863">
+    <state x="476" y="627" key="NewPhpFileDialog" timestamp="1588333879680">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="476" y="627" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1588325762863" />
+    <state x="476" y="627" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1588333879680" />
     <state x="274" y="282" key="SettingsEditor" timestamp="1588064474995">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

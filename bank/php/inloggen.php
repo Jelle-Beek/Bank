@@ -1,6 +1,7 @@
 <?php
-include 'index.php';
+$pasnummer= $_POST["pasnummer"];
 $pincode = $_POST["pincode"];
+
 
 $host = "localhost";
 $dbUsername = "root";
@@ -20,8 +21,11 @@ if (mysqli_connect_error()) {
 
     if (mysqli_num_rows($result) == 1) {
         echo "Gebruiker gevonden";
+        header("location: ../html/nederlands/menu.html");
     } else {
         echo "Bestaat niet";
     }
 }
+
+
 ?>
