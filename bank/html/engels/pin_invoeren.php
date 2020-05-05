@@ -27,7 +27,7 @@
             <input type="reset" class="input_corr" value="B   CORR">
         </form>
         <br>
-        <h2>Keep your pincode secret. Don't let anyone watch</h2>
+        <h2 style="color: orangered">Houd uw pincode geheim. Laat niemand meekijken>Keep your pincode secret. Don't let anyone watch</h2>
 
         <a href="menu.php"><img src="../../Pictures/algemeen/passcode.png" style="width: 40%"></a>
     </section>
