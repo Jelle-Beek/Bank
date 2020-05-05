@@ -13,8 +13,8 @@
     </button>
 
     <button>
-        <a href="opnemen.html"><img src="../../Pictures/algemeen/left-teal-arrow.png"
-                                    class="home_button"></a>
+        <a href="opnemen.php"><img src="../../Pictures/algemeen/left-teal-arrow.png"
+                                   class="home_button"></a>
         <h3>C</h3>
     </button>
 </div>
@@ -33,7 +33,7 @@
         </form>
 
         <br><br><br><br><br><br>
-        <a href="menu.html"><img src="../../Pictures/algemeen/geld.png" style="width: 60%"></a>
+        <a href="menu.php"><img src="../../Pictures/algemeen/geld.png" style="width: 60%"></a>
     </section>
 </div>
 </body>

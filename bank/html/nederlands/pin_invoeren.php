@@ -32,7 +32,7 @@
         <br>
         <h2>Houd uw pincode geheim. Laat niemand meekijken</h2>
 
-        <a href="menu.html"><img src="../../Pictures/algemeen/passcode.png" style="width: 40%"></a>
+        <a href="menu.php"><img src="../../Pictures/algemeen/passcode.png" style="width: 40%"></a>
     </section>
 </div>
 </body>

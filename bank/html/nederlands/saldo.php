@@ -19,7 +19,7 @@ session_start();
     </button>
 
     <button>
-        <a href="menu.html"><img src="../../Pictures/algemeen/left-teal-arrow.png"
+        <a href="menu.php"><img src="../../Pictures/algemeen/left-teal-arrow.png"
                                  class="home_button"></a>
         <h3>C</h3>
     </button>

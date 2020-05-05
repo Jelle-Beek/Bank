@@ -29,8 +29,8 @@
         </button>
 
         <button class="keuze">
-            <a href="opnemen.html"><img src="../../Pictures/nederlands/opnemen.png"
-                                        class="keuze_button"></a>
+            <a href="opnemen.php"><img src="../../Pictures/nederlands/opnemen.png"
+                                       class="keuze_button"></a>
             <h3>D</h3>
         </button>
         <button class="keuze">
@@ -40,8 +40,8 @@
         </button>
 
         <button class="keuze">
-            <a href="help.html"><img src="../../Pictures/nederlands/Help.png"
-                                     class="keuze_button"></a>
+            <a href="help.php"><img src="../../Pictures/nederlands/Help.png"
+                                    class="keuze_button"></a>
             <h3>D</h3>
         </button>
     </section>

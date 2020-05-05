@@ -13,7 +13,7 @@
     </button>
 
     <button class="home">
-        <a href="menu.html"><img src="../../Pictures/algemeen/left-teal-arrow.png"
+        <a href="menu.php"><img src="../../Pictures/algemeen/left-teal-arrow.png"
                                  class="home_button"></a>
         <h3>C</h3>
     </button>
@@ -51,8 +51,8 @@
         </button>
 
         <button class="keuze">
-            <a href="bedrag_invoeren.html"> <img src="../../Pictures/nederlands/anders.png"
-                                                 class="keuze_button"> </a>
+            <a href="bedrag_invoeren.php"> <img src="../../Pictures/nederlands/anders.png"
+                                                class="keuze_button"> </a>
             <h3>D</h3>
         </button>
     </section>
