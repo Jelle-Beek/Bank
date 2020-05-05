@@ -1,27 +1,28 @@
 <?php
-session_id('batbank');
+session_id("batbank");
 session_start();
+if (ctype_alnum($_SESSION["key"])) {
+    switch ($_SESSION["key"]) {
+        case '1':
+            header("location: saldo.php");
+            break;
 
-switch ($_SESSION["key"]) {
-    case '1':
-        header("location: saldo.php");
-        break;
+        case '2':
+            header("location: opnemen.php");
+            break;
 
-    case '2':
-        header("location: opnemen.php");
-        break;
+        case '3':
 
-    case '3':
+            break;
 
-        break;
+        case '4':
+            header("location: help.php");
+            break;
 
-    case '4':
-        header("location: help.php");
-        break;
-
-    case 'D':
-        header("location: ../../index.php");
-        break;
+        case 'D':
+            header("location: ../../index.php");
+            break;
+    }
 }
 ?>
 

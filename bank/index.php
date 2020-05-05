@@ -2,7 +2,7 @@
 session_id('batbank');
 session_start();
 
-if (!$_SESSION['pasnummer'] == "???????????" || !$_SESSION['pasnummer'] == null) {
+if ($_SESSION['pasnummer'] != "...........") {
     header("location: html/nederlands/pin_invoeren.php");
 }
 
@@ -13,6 +13,7 @@ if (!$_SESSION['pasnummer'] == "???????????" || !$_SESSION['pasnummer'] == null)
 <head>
     <title>home</title>
     <link href="CSS/index.css" rel="stylesheet" type="text/css"/>
+    <meta http-equiv="refresh" content="2" >
 </head>
 <body>
 <div class="buttons">

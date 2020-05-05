@@ -1,15 +1,29 @@
 <?php
-session_id('test');
+session_id("batbank");
 session_start();
 
 $_SESSION['saldo'] = 1000;
+
+if (ctype_alnum($_SESSION["key"])) {
+    switch ($_SESSION["key"]) {
+        case 'C':
+            header("location: menu.php");
+            break;
+
+        case 'D':
+            header("location: ../../index.php");
+            break;
+    }
+}
 ?>
+
 
 <!DOCTYPE html>
 <html>
 <head>
     <title>saldo</title>
     <link href="../../CSS/saldo.css" rel="stylesheet" type="text/css"/>
+    <meta http-equiv="refresh" content="1" >
 </head>
 <body>
 <div class="buttons">

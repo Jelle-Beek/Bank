@@ -1,9 +1,46 @@
+<?php
+session_id("batbank");
+session_start();
+
+if (ctype_alnum($_SESSION["key"])) {
+    switch ($_SESSION["key"]) {
+        case 'A':
+            header("location: menu.php");
+            break;
+
+        case 'B':
+            $_SESSION["pin"] = NULL;
+            break;
+
+        case 'D':
+            header("location: ../../index.php");
+            break;
+
+
+        case 0:
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+        case 7:
+        case 8:
+        case 9:
+            $_SESSION["pin"] = $_SESSION["pin"] . $_SESSION["key"];
+            break;
+    }
+}
+
+$_SESSION["key"] = NULL;
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>pin invoeren</title>
     <link href="../../CSS/pin_invoeren.css" rel="stylesheet" type="text/css"/>
-    <meta http-equiv="refresh" content="10" >
+    <meta http-equiv="refresh" content="1.5">
 </head>
 <body>
 <div class="buttons">
@@ -21,10 +58,10 @@
         <h2>Voer uw pincode in a.u.b.</h2>
         <br>
         <form action="../../php/inloggen.php" method="post">
-            <input type="text" class="input_pin" name="pasnummer" placeholder="Passnummer" value="0987654"/>
+            <input type="text" class="input_pin" name="pasnummer" placeholder="Passnummer"/>
 
             <input type="password" class="input_pin" name="pincode" placeholder="Pincode" pattern="[0-9]{4}"
-                   maxlength="4" required/>
+                   maxlength="4" required value="<?php echo $_SESSION["pin"] ?>"/>
             <br>
             <input type="submit" class="input_ok" value="A   OK">
             <input type="reset" class="input_corr" value="B   CORR">

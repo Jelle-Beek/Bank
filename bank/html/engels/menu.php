@@ -3,6 +3,7 @@
 <head>
     <title>menu</title>
     <link href="../../CSS/menu.css" rel="stylesheet" type="text/css"/>
+    <meta http-equiv="refresh" content="0.2" >
 </head>
 <body>
 <div class="buttons">
