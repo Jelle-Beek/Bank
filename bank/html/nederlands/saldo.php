@@ -2,6 +2,7 @@
 session_id('test');
 session_start();
 
+$_SESSION['saldo'] = 1000;
 ?>
 
 <!DOCTYPE html>
