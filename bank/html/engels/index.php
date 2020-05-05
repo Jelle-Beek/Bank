@@ -7,8 +7,8 @@
 <body>
 <div class="buttons">
     <button>
-        <a href="../../index.html"><img src="../../Pictures/algemeen/Flag_of_the_Netherlands.svg" alt="Nederlandse Vlag"
-                                  class="language"></a>
+        <a href="../../index.php"><img src="../../Pictures/algemeen/Flag_of_the_Netherlands.svg" alt="Nederlandse Vlag"
+                                       class="language"></a>
         <h3>A</h3>
     </button>
 

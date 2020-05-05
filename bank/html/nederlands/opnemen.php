@@ -7,8 +7,8 @@
 <body>
 <div class="buttons">
     <button class="home">
-        <a href="../../index.html"><img src="../../Pictures/algemeen/home_button.png"
-                                        class="home_button"></a>
+        <a href="../../index.php"><img src="../../Pictures/algemeen/home_button.png"
+                                       class="home_button"></a>
         <h3>D</h3>
     </button>
 
