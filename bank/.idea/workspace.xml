@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3dfe9a6-f9fc-4457-b689-b78444ff284d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/nederlands/pin_invoeren.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/nederlands/pin_invoeren.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/nederlands/bedrag_invoeren.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/nederlands/bedrag_invoeren.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/nederlands/gebruiker_toevoegen.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/nederlands/gebruiker_toevoegen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/nederlands/help.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/nederlands/help.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/nederlands/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/nederlands/menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/nederlands/opnemen.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/nederlands/opnemen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/nederlands/pin_invoeren.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/nederlands/pin_invoeren.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/nederlands/saldo.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/html/nederlands/saldo.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/nederlands/saldo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/inloggen.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/inloggen.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -236,6 +241,7 @@
       <workItem from="1588334379675" duration="3170000" />
       <workItem from="1588337581642" duration="208000" />
       <workItem from="1588675667705" duration="3196000" />
+      <workItem from="1588680315175" duration="432000" />
     </task>
     <servers />
   </component>
