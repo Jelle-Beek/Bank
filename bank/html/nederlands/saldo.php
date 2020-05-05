@@ -1,6 +1,6 @@
 <?php
-$saldo = "1000";
-
+session_id('test');
+session_start();
 
 ?>
 
@@ -32,7 +32,7 @@ $saldo = "1000";
         <br>
         <h2 style="font-size: 60px">Uw saldo is:</h2>
 
-        <h2>&euro;<?php echo $saldo; ?></h2>
+        <h2>&euro;<?php echo $_SESSION['saldo']; ?></h2>
 
         <br><br>
         <img src="../../Pictures/algemeen/wallet.png" alt="Wallet" style="width: 70%">

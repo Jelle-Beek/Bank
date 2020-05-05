@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3dfe9a6-f9fc-4457-b689-b78444ff284d" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <list default="true" id="e3dfe9a6-f9fc-4457-b689-b78444ff284d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/html/nederlands/saldo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/nederlands/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/nederlands/menu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/nederlands/pin_invoeren.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/nederlands/pin_invoeren.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/nederlands/saldo.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/nederlands/saldo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/inloggen.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/inloggen.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,31 +60,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/xampp/php/php.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/html/nederlands" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\ziwez\Desktop\school\Projecten\Project 34 - Bank\project bank\html" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ziwez\Desktop\school\Projecten\Project 34 - Bank\project bank\php" />
       <recent name="C:\Users\ziwez\Desktop\school\Projecten\Project 34 - Bank\project bank" />
       <recent name="C:\Users\ziwez\Desktop\project bank\GUI\html" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\html\nederlands" />
+      <recent name="C:\Users\ziwez\Desktop\school\Projecten\Project 34 - Bank\project bank\html" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="GlassFish 5.0.1" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.0.1" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
@@ -250,24 +235,24 @@
       <workItem from="1588325555234" duration="1070000" />
       <workItem from="1588334379675" duration="3170000" />
       <workItem from="1588337581642" duration="208000" />
+      <workItem from="1588675667705" duration="3196000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="354" y="294" key="#CLI_Interpreters" timestamp="1586172112790">
@@ -314,22 +299,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="473" y="436" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1586168862219" />
-    <state width="1741" height="400" key="GridCell.Tab.0.bottom" timestamp="1588331776219">
+    <state width="1741" height="388" key="GridCell.Tab.0.bottom" timestamp="1588680293711">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1741" height="400" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1588331776219" />
-    <state width="1741" height="400" key="GridCell.Tab.0.center" timestamp="1588331776218">
+    <state width="1741" height="388" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1588680293711" />
+    <state width="1741" height="388" key="GridCell.Tab.0.center" timestamp="1588680293711">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1741" height="400" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1588331776218" />
-    <state width="1741" height="400" key="GridCell.Tab.0.left" timestamp="1588331776218">
+    <state width="1741" height="388" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1588680293711" />
+    <state width="1741" height="388" key="GridCell.Tab.0.left" timestamp="1588680293711">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1741" height="400" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1588331776218" />
-    <state width="1741" height="400" key="GridCell.Tab.0.right" timestamp="1588331776219">
+    <state width="1741" height="388" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1588680293711" />
+    <state width="1741" height="388" key="GridCell.Tab.0.right" timestamp="1588680293711">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1741" height="400" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1588331776219" />
+    <state width="1741" height="388" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1588680293711" />
     <state x="331" y="518" key="NewPhpClassDialog" timestamp="1587391457119">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

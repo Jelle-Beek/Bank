@@ -3,6 +3,7 @@
 <head>
     <title>pin invoeren</title>
     <link href="../../CSS/pin_invoeren.css" rel="stylesheet" type="text/css"/>
+    <meta http-equiv="refresh" content="10" >
 </head>
 <body>
 <div class="buttons">
@@ -20,7 +21,7 @@
         <h2>Voer uw pincode in a.u.b.</h2>
         <br>
         <form action="../../php/inloggen.php" method="post">
-            <input type="password" class="input_pin" name="pasnummer" placeholder="Passnummer"/>
+            <input type="text" class="input_pin" name="pasnummer" placeholder="Passnummer" value="0987654"/>
 
             <input type="password" class="input_pin" name="pincode" placeholder="Pincode" pattern="[0-9]{4}"
                    maxlength="4" required/>
