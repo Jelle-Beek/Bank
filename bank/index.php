@@ -1,3 +1,13 @@
+<?php
+session_id('batbank');
+session_start();
+
+if (!$_SESSION['pasnummer'] == "???????????") {
+    header("location: html/nederlands/pin_invoeren.php");
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
