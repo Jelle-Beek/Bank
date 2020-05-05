@@ -21,7 +21,7 @@ if (mysqli_connect_error()) {
 
     if (mysqli_num_rows($result) == 1) {
         echo "Gebruiker gevonden";
-        header("location: ../html/nederlands/menu.html");
+        header("location: ../html/nederlands/menu.php");
     } else {
         echo "Bestaat niet";
     }
