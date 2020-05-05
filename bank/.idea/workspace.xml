@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3dfe9a6-f9fc-4457-b689-b78444ff284d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/engels/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/engels/menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/nederlands/help.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/nederlands/help.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/nederlands/opnemen.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/nederlands/opnemen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/nederlands/pin_invoeren.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/nederlands/pin_invoeren.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/nederlands/saldo.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/nederlands/saldo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/arduino.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/arduino.php" afterDir="false" />
-    </list>
+    <list default="true" id="e3dfe9a6-f9fc-4457-b689-b78444ff284d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -245,7 +236,7 @@
       <workItem from="1588680471801" duration="12000" />
       <workItem from="1588680492752" duration="158000" />
       <workItem from="1588682982238" duration="96000" />
-      <workItem from="1588699842239" duration="13218000" />
+      <workItem from="1588699842239" duration="13989000" />
     </task>
     <servers />
   </component>
