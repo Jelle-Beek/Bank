@@ -7,14 +7,14 @@
 <body>
 <div class="buttons">
     <button>
-        <a href="index.html"><img src="../../Pictures/algemeen/home_button.png"
-                                        class="home_button"></a>
+        <a href="index.php"><img src="../../Pictures/algemeen/home_button.png"
+                                 class="home_button"></a>
         <h3>D</h3>
     </button>
 
     <button>
-        <a href="menu.html"><img src="../../Pictures/algemeen/left-teal-arrow.png"
-                                 class="home_button"></a>
+        <a href="menu.php"><img src="../../Pictures/algemeen/left-teal-arrow.png"
+                                class="home_button"></a>
         <h3>C</h3>
     </button>
 </div>

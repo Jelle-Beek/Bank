@@ -45,7 +45,7 @@ if (!empty($voornaam) || !empty($tussenvoegsel) || !empty($achternaam) || !empty
     die();
 }
 
-header("location: ../index.html");
+header("location: ../index.php");
 
 /*
 $host = "localhost";
