@@ -66,14 +66,15 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ziwez\Desktop\school\Projecten\Project 34 - Bank\project bank\php" />
-      <recent name="C:\Users\ziwez\Desktop\school\Projecten\Project 34 - Bank\project bank" />
-      <recent name="C:\Users\ziwez\Desktop\project bank\GUI\html" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\html\nederlands" />
       <recent name="C:\Users\ziwez\Desktop\school\Projecten\Project 34 - Bank\project bank\html" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jelle\Desktop\HR\jaar 1\Periode 3\Project 3-4\Github\bank\html" />
+      <recent name="C:\Users\ziwez\Desktop\school\Projecten\Project 34 - Bank\project bank\php" />
+      <recent name="C:\Users\ziwez\Desktop\school\Projecten\Project 34 - Bank\project bank" />
+      <recent name="C:\Users\ziwez\Desktop\project bank\GUI\html" />
     </key>
   </component>
   <component name="RunDashboard">

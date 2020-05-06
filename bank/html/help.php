@@ -38,19 +38,19 @@ switch ($_SESSION["taal"]){
 <html>
 <head>
     <title>saldo</title>
-    <link href="../../CSS/help.css" rel="stylesheet" type="text/css"/>
+    <link href="../CSS/help.css" rel="stylesheet" type="text/css"/>
     <meta http-equiv="refresh" content="0.2">
 </head>
 <body>
 <div class="buttons">
     <button>
-        <a href="../../index.php"><img src="../../Pictures/algemeen/home_button.png"
-                                       class="home_button"></a>
+        <a href="../index.php"><img src="../Pictures/algemeen/home_button.png"
+                                    class="home_button"></a>
         <h3>D</h3>
     </button>
 
     <button>
-        <a href="menu.php"><img src="../../Pictures/algemeen/left-teal-arrow.png"
+        <a href="menu.php"><img src="../Pictures/algemeen/left-teal-arrow.png"
                                 class="home_button"></a>
         <h3>C</h3>
     </button>

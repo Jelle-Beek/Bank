@@ -55,19 +55,19 @@ switch ($_SESSION["taal"]){
 <html>
 <head>
     <title>pin invoeren</title>
-    <link href="../../CSS/bedrag_invoeren.css" rel="stylesheet" type="text/css"/>
+    <link href="../CSS/bedrag_invoeren.css" rel="stylesheet" type="text/css"/>
     <meta http-equiv="refresh" content="0.2">
 </head>
 <body>
 <div class="buttons">
     <button>
-        <a href="../../index.php"><img src="../../Pictures/algemeen/home_button.png"
-                                       class="home_button"></a>
+        <a href="../index.php"><img src="../Pictures/algemeen/home_button.png"
+                                    class="home_button"></a>
         <h3>D</h3>
     </button>
 
     <button>
-        <a href="opnemen.php"><img src="../../Pictures/algemeen/left-teal-arrow.png"
+        <a href="opnemen.php"><img src="../Pictures/algemeen/left-teal-arrow.png"
                                    class="home_button"></a>
         <h3>C</h3>
     </button>
@@ -87,7 +87,7 @@ switch ($_SESSION["taal"]){
         </form>
 
         <br><br><br><br><br><br>
-        <a href="menu.php"><img src="../../Pictures/algemeen/geld.png" style="width: 60%"></a>
+        <a href="menu.php"><img src="../Pictures/algemeen/geld.png" style="width: 60%"></a>
     </section>
 </div>
 </body>

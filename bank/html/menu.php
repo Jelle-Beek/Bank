@@ -28,24 +28,24 @@ if (ctype_alnum($_SESSION["key"])) {
 switch ($_SESSION["taal"]){
     case "Nederlands":
         $keuze = "Maak uw keuze:";
-        $saldo = "../../Pictures/nederlands/saldo.png";
-        $opnemen = "../../Pictures/nederlands/opnemen.png";
-        $zeventig = "../../Pictures/nederlands/70_euro.png";
-        $help = "../../Pictures/nederlands/Help.png";
+        $saldo = "../Pictures/nederlands/saldo.png";
+        $opnemen = "../Pictures/nederlands/opnemen.png";
+        $zeventig = "../Pictures/nederlands/70_euro.png";
+        $help = "../Pictures/nederlands/Help.png";
         break;
     case "Engels":
         $keuze = "Make your choice:";
-        $saldo = "../../Pictures/engels/balance.png";
-        $opnemen = "../../Pictures/engels/withdraw.png";
-        $zeventig = "../../Pictures/engels/withdraw_70_euro.png";
-        $help = "../../Pictures/engels/Help.png";
+        $saldo = "../Pictures/engels/balance.png";
+        $opnemen = "../Pictures/engels/withdraw.png";
+        $zeventig = "../Pictures/engels/withdraw_70_euro.png";
+        $help = "../Pictures/engels/Help.png";
         break;
     case "Duits":
         $keuze = "Treffen Sie Ihre Wahl:";
-        $saldo = "../../Pictures/duits/gleichgewicht.png";
-        $opnemen = "../../Pictures/duits/aufnehmen.png";
-        $zeventig = "../../Pictures/duits/70_Euro_aufnehmen.png";
-        $help = "../../Pictures/duits/helfe.png";
+        $saldo = "../Pictures/duits/gleichgewicht.png";
+        $opnemen = "../Pictures/duits/aufnehmen.png";
+        $zeventig = "../Pictures/duits/70_Euro_aufnehmen.png";
+        $help = "../Pictures/duits/helfe.png";
         break;
 }
 ?>
@@ -54,14 +54,14 @@ switch ($_SESSION["taal"]){
 <html>
 <head>
     <title>pin invoeren</title>
-    <link href="../../CSS/menu.css" rel="stylesheet" type="text/css"/>
+    <link href="../CSS/menu.css" rel="stylesheet" type="text/css"/>
     <meta http-equiv="refresh" content="0.2">
 </head>
 <body>
 <div class="buttons">
     <button class="home">
-        <a href="../../index.php"><img src="../../Pictures/algemeen/home_button.png"
-                                       class="home_button"></a>
+        <a href="../index.php"><img src="../Pictures/algemeen/home_button.png"
+                                    class="home_button"></a>
         <h3>D</h3>
     </button>
 </div>

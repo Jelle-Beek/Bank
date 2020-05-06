@@ -19,15 +19,15 @@ $_SESSION["bedrag"] = NULL;
 switch ($_SESSION["taal"]){
     case "Nederlands":
         $keuze = "Maak uw keuze:";
-        $anders = "../../Pictures/nederlands/anders.png";
+        $anders = "../Pictures/nederlands/anders.png";
         break;
     case "Engels":
         $keuze = "Make your choice:";
-        $anders = "../../Pictures/engels/otherwise.png";
+        $anders = "../Pictures/engels/otherwise.png";
         break;
     case "Duits":
         $keuze = "Treffen Sie Ihre Wahl:";
-        $anders = "../../Pictures/duits/sonst.png";
+        $anders = "../Pictures/duits/sonst.png";
         break;
 }
 
@@ -37,20 +37,20 @@ switch ($_SESSION["taal"]){
 <html>
 <head>
     <title>pin invoeren</title>
-    <link href="../../CSS/opnemen.css" rel="stylesheet" type="text/css"/>
+    <link href="../CSS/opnemen.css" rel="stylesheet" type="text/css"/>
     <meta http-equiv="refresh" content="0.2">
 </head>
 <body>
 <div class="buttons">
     <button class="home">
-        <a href="../../index.php"><img src="../../Pictures/algemeen/home_button.png"
-                                       class="home_button"></a>
+        <a href="../index.php"><img src="../Pictures/algemeen/home_button.png"
+                                    class="home_button"></a>
         <h3>D</h3>
     </button>
 
     <button class="home">
-        <a href="menu.php"><img src="../../Pictures/algemeen/left-teal-arrow.png"
-                                 class="home_button"></a>
+        <a href="menu.php"><img src="../Pictures/algemeen/left-teal-arrow.png"
+                                class="home_button"></a>
         <h3>C</h3>
     </button>
 </div>
@@ -64,24 +64,24 @@ switch ($_SESSION["taal"]){
         <br><br><br>
 
         <button class="keuze">
-            <img src="../../Pictures/algemeen/5_euro.png"
+            <img src="../Pictures/algemeen/5_euro.png"
                  class="keuze_button">
             <h3>1</h3>
         </button>
 
         <button class="keuze">
-            <img src="../../Pictures/algemeen/10_euro.png"
+            <img src="../Pictures/algemeen/10_euro.png"
                  class="keuze_button">
             <h3>2</h3>
         </button>
         <button class="keuze">
-            <img src="../../Pictures/algemeen/20_euro.png"
+            <img src="../Pictures/algemeen/20_euro.png"
                  class="keuze_button">
             <h3>3</h3>
         </button>
 
         <button class="keuze">
-            <img src="../../Pictures/algemeen/50_euro.png"
+            <img src="../Pictures/algemeen/50_euro.png"
                  class="keuze_button">
             <h3>4</h3>
         </button>

@@ -67,7 +67,7 @@ switch ($_SESSION["taal"]){
 <div class="main">
     <section>
         <h1>Batbank</h1>
-        <h2><a href="html/nederlands/pin_invoeren.php"><?php echo $pas?></a></h2>
+        <h2><a href="html/pin_invoeren.php"><?php echo $pas?></a></h2>
     </section>
 </div>
 </body>

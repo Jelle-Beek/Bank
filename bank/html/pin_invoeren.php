@@ -54,14 +54,14 @@ switch ($_SESSION["taal"]){
 <html>
 <head>
     <title>pin invoeren</title>
-    <link href="../../CSS/pin_invoeren.css" rel="stylesheet" type="text/css"/>
+    <link href="../CSS/pin_invoeren.css" rel="stylesheet" type="text/css"/>
     <meta http-equiv="refresh" content="0.2">
 </head>
 <body>
 <div class="buttons">
     <button>
-        <a href="../../index.php"><img src="../../Pictures/algemeen/home_button.png"
-                                       class="home_button"></a>
+        <a href="../index.php"><img src="../Pictures/algemeen/home_button.png"
+                                    class="home_button"></a>
         <h3>D</h3>
     </button>
 </div>
@@ -72,7 +72,7 @@ switch ($_SESSION["taal"]){
         <h1>Batbank</h1>
         <h2><?php echo $geheim?></h2>
         <br>
-        <form action="../../php/inloggen.php" method="post">
+        <form action="../php/inloggen.php" method="post">
             <input type="text" class="input_pin" name="pasnummer" placeholder="Pasnummer"/>
 
             <input type="password" class="input_pin" name="pincode" placeholder="Pincode" pattern="[0-9]{4}"
@@ -84,7 +84,7 @@ switch ($_SESSION["taal"]){
         <br>
         <h2 style="color: orangered"><?php echo $geheim?></h2>
 
-        <a href="menu.php"><img src="../../Pictures/algemeen/passcode.png" style="width: 40%"></a>
+        <a href="menu.php"><img src="../Pictures/algemeen/passcode.png" style="width: 40%"></a>
     </section>
 </div>
 </body>
