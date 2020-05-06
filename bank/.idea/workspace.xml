@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3dfe9a6-f9fc-4457-b689-b78444ff284d" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="e3dfe9a6-f9fc-4457-b689-b78444ff284d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,9 +13,7 @@
     <option name="done" value="true" />
   </component>
   <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -74,18 +73,6 @@
       <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\html\nederlands" />
       <recent name="C:\Users\ziwez\Desktop\school\Projecten\Project 34 - Bank\project bank\html" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="GlassFish 5.0.1" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.0.1" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
@@ -252,25 +239,25 @@
       <workItem from="1588680492752" duration="158000" />
       <workItem from="1588682982238" duration="96000" />
       <workItem from="1588699842239" duration="13989000" />
-      <workItem from="1588759519383" duration="1840000" />
+      <workItem from="1588759519383" duration="1232000" />
+      <workItem from="1588760840864" duration="334000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="354" y="294" key="#CLI_Interpreters" timestamp="1588681654560">
@@ -361,9 +348,9 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="305" y="333" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1588071006028" />
-    <state x="303" y="320" width="672" height="678" key="search.everywhere.popup" timestamp="1586169246175">
+    <state x="303" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1588760882675">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="303" y="320" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1586169246175" />
+    <state x="303" y="319" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1588760882675" />
   </component>
 </project>
