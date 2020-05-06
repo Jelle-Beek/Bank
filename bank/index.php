@@ -6,6 +6,8 @@ if ($_SESSION['pasnummer'] != "...........") {
     header("location: html/nederlands/pin_invoeren.php");
 }
 
+$_SESSION["pin"] = NULL;
+
 switch ($_SESSION["key"]) {
     case 'A':
         $_SESSION["taal"] = "Nederlands";
