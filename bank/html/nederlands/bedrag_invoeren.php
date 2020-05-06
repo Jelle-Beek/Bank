@@ -1,3 +1,56 @@
+<?php
+session_id("batbank");
+session_start();
+
+if (ctype_alnum($_SESSION["key"])) {
+    switch ($_SESSION["key"]) {
+        case 'A':
+
+            break;
+
+        case 'B':
+            $_SESSION["bedrag"] = NULL;
+            break;
+
+        case 'C':
+            header("location: opnemen.php");
+            break;
+
+        case 'D':
+            header("location: ../../index.php");
+            break;
+
+
+        case 0:
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+        case 7:
+        case 8:
+        case 9:
+            $_SESSION["bedrag"] = $_SESSION["bedrag"] . $_SESSION["key"];
+            break;
+    }
+}
+
+switch ($_SESSION["taal"]){
+    case "Nederlands":
+        $invoeren = "Voer het bedrag in.";
+        $bedrag = "Bedrag";
+        break;
+    case "Engels":
+        $invoeren = "Enter the amount.";
+        $bedrag = "Amount";
+        break;
+    case "Duits":
+        $invoeren = "Geben Sie den Betrag ein.";
+        $bedrag = "Betrag";
+        break;
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,10 +76,10 @@
     <section class="background"></section>
     <section>
         <h1>Batbank</h1>
-        <h2>Voer het bedrag in.</h2>
+        <h2><?php echo $invoeren?></h2>
         <br>
         <form>
-            <input type="text" class="input_bedrag" name="Bedrag" placeholder="Bedrag" maxlength="4"/>
+            <input type="text" class="input_bedrag" name="Bedrag" placeholder="<?php echo $bedrag?>" maxlength="4"/>
             <br>
             <input type="submit" class="input_ok" value="A   OK">
             <input type="reset" class="input_corr" value="B   CORR">

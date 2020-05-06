@@ -14,6 +14,8 @@ if (ctype_alnum($_SESSION["key"])) {
     }
 }
 
+$_SESSION["bedrag"] = NULL;
+
 switch ($_SESSION["taal"]){
     case "Nederlands":
         $keuze = "Maak uw keuze:";
