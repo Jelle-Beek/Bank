@@ -58,7 +58,7 @@ switch ($_SESSION["taal"]){
     <section>
         <h1>Batbank</h1>
         <br>
-        <h2 style="font-size: 60px"><?php echo $uwSaldo?>></h2>
+        <h2 style="font-size: 60px"><?php echo $uwSaldo?></h2>
 
         <h2>&euro;<?php echo $_SESSION['saldo']; ?></h2>
 

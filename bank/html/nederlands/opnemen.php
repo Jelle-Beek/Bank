@@ -13,6 +13,22 @@ if (ctype_alnum($_SESSION["key"])) {
             break;
     }
 }
+
+switch ($_SESSION["taal"]){
+    case "Nederlands":
+        $keuze = "Maak uw keuze:";
+        $anders = "../../Pictures/nederlands/anders.png";
+        break;
+    case "Engels":
+        $keuze = "Make your choice:";
+        $anders = "../../Pictures/engels/otherwise.png";
+        break;
+    case "Duits":
+        $keuze = "Treffen Sie Ihre Wahl:";
+        $anders = "../../Pictures/duits/sonst.png";
+        break;
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -42,7 +58,7 @@ if (ctype_alnum($_SESSION["key"])) {
     <section>
         <h1>Batbank</h1>
         <br>
-        <h2>Maak uw keuze:</h2>
+        <h2><?php echo $keuze?></h2>
         <br><br><br>
 
         <button class="keuze">
@@ -69,7 +85,7 @@ if (ctype_alnum($_SESSION["key"])) {
         </button>
 
         <button class="keuze">
-            <a href="bedrag_invoeren.php"> <img src="../../Pictures/nederlands/anders.png"
+            <a href="bedrag_invoeren.php"> <img src="<?php echo $anders ?>"
                                                 class="keuze_button"> </a>
             <h3>5</h3>
         </button>

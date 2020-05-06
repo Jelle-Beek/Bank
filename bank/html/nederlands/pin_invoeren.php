@@ -37,15 +37,15 @@ $_SESSION["key"] = NULL;
 switch ($_SESSION["taal"]){
     case "Nederlands":
         $invoeren = "Voer uw pincode in a.u.b.";
-        $geheim = "Houd uw pincode geheim. Laat niemand meekijken";
+        $geheim = "Houd uw pincode geheim. Laat niemand meekijken.";
         break;
     case "Engels":
-        $invoeren = "Please enter your pincode";
-        $geheim = "Keep your pincode secret. Don't let anyone watch";
+        $invoeren = "Please enter your pincode.";
+        $geheim = "Keep your pincode secret. Don't let anyone watch.";
         break;
     case "Duits":
-        $invoeren = "";
-        $geheim = "";
+        $invoeren = "Bitte geben Sie Ihren PIN-Code ein.";
+        $geheim = "Halten Sie Ihre PIN geheim. Lass niemanden zuschauen.";
         break;
 }
 ?>
@@ -70,10 +70,10 @@ switch ($_SESSION["taal"]){
     <section class="background"></section>
     <section>
         <h1>Batbank</h1>
-        <h2>Voer uw pincode in a.u.b.</h2>
+        <h2><?php echo $geheim?></h2>
         <br>
         <form action="../../php/inloggen.php" method="post">
-            <input type="text" class="input_pin" name="pasnummer" placeholder="Passnummer"/>
+            <input type="text" class="input_pin" name="pasnummer" placeholder="Pasnummer"/>
 
             <input type="password" class="input_pin" name="pincode" placeholder="Pincode" pattern="[0-9]{4}"
                    maxlength="4" required value="<?php echo $_SESSION["pin"] ?>"/>
@@ -82,7 +82,7 @@ switch ($_SESSION["taal"]){
             <input type="reset" class="input_corr" value="B   CORR">
         </form>
         <br>
-        <h2 style="color: orangered">Houd uw pincode geheim. Laat niemand meekijken</h2>
+        <h2 style="color: orangered"><?php echo $geheim?></h2>
 
         <a href="menu.php"><img src="../../Pictures/algemeen/passcode.png" style="width: 40%"></a>
     </section>
