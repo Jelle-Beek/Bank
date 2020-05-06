@@ -24,6 +24,30 @@ if (ctype_alnum($_SESSION["key"])) {
             break;
     }
 }
+
+switch ($_SESSION["taal"]){
+    case "Nederlands":
+        $keuze = "Maak uw keuze:";
+        $saldo = "../../Pictures/nederlands/anders.png";
+        $opnemen = "../../Pictures/nederlands/openemen.png";
+        $zeventig = "../../Pictures/nederlands/70_euro.png";
+        $help = "../../Pictures/nederlands/Help.png";
+        break;
+    case "Engels":
+        $keuze = "Make your choice:";
+        $saldo = "../../Pictures/engels/balance.png";
+        $opnemen = "../../Pictures/engels/otherwise.png";
+        $zeventig = "../../Pictures/engels/withdraw_70_euro.png";
+        $help = "../../Pictures/engels/Help.png";
+        break;
+    case "Duits":
+        $keuze = "Treffen Sie Ihre Wahl:";
+        $saldo = "../../Pictures/duits/gleichgewicht.png";
+        $opnemen = "../../Pictures/duits/aufnehmen.png";
+        $zeventig = "../../Pictures/duits/70_Euro_afnehmen.png";
+        $help = "../../Pictures/duits/helfe.png";
+        break;
+}
 ?>
 
 <!DOCTYPE html>
@@ -47,28 +71,28 @@ if (ctype_alnum($_SESSION["key"])) {
     <section>
         <h1>Batbank</h1>
         <br>
-        <h2>Maak uw keuze: </h2>
+        <h2><?php echo $keuze?></h2>
         <br><br><br>
 
         <button class="keuze">
-            <a href="saldo.php"><img src="../../Pictures/nederlands/saldo.png"
+            <a href="saldo.php"><img src="<?php echo $saldo?>"
                                      class="keuze_button"></a>
             <h3>1</h3>
         </button>
 
         <button class="keuze">
-            <a href="opnemen.php"><img src="../../Pictures/nederlands/opnemen.png"
+            <a href="opnemen.php"><img src="<?php echo $opnemen?>"
                                        class="keuze_button"></a>
             <h3>2</h3>
         </button>
         <button class="keuze">
-            <img src="../../Pictures/nederlands/70_euro.png"
+            <img src="<?php echo $zeventig?>"
                  class="keuze_button">
             <h3>3</h3>
         </button>
 
         <button class="keuze">
-            <a href="help.php"><img src="../../Pictures/nederlands/Help.png"
+            <a href="help.php"><img src="<?php echo $help?>"
                                     class="keuze_button"></a>
             <h3>4</h3>
         </button>

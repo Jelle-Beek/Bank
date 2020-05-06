@@ -85,7 +85,7 @@ switch ($_SESSION["taal"]){
         </button>
 
         <button class="keuze">
-            <a href="bedrag_invoeren.php"> <img src="<?php echo $anders ?>"
+            <a href="bedrag_invoeren.php"> <img src="<?php echo $anders?>"
                                                 class="keuze_button"> </a>
             <h3>5</h3>
         </button>
