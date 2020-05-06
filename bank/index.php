@@ -6,6 +6,32 @@ if ($_SESSION['pasnummer'] != "...........") {
     header("location: html/nederlands/pin_invoeren.php");
 }
 
+switch ($_SESSION["key"]) {
+    case 'A':
+        $_SESSION["taal"] = "Nederlands";
+        break;
+
+    case 'B':
+        $_SESSION["taal"] = "Engels";
+        break;
+
+    case 'c':
+        $_SESSION["taal"] = "Duits";
+        break;
+}
+
+switch ($_SESSION["taal"]){
+    case "Nederlands":
+        $pas = "Pas invoegen a.u.b.";
+        break;
+    case "Engels":
+        $pas = "Please insert your card.";
+        break;
+    case "Duits":
+        $pas = "Bitte geben Sie Ihre Karte ein";
+        break;
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -39,7 +65,7 @@ if ($_SESSION['pasnummer'] != "...........") {
 <div class="main">
     <section>
         <h1>Batbank</h1>
-        <h2><a href="html/nederlands/pin_invoeren.php">Pas</a> invoegen a.u.b.</h2>
+        <h2><a href="html/nederlands/pin_invoeren.php"><?php echo $pas?>></a></h2>
     </section>
 </div>
 </body>

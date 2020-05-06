@@ -33,6 +33,21 @@ if (ctype_alnum($_SESSION["key"])) {
 }
 
 $_SESSION["key"] = NULL;
+
+switch ($_SESSION["taal"]){
+    case "Nederlands":
+        $invoeren = "Voer uw pincode in a.u.b.";
+        $geheim = "Houd uw pincode geheim. Laat niemand meekijken";
+        break;
+    case "Engels":
+        $invoeren = "Please enter your pincode";
+        $geheim = "Keep your pincode secret. Don't let anyone watch";
+        break;
+    case "Duits":
+        $invoeren = "";
+        $geheim = "";
+        break;
+}
 ?>
 
 <!DOCTYPE html>

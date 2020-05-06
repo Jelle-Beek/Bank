@@ -15,6 +15,19 @@ if (ctype_alnum($_SESSION["key"])) {
             break;
     }
 }
+
+switch ($_SESSION["taal"]){
+    case "Nederlands":
+        $uwSaldo = "Uw saldo is:";
+        break;
+    case "Engels":
+        $uwSaldo = "Your balance is:";
+        break;
+    case "Duits":
+        $uwSaldo = "Ihr Gleichgewicht ist:";
+        break;
+}
+
 ?>
 
 
@@ -45,7 +58,7 @@ if (ctype_alnum($_SESSION["key"])) {
     <section>
         <h1>Batbank</h1>
         <br>
-        <h2 style="font-size: 60px">Uw saldo is:</h2>
+        <h2 style="font-size: 60px"><?php echo $uwSaldo?>></h2>
 
         <h2>&euro;<?php echo $_SESSION['saldo']; ?></h2>
 
