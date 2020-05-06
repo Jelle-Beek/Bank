@@ -4,11 +4,11 @@ session_start();
 
 if (ctype_alnum($_SESSION["key"])) {
     switch ($_SESSION["key"]) {
-        case 'A':
+        case '*':
             header("location: menu.php");
             break;
 
-        case 'B':
+        case '#':
             $_SESSION["pin"] = NULL;
             break;
 
@@ -78,8 +78,8 @@ switch ($_SESSION["taal"]){
             <input type="password" class="input_pin" name="pincode" placeholder="Pincode" pattern="[0-9]{4}"
                    maxlength="4" required value="<?php echo $_SESSION["pin"]?>"/>
             <br>
-            <input type="submit" class="input_ok" value="A   OK">
-            <input type="reset" class="input_corr" value="B   CORR">
+            <input type="submit" class="input_ok" value="*   OK">
+            <input type="reset" class="input_corr" value="#   CORR">
         </form>
         <br>
         <h2 style="color: orangered"><?php echo $geheim?></h2>

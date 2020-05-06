@@ -4,11 +4,11 @@ session_start();
 
 if (ctype_alnum($_SESSION["key"])) {
     switch ($_SESSION["key"]) {
-        case 'A':
+        case '*':
 
             break;
 
-        case 'B':
+        case '#':
             $_SESSION["bedrag"] = NULL;
             break;
 
@@ -81,8 +81,8 @@ switch ($_SESSION["taal"]){
         <form>
             <input type="text" class="input_bedrag" name="Bedrag" placeholder="<?php echo $bedrag?>" maxlength="4"/>
             <br>
-            <input type="submit" class="input_ok" value="A   OK">
-            <input type="reset" class="input_corr" value="B   CORR">
+            <input type="submit" class="input_ok" value="*   OK">
+            <input type="reset" class="input_corr" value="#   CORR">
         </form>
 
         <br><br><br><br><br><br>

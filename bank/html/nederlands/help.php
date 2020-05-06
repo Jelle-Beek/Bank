@@ -23,12 +23,12 @@ switch ($_SESSION["taal"]){
     case "Engels":
         $hulp = "For help, contact us by:";
         $mail = "Mailing to:  0984233@hr.nl";
-        $telnr = "Calling the number: 0681757734";
+        $telnr = "Calling the number:   0681757734";
         break;
     case "Duits":
         $hulp = "F&uumlr Hilfe k&oumlnnen Sie:";
-        $mail = "Die folgende E-Mail-Adresse e-mailen: \n0984233@hr.nl";
-        $telnr = "Die folgende Nummer anrufen: 0681757734";
+        $mail = "Die folgende E-Mail-Adresse e-mailen: <br>0984233@hr.nl";
+        $telnr = "Die folgende Nummer anrufen: <br>0681757734";
         break;
 }
 
