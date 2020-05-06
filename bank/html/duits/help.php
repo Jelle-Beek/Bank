@@ -25,8 +25,7 @@
         <h1>Batbank</h1>
         <br><br><br>
         <h2>F&uumlr Hilfe k&oumlnnen Sie:</h2><br>
-        <h2>Die folgende E-Mail-Adresse e-mailen: </h2>
-        <h2>0984233@hr.nl</h2>
+        <h2>Die folgende E-Mail-Adresse e-mailen: <br>0984233@hr.nl</h2>
         <h2>Die folgende Nummer anrufen: 0681757734</h2>
     </section>
 </div>

@@ -28,15 +28,15 @@ if (ctype_alnum($_SESSION["key"])) {
 switch ($_SESSION["taal"]){
     case "Nederlands":
         $keuze = "Maak uw keuze:";
-        $saldo = "../../Pictures/nederlands/anders.png";
-        $opnemen = "../../Pictures/nederlands/openemen.png";
+        $saldo = "../../Pictures/nederlands/saldo.png";
+        $opnemen = "../../Pictures/nederlands/opnemen.png";
         $zeventig = "../../Pictures/nederlands/70_euro.png";
         $help = "../../Pictures/nederlands/Help.png";
         break;
     case "Engels":
         $keuze = "Make your choice:";
         $saldo = "../../Pictures/engels/balance.png";
-        $opnemen = "../../Pictures/engels/otherwise.png";
+        $opnemen = "../../Pictures/engels/withdraw.png";
         $zeventig = "../../Pictures/engels/withdraw_70_euro.png";
         $help = "../../Pictures/engels/Help.png";
         break;
@@ -44,7 +44,7 @@ switch ($_SESSION["taal"]){
         $keuze = "Treffen Sie Ihre Wahl:";
         $saldo = "../../Pictures/duits/gleichgewicht.png";
         $opnemen = "../../Pictures/duits/aufnehmen.png";
-        $zeventig = "../../Pictures/duits/70_Euro_afnehmen.png";
+        $zeventig = "../../Pictures/duits/70_Euro_aufnehmen.png";
         $help = "../../Pictures/duits/helfe.png";
         break;
 }

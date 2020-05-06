@@ -13,6 +13,25 @@ if (ctype_alnum($_SESSION["key"])) {
             break;
     }
 }
+
+switch ($_SESSION["taal"]){
+    case "Nederlands":
+        $hulp = "Voor hulp kunt u:";
+        $mail = "Het volgende emailadress mailen:  0984233@hr.nl";
+        $telnr = "Het volgende nummer bellen: 0681757734";
+        break;
+    case "Engels":
+        $hulp = "For help, contact us by:";
+        $mail = "Mailing to:  0984233@hr.nl";
+        $telnr = "Calling the number: 0681757734";
+        break;
+    case "Duits":
+        $hulp = "F&uumlr Hilfe k&oumlnnen Sie:";
+        $mail = "Die folgende E-Mail-Adresse e-mailen: \n0984233@hr.nl";
+        $telnr = "Die folgende Nummer anrufen: 0681757734";
+        break;
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -42,9 +61,9 @@ if (ctype_alnum($_SESSION["key"])) {
     <section>
         <h1>Batbank</h1>
         <br><br><br>
-        <h2>Voor hulp kunt u:</h2><br>
-        <h2>Het volgende emailadress mailen:  0984233@hr.nl</h2>
-        <h2>Het volgende nummer bellen: 0681757734</h2>
+        <h2><?php echo $hulp?></h2><br>
+        <h2><?php echo $mail?></h2>
+        <h2><?php echo $telnr?></h2>
     </section>
 </div>
 </body>
