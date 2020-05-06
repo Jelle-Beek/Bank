@@ -39,7 +39,7 @@ switch ($_SESSION["taal"]){
 <head>
     <title>saldo</title>
     <link href="../../CSS/help.css" rel="stylesheet" type="text/css"/>
-    <meta http-equiv="refresh" content="1" >
+    <meta http-equiv="refresh" content="0.2">
 </head>
 <body>
 <div class="buttons">

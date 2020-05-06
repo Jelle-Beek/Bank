@@ -55,7 +55,7 @@ switch ($_SESSION["taal"]){
 <head>
     <title>pin invoeren</title>
     <link href="../../CSS/pin_invoeren.css" rel="stylesheet" type="text/css"/>
-    <meta http-equiv="refresh" content="1.5">
+    <meta http-equiv="refresh" content="0.2">
 </head>
 <body>
 <div class="buttons">
