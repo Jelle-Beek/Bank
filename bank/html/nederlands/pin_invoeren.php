@@ -76,7 +76,7 @@ switch ($_SESSION["taal"]){
             <input type="text" class="input_pin" name="pasnummer" placeholder="Pasnummer"/>
 
             <input type="password" class="input_pin" name="pincode" placeholder="Pincode" pattern="[0-9]{4}"
-                   maxlength="4" required value="<?php echo $_SESSION["pin"] ?>"/>
+                   maxlength="4" required value="<?php echo $_SESSION["pin"]?>"/>
             <br>
             <input type="submit" class="input_ok" value="A   OK">
             <input type="reset" class="input_corr" value="B   CORR">
