@@ -4,6 +4,7 @@
     <list default="true" id="e3dfe9a6-f9fc-4457-b689-b78444ff284d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/html/pin_invoeren.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/pin_invoeren.php" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +14,9 @@
     <option name="done" value="true" />
   </component>
   <component name="ComposerSettings">
-    <execution />
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -40,7 +43,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4.2" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
@@ -58,10 +67,10 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/html/nederlands" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -75,6 +84,18 @@
       <recent name="C:\Users\ziwez\Desktop\project bank\GUI\html" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="GlassFish 5.0.1" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.0.1" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -85,7 +106,7 @@
         <option name="COMPATIBILITY" value="false" />
         <option name="VIRTUAL_SERVER" />
         <option name="USERNAME" value="admin" />
-        <option name="CREDENTIAL_ALIAS" />
+        <option name="CREDENTIAL_ALIAS" value="7a4e1527-3256-4147-8b6b-c1a1baa80b48" />
       </server-settings>
       <predefined_log_file enabled="true" id="GlassFish" />
       <RunnerSettings RunnerId="Debug">
@@ -243,23 +264,26 @@
       <workItem from="1588759519383" duration="1232000" />
       <workItem from="1588760840864" duration="334000" />
       <workItem from="1588761506298" duration="521000" />
+      <workItem from="1589132347578" duration="1020000" />
+      <workItem from="1589133942518" duration="3770000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="354" y="294" key="#CLI_Interpreters" timestamp="1588681654560">
