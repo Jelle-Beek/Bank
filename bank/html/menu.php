@@ -4,7 +4,7 @@ session_start();
 if (ctype_alnum($_SESSION["key"])) {
     switch ($_SESSION["key"]) {
         case '1':
-            header("location: saldo.php");
+            header("location: ../php/saldo_opvragen.php");
             break;
 
         case '2':
@@ -76,7 +76,7 @@ switch ($_SESSION["taal"]){
         <br><br><br>
 
         <button class="keuze">
-            <a href="saldo.php"><img src="<?php echo $saldo?>"
+            <a href="../php/saldo_opvragen.php"><img src="<?php echo $saldo?>"
                                      class="keuze_button"></a>
             <h3>1</h3>
         </button>

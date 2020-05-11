@@ -10,7 +10,7 @@ $telefoonnummer = $landcode . " " . $nummer;
 $emailadres = $_POST["emailadres"];
 
 if (!empty($voornaam) || !empty($tussenvoegsel) || !empty($achternaam) || !empty($gebroorte_datum) || !empty($geslacht) || !empty($telefoonnummer) || !empty($emailadres)) {
-    $host = "145.24.222.43/phpmyadmin/";
+    $host = "localhost";
     $dbUsername = "root";
     $dbPassword = "Bank@Y44n72";
     $dbName = "batbank";
@@ -24,16 +24,18 @@ if (!empty($voornaam) || !empty($tussenvoegsel) || !empty($achternaam) || !empty
     } else {
         if ($tussenvoegsel == "") {
             $sql = "INSERT INTO gebruiker (GebruikersID, Naam, Tussenvoegsel, Achternaam, Geboorte_datum, Geslacht, Telefoonnummer, Emailadres)
-            VALUES ('', '$voornaam', NULL, '$achternaam', '$gebroorte_datum', '$geslacht', '$telefoonnummer', '$emailadres');";
+            VALUES (NULL, '$voornaam', NULL, '$achternaam', '$gebroorte_datum', '$geslacht', '$telefoonnummer', '$emailadres');";
 
         } else {
             $sql = "INSERT INTO gebruiker (GebruikersID, Naam, Tussenvoegsel, Achternaam, Geboorte_datum, Geslacht, Telefoonnummer, Emailadres)
-            VALUES ('', '$voornaam', '$tussenvoegsel', '$achternaam', '$gebroorte_datum', '$geslacht', '$telefoonnummer', '$emailadres');";
+            VALUES ('NULL, '$voornaam', '$tussenvoegsel', '$achternaam', '$gebroorte_datum', '$geslacht', '$telefoonnummer', '$emailadres');";
         }
 
 
         if ($conn->query($sql)) {
             echo "Gebruiker is aangemaakt";
+
+            header("location: ../index.php");
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
@@ -44,8 +46,6 @@ if (!empty($voornaam) || !empty($tussenvoegsel) || !empty($achternaam) || !empty
     echo "Alle velden moeten ingevuld zijn";
     die();
 }
-
-header("location: ../index.php");
 
 /*
 $host = "localhost";

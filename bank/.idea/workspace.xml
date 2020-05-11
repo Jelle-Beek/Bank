@@ -2,10 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3dfe9a6-f9fc-4457-b689-b78444ff284d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Test/test_index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/test_inloggen.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/duits.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/engels.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/nederlands.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/gebruiker_toevoegen.php" beforeDir="false" afterPath="$PROJECT_DIR$/Test/gebruiker_toevoegen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/menu.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/pin_invoeren.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/pin_invoeren.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/saldo.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/saldo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/gebruiker_toevoegen.php" beforeDir="false" afterPath="$PROJECT_DIR$/Test/gebruiker_toevoegen_controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/inloggen.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/inloggen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/saldo_opvragen.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/saldo_opvragen.php" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,9 +27,7 @@
     <option name="done" value="true" />
   </component>
   <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -50,7 +60,7 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4.2" />
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
@@ -66,7 +76,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/html/nederlands" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/php" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
@@ -74,28 +84,20 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\html\nederlands" />
-      <recent name="C:\Users\ziwez\Desktop\school\Projecten\Project 34 - Bank\project bank\html" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\Test" />
+      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\php" />
       <recent name="C:\Users\jelle\Desktop\HR\jaar 1\Periode 3\Project 3-4\Github\bank\html" />
       <recent name="C:\Users\ziwez\Desktop\school\Projecten\Project 34 - Bank\project bank\php" />
       <recent name="C:\Users\ziwez\Desktop\school\Projecten\Project 34 - Bank\project bank" />
-      <recent name="C:\Users\ziwez\Desktop\project bank\GUI\html" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\php" />
+      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank" />
+      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\Test" />
+      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\html\nederlands" />
+      <recent name="C:\Users\ziwez\Desktop\school\Projecten\Project 34 - Bank\project bank\html" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="GlassFish 5.0.1" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.0.1" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
@@ -267,24 +269,24 @@
       <workItem from="1588761506298" duration="521000" />
       <workItem from="1589132347578" duration="1020000" />
       <workItem from="1589133942518" duration="3770000" />
+      <workItem from="1589197117562" duration="6604000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="354" y="294" key="#CLI_Interpreters" timestamp="1588681654560">
@@ -303,18 +305,18 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="240" y="359" key="#Inspections/0.0.2560.1400@0.0.2560.1400" timestamp="1586097172475" />
-    <state x="356" y="291" key="#PHP" timestamp="1588332994636">
+    <state x="356" y="291" key="#PHP" timestamp="1589198058350">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="356" y="291" key="#PHP/0.0.2560.1400@0.0.2560.1400" timestamp="1588332994636" />
+    <state x="356" y="291" key="#PHP/0.0.2560.1400@0.0.2560.1400" timestamp="1589198058350" />
     <state x="97" y="419" key="#Project_Structure" timestamp="1588681430173">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="97" y="419" key="#Project_Structure/0.0.2560.1400@0.0.2560.1400" timestamp="1588681430173" />
-    <state x="240" y="359" key="#SQL_Dialects" timestamp="1586096770420">
+    <state x="240" y="359" key="#SQL_Dialects" timestamp="1589202129143">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="240" y="359" key="#SQL_Dialects/0.0.2560.1400@0.0.2560.1400" timestamp="1586096770420" />
+    <state x="240" y="359" key="#SQL_Dialects/0.0.2560.1400@0.0.2560.1400" timestamp="1589202129143" />
     <state x="72" y="481" width="1089" height="725" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588681528025">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -327,38 +329,38 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="343" y="469" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1588682279561" />
-    <state x="1011" y="448" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588332810729">
+    <state x="1011" y="448" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589199092755">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1011" y="448" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1588332810729" />
+    <state x="1011" y="448" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589199092755" />
     <state x="473" y="436" key="FileChooserDialogImpl" timestamp="1586168862219">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="473" y="436" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1586168862219" />
-    <state width="1741" height="388" key="GridCell.Tab.0.bottom" timestamp="1588682882477">
+    <state width="843" height="388" key="GridCell.Tab.0.bottom" timestamp="1589203741186">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1741" height="388" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1588682882477" />
-    <state width="1741" height="388" key="GridCell.Tab.0.center" timestamp="1588682882477">
+    <state width="843" height="388" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1589203741186" />
+    <state width="843" height="388" key="GridCell.Tab.0.center" timestamp="1589203741185">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1741" height="388" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1588682882477" />
-    <state width="1741" height="388" key="GridCell.Tab.0.left" timestamp="1588682882477">
+    <state width="843" height="388" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1589203741185" />
+    <state width="843" height="388" key="GridCell.Tab.0.left" timestamp="1589203741185">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1741" height="388" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1588682882477" />
-    <state width="1741" height="388" key="GridCell.Tab.0.right" timestamp="1588682882477">
+    <state width="843" height="388" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1589203741185" />
+    <state width="843" height="388" key="GridCell.Tab.0.right" timestamp="1589203741185">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1741" height="388" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1588682882477" />
-    <state x="331" y="518" key="NewPhpClassDialog" timestamp="1587391457119">
+    <state width="843" height="388" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1589203741185" />
+    <state x="331" y="518" key="NewPhpClassDialog" timestamp="1589198962637">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="331" y="518" key="NewPhpClassDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1587391457119" />
-    <state x="476" y="627" key="NewPhpFileDialog" timestamp="1588700583111">
+    <state x="331" y="518" key="NewPhpClassDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589198962637" />
+    <state x="476" y="627" key="NewPhpFileDialog" timestamp="1589200818194">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="476" y="627" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1588700583111" />
+    <state x="476" y="627" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589200818194" />
     <state x="512" y="463" key="SettingsEditor" timestamp="1588703159973">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

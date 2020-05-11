@@ -5,7 +5,7 @@
 </head>
 
 <body>
-<form action="../php/gebruiker_toevoegen.php" method="POST">
+<form action="gebruiker_toevoegen_controller.php" method="POST">
     <label>Naam:
         <input type="text" name="voornaam" placeholder="Voornaam" required/>
         <input type="text" name="tussenvoegsel" placeholder="Tussenvoegsel"/>

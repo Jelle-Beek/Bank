@@ -2,8 +2,11 @@
 session_id("batbank");
 session_start();
 
-$pasnummer= $_SESSION['pasnummer'];
-$pincode  = $_SESSION["pin"];
+$pasnummer= $_POST['pasnummer'];
+$pincode  = $_POST["pincode"];
+
+$_SESSION['pasnummer'] = $pasnummer;
+$_SESSION["pin"] = $pincode;
 
 $_SESSION["error"] = "";
 
@@ -17,8 +20,10 @@ $conn = new mysqli($host, $dbUsername, $dbPassword, $dbName);
 
 // Check connection
 if (mysqli_connect_error()) {
+    //connectie slecht
     die('Connect Error(' . mysqli_connect_errno() . ')' . mysqli_connect_error());
 } else {
+    //connectie goed
         $sql = "SELECT Pincode FROM rekeningen WHERE Pasnummer = '$pasnummer' AND Pincode = '$pincode'";
 
         $result = mysqli_query($conn, $sql);

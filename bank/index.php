@@ -2,11 +2,12 @@
 session_id('batbank');
 session_start();
 
-if ($_SESSION['pasnummer'] != "..........." && $_SESSION['pasnummer'] != "") {
-    header("location: html/nederlands/pin_invoeren.php");
+if ($_SESSION['pasnummer'] != "..........." && $_SESSION['pasnummer'] != "" && $_SESSION["pin"] != NULL) {
+    header("location: html/pin_invoeren.php");
 }
 
 $_SESSION["pin"] = NULL;
+$_SESSION["error"] = NULL;
 
 switch ($_SESSION["key"]) {
     case 'A':
@@ -46,20 +47,20 @@ switch ($_SESSION["taal"]){
 <body>
 <div class="buttons">
     <button>
-        <a href="index.php"><img src="Pictures/algemeen/Flag_of_the_Netherlands.svg" alt="Nederlandse Vlag"
-                                 class="language"></a>
+        <a href="php/nederlands.php"><img src="Pictures/algemeen/Flag_of_the_Netherlands.svg" alt="Nederlandse Vlag"
+                                          class="language"></a>
         <h3>A</h3>
     </button>
 
     <button>
-        <a href="html/engels/index.php"><img src="Pictures/algemeen/Flag_of_the_United_States.JPEG" alt="Flag of the United States"
-                                             class="language"></a>
+        <a href="php/engels.php"><img src="Pictures/algemeen/Flag_of_the_United_States.JPEG" alt="Flag of the United States"
+                                      class="language"></a>
         <h3>B</h3>
     </button>
 
     <button>
-        <a href="html/duits/index.php"><img src="Pictures/algemeen/Flag_of_Germany.JPEG" alt="Deutsche Flagge"
-                                            class="language"></a>
+        <a href="php/duits.php"><img src="Pictures/algemeen/Flag_of_Germany.JPEG" alt="Deutsche Flagge"
+                                     class="language"></a>
         <h3>C</h3>
     </button>
 </div>

@@ -2,8 +2,6 @@
 session_id("batbank");
 session_start();
 
-$_SESSION['saldo'] = 1000;
-
 if (ctype_alnum($_SESSION["key"])) {
     switch ($_SESSION["key"]) {
         case 'C':
