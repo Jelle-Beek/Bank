@@ -9,7 +9,7 @@ $_SESSION["error"] = "";
 
 $host = "localhost";
 $dbUsername = "root";
-$dbPassword = "";
+$dbPassword = "Bank@Y44n72";
 $dbName = "batbank";
 
 // Create connection

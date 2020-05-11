@@ -2,19 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3dfe9a6-f9fc-4457-b689-b78444ff284d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Test/test_index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/test_inloggen.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/duits.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/engels.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/nederlands.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/gebruiker_toevoegen.php" beforeDir="false" afterPath="$PROJECT_DIR$/Test/gebruiker_toevoegen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/pin_invoeren.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/pin_invoeren.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/saldo.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/saldo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/gebruiker_toevoegen.php" beforeDir="false" afterPath="$PROJECT_DIR$/Test/gebruiker_toevoegen_controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/inloggen.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/inloggen.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/saldo_opvragen.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/saldo_opvragen.php" afterDir="false" />
     </list>
@@ -270,6 +257,7 @@
       <workItem from="1589132347578" duration="1020000" />
       <workItem from="1589133942518" duration="3770000" />
       <workItem from="1589197117562" duration="6604000" />
+      <workItem from="1589203795301" duration="47000" />
     </task>
     <servers />
   </component>

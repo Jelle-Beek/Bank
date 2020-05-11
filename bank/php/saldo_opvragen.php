@@ -7,7 +7,7 @@ $pincode = $_SESSION['pin'];
 
 $host = "localhost";
 $dbUsername = "root";
-$dbPassword = "";
+$dbPassword = "Bank@Y44n72";
 $dbName = "batbank";
 
 //create connection
