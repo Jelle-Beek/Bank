@@ -8,12 +8,13 @@ const char* password = "SalvadoR2205";
 
 const char* host = "145.24.222.43";
 
-
 String data;
 String postVariableCard = "pasnummer=";
 String pasnummer;
 String postVariableKey = "key=";
 char key;
+
+String printInformatie = "85:j:50,20,10,05,..";
 
 
 void setup() {
@@ -30,18 +31,14 @@ void setup() {
   Serial.println("WiFi connected");  
   Serial.println("IP address: ");
   Serial.println(WiFi.localIP());
-  
 }
+
 
 void loop() {
   informatie();
   post();
 
-
-
-  delay(100);
-  
-
+  delay(200);
 }
 
 
@@ -52,7 +49,7 @@ void post(){
     Serial.println("connection failed");
     return;
   }
-  
+
   client.println("POST /php/arduino.php HTTP/1.1");
   client.print("Host: ");
   client.println(host);
@@ -72,12 +69,31 @@ void post(){
       return;
     }
   }
-
-  while(client.available()){
-    String line = client.readStringUntil('\r');
-    Serial.print(line);
-  }
 }
+
+
+//void printen(){
+//  int bedrag = printInformatie.substring(0,2).toInt();
+//  if (printInformatie.substring(3,4) == "j"){
+////    Wire.beginTransmission(13);
+////    Wire.write(bedrag);
+////    Wire.endTransmission();
+//  }
+//
+// 
+//  for(int positie = 5; printInformatie.substring(positie,positie+2) != ".."; positie += 3){
+//    String biljet = printInformatie.substring(positie,positie+2);
+//    if(biljet == "50"){
+//      //zet motor van 50 aan
+//    } else if(biljet == "20"){
+//      
+//    } else if(biljet == "10"){
+//      
+//    } else if(biljet == "05"){
+//      
+//    }    
+//  }  
+//}
 
 
 void informatie(){
@@ -93,12 +109,7 @@ void informatie(){
       delay(10);
    }
 
-   Serial.println(pasnummer);
-
-   
-
   data = postVariableCard + pasnummer + "&" + postVariableKey + key;
-  Serial.println();
+  Serial.println("----------------------------------------");
   Serial.println(data);
-  Serial.println();
 }
