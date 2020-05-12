@@ -14,7 +14,7 @@
 #define RST_PIN 9
 MFRC522 mfrc522(SS_PIN, RST_PIN);
 
-//printer stuff (TX = yellow(RX printer), RX = green(TX printer))
+//printer stuff (TX = blue(RX printer), RX = green(TX printer))
 #define TX_PIN 2
 #define RX_PIN 8
 
