@@ -15,8 +15,8 @@
 MFRC522 mfrc522(SS_PIN, RST_PIN);
 
 //printer stuff (TX = yellow(RX printer), RX = green(TX printer))
-#define TX_PIN 5
-#define RX_PIN 6
+#define TX_PIN 2
+#define RX_PIN 8
 
 SoftwareSerial mySerial(RX_PIN, TX_PIN);
 Adafruit_Thermal printer(&mySerial);
@@ -26,7 +26,7 @@ RTC_Millis rtc;
 const byte ROWS = 4; 
 const byte COLS = 4;
 byte rowPins[ROWS] = {4, 5, 6, 7}; //begin kant van ster 
-byte colPins[COLS] = {A3, A2, A1, A0};
+byte colPins[COLS] = {A3, A2, A1, 3};
 
 char keyMap [ROWS] [COLS] = { 
   {'1', '2', '3', 'A'},
@@ -41,6 +41,9 @@ String content = "";
 char key = '\0';
 char pasnummer[11];
 
+boolean boolPrint = false;
+int bedrag = 0;
+
 void setup() {
   Wire.begin(13); 
   Wire.onRequest(requestEvent);
@@ -51,6 +54,8 @@ void setup() {
   mfrc522.PCD_Init();
 
   printer.begin();
+
+  attachInterrupt(digitalPinToInterrupt(3), keypadLezen, RISING);
   
 }
 
@@ -59,18 +64,24 @@ void loop() {
   if(content == ""){
     RFID();
     content.substring(1).toCharArray(pasnummer, 12);
-  } else {
+  } else{
     keypadLezen();
   }
+  
+
+//  if (boolPrint){
+//    printBon();
+//  }
   Serial.println(content);
   Serial.println(key);
   delay(100);
 }
 
 void receiveEvent(int bytes) {
-//  int  bedrag = Wire.read();
-//  printBon(bedrag);
+  bedrag = Wire.read();
+  boolPrint = true;
 }
+
 
 void requestEvent() {
   Wire.write(key);
@@ -111,10 +122,11 @@ void RFID(){
 }
 
 
-void printBon(int geld){
+void printBon(){
   rtc.begin(DateTime(F(__DATE__), F(__TIME__)));
   DateTime now = rtc.now();
 
+  
   // NAAM BANK
   printer.justify('C');
   printer.setSize('L');
@@ -140,12 +152,12 @@ void printBon(int geld){
   printer.println();
 
   // REKENING NUMMER
-  printer.println("Kaart nummer : *********\n");
+//  printer.println("Kaart nummer : *********\n");
 
   // HOEVEELHEID GELD
   printer.setSize('M');
   printer.print("Opgenomen bedrag : ");
-  printer.println(geld);
+  printer.println(bedrag);
   printer.println();
   
   // BEDANKT ...
@@ -154,8 +166,6 @@ void printBon(int geld){
   printer.println(F("Bedankt voor het gebruiken van"));
   printer.println(F("onze bank!\n"));
 
-  printer.sleep();      // Tell printer to sleep
-  delay(3000L);         // Sleep for 3 seconds
-  printer.wake();       // MUST wake() before printing again, even if reset
-  printer.setDefault(); // Restore printer to defaults
+  boolPrint = false; 
+  
 }

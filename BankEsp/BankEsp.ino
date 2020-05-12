@@ -14,7 +14,7 @@ String pasnummer;
 String postVariableKey = "key=";
 char key;
 
-String printInformatie = "85:j:50,20,10,05,..";
+String printInformatie = "85:n:50,20,10,05,..";
 
 
 void setup() {
@@ -37,6 +37,7 @@ void setup() {
 void loop() {
   informatie();
   post();
+  printen();
 
   delay(200);
 }
@@ -72,28 +73,28 @@ void post(){
 }
 
 
-//void printen(){
-//  int bedrag = printInformatie.substring(0,2).toInt();
-//  if (printInformatie.substring(3,4) == "j"){
-////    Wire.beginTransmission(13);
-////    Wire.write(bedrag);
-////    Wire.endTransmission();
-//  }
-//
-// 
-//  for(int positie = 5; printInformatie.substring(positie,positie+2) != ".."; positie += 3){
-//    String biljet = printInformatie.substring(positie,positie+2);
-//    if(biljet == "50"){
-//      //zet motor van 50 aan
-//    } else if(biljet == "20"){
-//      
-//    } else if(biljet == "10"){
-//      
-//    } else if(biljet == "05"){
-//      
-//    }    
-//  }  
-//}
+void printen(){
+  int bedrag = printInformatie.substring(0,2).toInt();
+  if (printInformatie.substring(3,4) == "j"){
+    Wire.beginTransmission(13);
+    Wire.write(bedrag);
+    Wire.endTransmission();
+  }
+
+ 
+  for(int positie = 5; printInformatie.substring(positie,positie+2) != ".."; positie += 3){
+    String biljet = printInformatie.substring(positie,positie+2);
+    if(biljet == "50"){
+      //zet motor van 50 aan
+    } else if(biljet == "20"){
+      
+    } else if(biljet == "10"){
+      
+    } else if(biljet == "05"){
+      
+    }    
+  }  
+}
 
 
 void informatie(){
