@@ -41,12 +41,6 @@ String content = "";
 char key = '\0';
 char pasnummer[11];
 
-String password = "1234";
-String input;
-
-
-int count = 0;
-
 void setup() {
   Wire.begin(13); 
   Wire.onRequest(requestEvent);
@@ -74,7 +68,8 @@ void loop() {
 }
 
 void receiveEvent(int bytes) {
-int  y = Wire.read();
+//  int  bedrag = Wire.read();
+//  printBon(bedrag);
 }
 
 void requestEvent() {
@@ -88,6 +83,9 @@ void requestEvent() {
 void keypadLezen(){
   char whichKey = myKeypad.getKey(); 
   if(whichKey){
+    if(whichKey == 'D'){
+      content = "";
+    }
     key = whichKey;
   }
 }
