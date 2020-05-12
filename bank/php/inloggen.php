@@ -27,7 +27,18 @@ if (mysqli_connect_error()) {
         echo "Gebruiker gevonden";
         header("location: ../html/menu.php");
     } else {
-        $_SESSION["error"] = "Wrong pincode";
+        switch ($_SESSION["taal"]) {
+            case "Nederlands":
+                $_SESSION["error"] = "Verkeerde pincode";
+                break;
+            case "Engels":
+                $_SESSION["error"] = "Wrong PIN";
+                break;
+            case "Duits":
+                $_SESSION["error"] = "Falsche PIN";
+                break;
+        }
+        $_SESSION["pin"] = NULL;
         header("location: ../html/pin_invoeren.php");
     }
 }

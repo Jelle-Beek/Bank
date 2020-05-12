@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3dfe9a6-f9fc-4457-b689-b78444ff284d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/gebruiker_toevoegen.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/gebruiker_toevoegen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/gebruiker_toevoegen_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/gebruiker_toevoegen_controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/test_index.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/test_inloggen.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_inloggen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/bedrag_invoeren.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/bedrag_invoeren.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/pin_invoeren.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/pin_invoeren.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/bedrag_invoeren.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/bedrag_invoeren.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/pin_invoeren.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/pin_invoeren.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/arduino.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/arduino.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/inloggen.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/inloggen.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,6 +266,7 @@
       <workItem from="1589197117562" duration="6604000" />
       <workItem from="1589203795301" duration="47000" />
       <workItem from="1589204141750" duration="931000" />
+      <workItem from="1589278031493" duration="8532000" />
     </task>
     <servers />
   </component>

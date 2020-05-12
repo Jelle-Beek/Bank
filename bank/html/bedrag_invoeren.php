@@ -36,7 +36,7 @@ if (ctype_alnum($_SESSION["key"])) {
     }
 }
 
-switch ($_SESSION["taal"]){
+switch ($_SESSION["taal"]) {
     case "Nederlands":
         $invoeren = "Voer het bedrag in.";
         $bedrag = "Bedrag";
@@ -77,17 +77,16 @@ switch ($_SESSION["taal"]){
     <section class="background"></section>
     <section>
         <h1>Batbank</h1>
-        <h2><?php echo $invoeren?></h2>
+        <h2><?php echo $invoeren ?></h2>
         <br>
         <form>
-            <input type="text" class="input_bedrag" name="Bedrag" placeholder="<?php echo $bedrag?>" maxlength="4"/>
+            <input type="text" class="input_bedrag" name="Bedrag" placeholder="<?php echo $bedrag ?>" maxlength="4"/>
             <br>
             <input type="submit" class="input_ok" value="*   OK">
             <input type="reset" class="input_corr" value="#   CORR">
         </form>
-
-        <br><br><br><br><br><br>
-        <a href="menu.php"><img src="../Pictures/algemeen/geld.png" style="width: 60%"></a>
+        <br><br><br><br><br><br><br><br>
+        <img src="../Pictures/algemeen/geld.png" style="width: 60%">
     </section>
 </div>
 </body>

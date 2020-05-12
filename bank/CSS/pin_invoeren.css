@@ -70,6 +70,8 @@ button {
     text-align: left;
     border: none;
     background: forestgreen;
+    margin-left: 200px;
+    float: left;
 }
 
 .input_corr {
@@ -79,4 +81,5 @@ button {
     text-align: left;
     border: none;
     background: orange;
+    float: left;
 }

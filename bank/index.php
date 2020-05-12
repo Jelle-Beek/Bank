@@ -2,28 +2,30 @@
 session_id('batbank');
 session_start();
 
-if ($_SESSION['pasnummer'] != "..........." && $_SESSION['pasnummer'] != "" && $_SESSION["pin"] != NULL) {
+if ($_SESSION['pasnummer'] != "..........." && $_SESSION['pasnummer'] != "") {
     header("location: html/pin_invoeren.php");
 }
 
 $_SESSION["pin"] = NULL;
 $_SESSION["error"] = NULL;
 
-switch ($_SESSION["key"]) {
-    case 'A':
-        $_SESSION["taal"] = "Nederlands";
-        break;
+if (ctype_alnum($_SESSION["key"])) {
+    switch ($_SESSION["key"]) {
+        case 'A':
+            $_SESSION["taal"] = "Nederlands";
+            break;
 
-    case 'B':
-        $_SESSION["taal"] = "Engels";
-        break;
+        case 'B':
+            $_SESSION["taal"] = "Engels";
+            break;
 
-    case 'c':
-        $_SESSION["taal"] = "Duits";
-        break;
+        case 'C':
+            $_SESSION["taal"] = "Duits";
+            break;
+    }
 }
 
-switch ($_SESSION["taal"]){
+switch ($_SESSION["taal"]) {
     case "Nederlands":
         $pas = "Pas invoegen a.u.b.";
         break;
@@ -42,7 +44,7 @@ switch ($_SESSION["taal"]){
 <head>
     <title>home</title>
     <link href="CSS/index.css" rel="stylesheet" type="text/css"/>
-    <meta http-equiv="refresh" content="2" >
+    <meta http-equiv="refresh" content="2">
 </head>
 <body>
 <div class="buttons">
@@ -53,7 +55,8 @@ switch ($_SESSION["taal"]){
     </button>
 
     <button>
-        <a href="php/engels.php"><img src="Pictures/algemeen/Flag_of_the_United_States.JPEG" alt="Flag of the United States"
+        <a href="php/engels.php"><img src="Pictures/algemeen/Flag_of_the_United_States.JPEG"
+                                      alt="Flag of the United States"
                                       class="language"></a>
         <h3>B</h3>
     </button>
@@ -68,7 +71,7 @@ switch ($_SESSION["taal"]){
 <div class="main">
     <section>
         <h1>Batbank</h1>
-        <h2><a href="html/pin_invoeren.php"><?php echo $pas?></a></h2>
+        <h2><a href="html/pin_invoeren.php"><?php echo $pas ?></a></h2>
     </section>
 </div>
 </body>
