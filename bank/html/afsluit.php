@@ -34,7 +34,6 @@ switch ($_SESSION["taal"]) {
         <h2><?php echo $tekst ?></h2>
         <img src="../Pictures/algemeen/logo.png" style="width: 70%">
         <h2 style="color: orangered"><?php echo $tekst2 ?></h2>
-
     </section>
 </div>
 </body>

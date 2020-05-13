@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3dfe9a6-f9fc-4457-b689-b78444ff284d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/algemeen/bon.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/algemeen/bon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/afsluit.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/afsluit.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,6 +65,7 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/php" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -265,7 +264,7 @@
       <workItem from="1589361680861" duration="930000" />
       <workItem from="1589362632222" duration="7634000" />
       <workItem from="1589370642433" duration="570000" />
-      <workItem from="1589371228932" duration="6871000" />
+      <workItem from="1589371228932" duration="7191000" />
     </task>
     <servers />
   </component>
@@ -369,10 +368,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="0" y="0" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1586172108460" />
-    <state x="305" y="333" key="run.anything.popup" timestamp="1588071006028">
+    <state x="305" y="333" key="run.anything.popup" timestamp="1589379116129">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="305" y="333" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1588071006028" />
+    <state x="305" y="333" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1589379116129" />
     <state x="303" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1588760882675">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
