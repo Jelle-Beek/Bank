@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3dfe9a6-f9fc-4457-b689-b78444ff284d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/php/var.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/bevestig.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/bevestig.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/bonprinten.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/bonprinten.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/bedrag_invoeren.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/bedrag_invoeren.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/bevestig.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/bevestig.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/bonprinten.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/bonprinten.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/help.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/help.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/opnemen.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/opnemen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/pin_invoeren.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/pin_invoeren.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/saldo.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/saldo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,6 +270,8 @@
       <workItem from="1589203795301" duration="47000" />
       <workItem from="1589204141750" duration="931000" />
       <workItem from="1589278031493" duration="9836000" />
+      <workItem from="1589361680861" duration="930000" />
+      <workItem from="1589362632222" duration="331000" />
     </task>
     <servers />
   </component>
@@ -331,30 +339,30 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="473" y="436" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1586168862219" />
-    <state width="843" height="388" key="GridCell.Tab.0.bottom" timestamp="1589203741186">
+    <state width="843" height="372" key="GridCell.Tab.0.bottom" timestamp="1589362612842">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="843" height="388" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1589203741186" />
-    <state width="843" height="388" key="GridCell.Tab.0.center" timestamp="1589203741185">
+    <state width="843" height="372" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1589362612842" />
+    <state width="843" height="372" key="GridCell.Tab.0.center" timestamp="1589362612842">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="843" height="388" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1589203741185" />
-    <state width="843" height="388" key="GridCell.Tab.0.left" timestamp="1589203741185">
+    <state width="843" height="372" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1589362612842" />
+    <state width="843" height="372" key="GridCell.Tab.0.left" timestamp="1589362612842">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="843" height="388" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1589203741185" />
-    <state width="843" height="388" key="GridCell.Tab.0.right" timestamp="1589203741185">
+    <state width="843" height="372" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1589362612842" />
+    <state width="843" height="372" key="GridCell.Tab.0.right" timestamp="1589362612842">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="843" height="388" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1589203741185" />
+    <state width="843" height="372" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1589362612842" />
     <state x="331" y="518" key="NewPhpClassDialog" timestamp="1589198962637">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="331" y="518" key="NewPhpClassDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589198962637" />
-    <state x="476" y="627" key="NewPhpFileDialog" timestamp="1589200818194">
+    <state x="476" y="627" key="NewPhpFileDialog" timestamp="1589362037745">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="476" y="627" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589200818194" />
+    <state x="476" y="627" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589362037745" />
     <state x="512" y="463" key="SettingsEditor" timestamp="1588703159973">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

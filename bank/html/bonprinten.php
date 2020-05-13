@@ -1,6 +1,5 @@
 <?php
-session_id("batbank");
-session_start();
+include "../php/var.php";
 
 if (ctype_alnum($_SESSION["key"])) {
     switch ($_SESSION["key"]) {

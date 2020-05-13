@@ -1,6 +1,5 @@
 <?php
-session_id("batbank");
-session_start();
+include "../php/var.php";
 
 if (ctype_alnum($_SESSION["key"])) {
     switch ($_SESSION["key"]) {
@@ -41,13 +40,13 @@ switch ($_SESSION["taal"]){
     <button>
         <a href="../index.php"><img src="../Pictures/algemeen/home_button.png"
                                     class="home_button"></a>
-        <h3>D</h3>
+        <h3><?php echo $afbreken ?><br> D</h3>
     </button>
 
     <button>
         <a href="menu.php"><img src="../Pictures/algemeen/left-teal-arrow.png"
                                 class="home_button"></a>
-        <h3>C</h3>
+        <h3><?php echo $terug ?><br> C</h3>
     </button>
 </div>
 
