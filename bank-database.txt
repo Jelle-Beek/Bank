@@ -117,5 +117,5 @@ ALTER TABLE `rekeningen`
 -- AUTO_INCREMENT voor een tabel `gebruiker`
 --
 ALTER TABLE `gebruiker`
-  MODIFY `GebruikersID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
+  MODIFY `GebruikersID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
 COMMIT;
