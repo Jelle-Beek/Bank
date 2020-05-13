@@ -1,9 +1,6 @@
 <?php
 include "var.php";
 
-$pasnummer = "0984223";
-$pincode = "0984";
-
 //check connection
 if (mysqli_connect_error()) {
     die('Connect Error(' . mysqli_connect_errno() . ')' . mysqli_connect_error());
