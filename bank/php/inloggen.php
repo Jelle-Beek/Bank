@@ -1,19 +1,10 @@
 <?php
-session_id("batbank");
-session_start();
+include "var.php";
 
 $pasnummer= $_SESSION['pasnummer'];
 $pincode  = $_SESSION["pin"];
 
 $_SESSION["error"] = "";
-
-$host = "localhost";
-$dbUsername = "root";
-$dbPassword = "Bank@Y44n72";
-$dbName = "batbank";
-
-// Create connection
-$conn = new mysqli($host, $dbUsername, $dbPassword, $dbName);
 
 // Check connection
 if (mysqli_connect_error()) {
