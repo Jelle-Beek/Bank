@@ -16,6 +16,8 @@ switch ($_SESSION["taal"]) {
         break;
 }
 
+$_SESSION["pasnummer"] = NULL;
+
 ?>
 
 <!DOCTYPE html>
