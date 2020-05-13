@@ -2,9 +2,9 @@
 session_id('batbank');
 session_start();
 
-if ($_SESSION['pasnummer'] != "..........." && $_SESSION['pasnummer'] != "") {
-    header("location: html/pin_invoeren.php");
-}
+//if ($_SESSION['pasnummer'] != "..........." && $_SESSION['pasnummer'] != "") {
+//    header("location: html/pin_invoeren.php");
+//}
 
 $_SESSION["pin"] = NULL;
 $_SESSION["error"] = NULL;
@@ -51,20 +51,20 @@ switch ($_SESSION["taal"]) {
     <button>
         <a href="php/nederlands.php"><img src="Pictures/algemeen/Flag_of_the_Netherlands.svg" alt="Nederlandse Vlag"
                                           class="language"></a>
-        <h3>A</h3>
+        <h3>Nederlands:<br> A</h3>
     </button>
 
     <button>
         <a href="php/engels.php"><img src="Pictures/algemeen/Flag_of_the_United_States.JPEG"
                                       alt="Flag of the United States"
                                       class="language"></a>
-        <h3>B</h3>
+        <h3>English:<br> B</h3>
     </button>
 
     <button>
         <a href="php/duits.php"><img src="Pictures/algemeen/Flag_of_Germany.JPEG" alt="Deutsche Flagge"
                                      class="language"></a>
-        <h3>C</h3>
+        <h3>Deutsch:<br> C</h3>
     </button>
 </div>
 

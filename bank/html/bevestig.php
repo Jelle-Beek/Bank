@@ -1,6 +1,5 @@
 <?php
-session_id("batbank");
-session_start();
+include "../php/var.php";
 
 if (ctype_alnum($_SESSION["key"])) {
     switch ($_SESSION["key"]) {
@@ -17,17 +16,17 @@ if (ctype_alnum($_SESSION["key"])) {
 
 switch ($_SESSION["taal"]){
     case "Nederlands":
-        $keuze = "Weet u het zeker ?";
+        $keuze = "Weet u het zeker?";
         $ja = "../Pictures/nederlands/ja.png";
         $nee = "../Pictures/nederlands/nee.png";
         break;
     case "Engels":
-        $keuze = "Are you sure ?";
+        $keuze = "Are you sure?";
         $ja = "../Pictures/engels/yes.png";
         $nee = "../Pictures/engels/no.png";
         break;
     case "Duits":
-        $keuze = "Bist du sicher ?";
+        $keuze = "Bist du sicher?";
         $ja = "../Pictures/duits/ja.png";
         $nee = "../Pictures/duits/nein.png";
         break;
@@ -47,13 +46,13 @@ switch ($_SESSION["taal"]){
     <button class="home">
         <a href="../index.php"><img src="../Pictures/algemeen/home_button.png"
                                     class="home_button"></a>
-        <h3>D</h3>
+        <h3><?php echo $afbreken ?><br> D</h3>
     </button>
 
     <button class="home">
-        <a href="menu.php"><img src="../Pictures/algemeen/left-teal-arrow.png"
+        <a href="opnemen.php"><img src="../Pictures/algemeen/left-teal-arrow.png"
                                 class="home_button"></a>
-        <h3>C</h3>
+        <h3><?php echo $terug ?><br> C</h3>
     </button>
 </div>
 
@@ -63,17 +62,19 @@ switch ($_SESSION["taal"]){
         <h1>Batbank</h1>
         <br>
         <h2><?php echo $keuze?></h2>
-        <br><br><br>
+        <br><br><br><br><br>
 
         <button class="keuze">
             <a href="bonprinten.php"> <img src="<?php echo $ja?>"
                                 class="keuze_button"> </a>
+            <h3>1</h3>
+        </button>
 
         <button class="keuze">
            <a href="menu.php"> <img src="<?php echo $nee?>"
                                 class="keuze_button"> </a>
 
-            <h3>5</h3>
+            <h3>2</h3>
         </button>
     </section>
 </div>

@@ -2,17 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3dfe9a6-f9fc-4457-b689-b78444ff284d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/php/var.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/bedrag_invoeren.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/bedrag_invoeren.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/pin_invoeren.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/pin_invoeren.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/bedrag_invoeren.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/bedrag_invoeren.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/bevestig.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/bevestig.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/bonprinten.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/bonprinten.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/help.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/help.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/opnemen.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/opnemen.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/pin_invoeren.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/pin_invoeren.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/saldo.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/saldo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/arduino.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/arduino.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/inloggen.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/inloggen.php" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,28 +96,17 @@
       <recent name="C:\Users\ziwez\Desktop\school\Projecten\Project 34 - Bank\project bank\html" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
-    <configuration default="true" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.0.1" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration name="GlassFish 5.0.1" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.0.1" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment />
       <server-settings>
-        <option name="DOMAIN" value="" />
+        <option name="DOMAIN" value="domain1" />
         <option name="PRESERVE" value="false" />
         <option name="COMPATIBILITY" value="false" />
         <option name="VIRTUAL_SERVER" />
         <option name="USERNAME" value="admin" />
+        <option name="CREDENTIAL_ALIAS" value="7a4e1527-3256-4147-8b6b-c1a1baa80b48" />
       </server-settings>
       <predefined_log_file enabled="true" id="GlassFish" />
       <RunnerSettings RunnerId="Debug">
@@ -171,16 +161,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GlassFish 5.0.1" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.0.1" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration default="true" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.0.1" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment />
       <server-settings>
-        <option name="DOMAIN" value="domain1" />
+        <option name="DOMAIN" value="" />
         <option name="PRESERVE" value="false" />
         <option name="COMPATIBILITY" value="false" />
         <option name="VIRTUAL_SERVER" />
         <option name="USERNAME" value="admin" />
-        <option name="CREDENTIAL_ALIAS" value="7a4e1527-3256-4147-8b6b-c1a1baa80b48" />
       </server-settings>
       <predefined_log_file enabled="true" id="GlassFish" />
       <RunnerSettings RunnerId="Debug">
@@ -280,7 +269,9 @@
       <workItem from="1589197117562" duration="6604000" />
       <workItem from="1589203795301" duration="47000" />
       <workItem from="1589204141750" duration="931000" />
-      <workItem from="1589278031493" duration="8532000" />
+      <workItem from="1589278031493" duration="9836000" />
+      <workItem from="1589361680861" duration="930000" />
+      <workItem from="1589362632222" duration="331000" />
     </task>
     <servers />
   </component>
@@ -292,13 +283,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="354" y="294" key="#CLI_Interpreters" timestamp="1588681654560">
@@ -349,30 +339,30 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="473" y="436" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1586168862219" />
-    <state width="843" height="388" key="GridCell.Tab.0.bottom" timestamp="1589203741186">
+    <state width="843" height="372" key="GridCell.Tab.0.bottom" timestamp="1589362612842">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="843" height="388" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1589203741186" />
-    <state width="843" height="388" key="GridCell.Tab.0.center" timestamp="1589203741185">
+    <state width="843" height="372" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1589362612842" />
+    <state width="843" height="372" key="GridCell.Tab.0.center" timestamp="1589362612842">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="843" height="388" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1589203741185" />
-    <state width="843" height="388" key="GridCell.Tab.0.left" timestamp="1589203741185">
+    <state width="843" height="372" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1589362612842" />
+    <state width="843" height="372" key="GridCell.Tab.0.left" timestamp="1589362612842">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="843" height="388" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1589203741185" />
-    <state width="843" height="388" key="GridCell.Tab.0.right" timestamp="1589203741185">
+    <state width="843" height="372" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1589362612842" />
+    <state width="843" height="372" key="GridCell.Tab.0.right" timestamp="1589362612842">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="843" height="388" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1589203741185" />
+    <state width="843" height="372" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1589362612842" />
     <state x="331" y="518" key="NewPhpClassDialog" timestamp="1589198962637">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="331" y="518" key="NewPhpClassDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589198962637" />
-    <state x="476" y="627" key="NewPhpFileDialog" timestamp="1589200818194">
+    <state x="476" y="627" key="NewPhpFileDialog" timestamp="1589362037745">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="476" y="627" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589200818194" />
+    <state x="476" y="627" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589362037745" />
     <state x="512" y="463" key="SettingsEditor" timestamp="1588703159973">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

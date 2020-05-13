@@ -1,6 +1,6 @@
 <?php
-session_id("batbank");
-session_start();
+include "../php/var.php";
+
 if (ctype_alnum($_SESSION["key"])) {
     switch ($_SESSION["key"]) {
         case '1':
@@ -62,7 +62,7 @@ switch ($_SESSION["taal"]){
     <button class="home">
         <a href="../index.php"><img src="../Pictures/algemeen/home_button.png"
                                     class="home_button"></a>
-        <h3>D</h3>
+        <h3><?php echo $afbreken ?><br> D</h3>
     </button>
 </div>
 
