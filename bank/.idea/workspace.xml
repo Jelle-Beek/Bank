@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3dfe9a6-f9fc-4457-b689-b78444ff284d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/html/afsluit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/bonprinten.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/bonprinten.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pictures/algemeen/bon.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/algemeen/bon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/bedrag_invoeren.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/bedrag_invoeren.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/bevestig.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/bevestig.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/bonprinten.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/bonprinten.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/help.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/help.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/opnemen.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/opnemen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/pin_invoeren.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/pin_invoeren.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/saldo.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/saldo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/arduino_get.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/arduino_get.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/inloggen.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/inloggen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/saldo_opvragen.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/saldo_opvragen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/var.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/var.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/afsluit.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/afsluit.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,19 +73,19 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\php" />
-      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank" />
-      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\Test" />
-      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\html\nederlands" />
-      <recent name="C:\Users\ziwez\Desktop\school\Projecten\Project 34 - Bank\project bank\html" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\Test" />
       <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\php" />
       <recent name="C:\Users\jelle\Desktop\HR\jaar 1\Periode 3\Project 3-4\Github\bank\html" />
       <recent name="C:\Users\ziwez\Desktop\school\Projecten\Project 34 - Bank\project bank\php" />
       <recent name="C:\Users\ziwez\Desktop\school\Projecten\Project 34 - Bank\project bank" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\php" />
+      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank" />
+      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\Test" />
+      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\html\nederlands" />
+      <recent name="C:\Users\ziwez\Desktop\school\Projecten\Project 34 - Bank\project bank\html" />
     </key>
   </component>
   <component name="RunManager">
@@ -280,7 +265,7 @@
       <workItem from="1589361680861" duration="930000" />
       <workItem from="1589362632222" duration="7634000" />
       <workItem from="1589370642433" duration="570000" />
-      <workItem from="1589371228932" duration="5369000" />
+      <workItem from="1589371228932" duration="6871000" />
     </task>
     <servers />
   </component>
