@@ -14,7 +14,7 @@
 #define RST_PIN 9
 MFRC522 mfrc522(SS_PIN, RST_PIN);
 
-//printer stuff (TX = blue(RX printer), RX = green(TX printer))
+//printer stuff (TX = blue(6)(RX printer), RX = green(5)(TX printer))
 #define TX_PIN 2
 #define RX_PIN 8
 
@@ -69,9 +69,7 @@ void loop() {
   }
   
 
-//  if (boolPrint){
-//    printBon();
-//  }
+//  if (boolPrint) printBon();
   Serial.println(content);
   Serial.println(key);
   delay(100);
