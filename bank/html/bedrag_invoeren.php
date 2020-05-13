@@ -4,7 +4,7 @@ include "../php/var.php";
 if (ctype_alnum($_SESSION["key"])) {
     switch ($_SESSION["key"]) {
         case '*':
-
+            header("location: bevestig.php");
             break;
 
         case '#':
@@ -16,7 +16,7 @@ if (ctype_alnum($_SESSION["key"])) {
             break;
 
         case 'D':
-            header("location: ../../index.php");
+            header("location: ../index.php");
             break;
 
 

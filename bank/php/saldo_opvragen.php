@@ -1,17 +1,8 @@
 <?php
-session_id("batbank");
-session_start();
+include "var.php";
 
-$pasnummer = $_SESSION['pasnummer'];
-$pincode = $_SESSION['pin'];
-
-$host = "localhost";
-$dbUsername = "root";
-$dbPassword = "Bank@Y44n72";
-$dbName = "batbank";
-
-//create connection
-$conn = new mysqli($host, $dbUsername, $dbPassword, $dbName);
+$pasnummer = "0984223";
+$pincode = "0984";
 
 //check connection
 if (mysqli_connect_error()) {
@@ -22,16 +13,16 @@ if (mysqli_connect_error()) {
     $result = mysqli_query($conn, $sql);
 
     if (mysqli_num_rows($result) == 1) {
-        while ($row = mysqli_fetch_assoc($result)) {
-            echo "saldo = " . $row["saldo"];
-            echo "<br>Gebruiker gevonden";
-            $_SESSION['saldo'] = $row["saldo"];
-            header("location: ../html/saldo.php");
-        }
+        $row = mysqli_fetch_assoc($result);
+
+        echo "saldo = " . $row["saldo"];
+        echo "<br>Gebruiker gevonden";
+        $_SESSION['saldo'] = $row["saldo"];
+        header("location: ../html/saldo.php");
     } else {
         echo "geen gebruiker gevonden! [salo_opvragen.php]";
-        echo "<br> pasnummer =".$pasnummer;
-        echo "<br> pincode =".$pincode;
+        echo "<br> pasnummer =" . $pasnummer;
+        echo "<br> pincode =" . $pincode;
     }
 }
 

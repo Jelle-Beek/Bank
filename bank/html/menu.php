@@ -8,11 +8,13 @@ if (ctype_alnum($_SESSION["key"])) {
             break;
 
         case '2':
+            $_SESSION["key"] = NULL;
             header("location: opnemen.php");
             break;
 
         case '3':
-
+            $_SESSION["bedrag"] = 70;
+            header("location: bevestig.php");
             break;
 
         case '4':
@@ -20,7 +22,7 @@ if (ctype_alnum($_SESSION["key"])) {
             break;
 
         case 'D':
-            header("location: ../../index.php");
+            header("location: ../index.php");
             break;
     }
 }

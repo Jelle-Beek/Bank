@@ -8,14 +8,34 @@ if (ctype_alnum($_SESSION["key"])) {
             break;
 
         case 'D':
-            header("location: ../../index.php");
+            header("location: ../index.php");
+            break;
+
+        case '1':
+            $_SESSION["bedrag"] = 5;
+            header("location: bevestig.php");
+            break;
+        case '2':
+            $_SESSION["bedrag"] = 10;
+            header("location: bevestig.php");
+            break;
+        case '3':
+            $_SESSION["bedrag"] = 20;
+            header("location: bevestig.php");
+            break;
+        case '4':
+            $_SESSION["bedrag"] = 50;
+            header("location: bevestig.php");
+            break;
+        case '5':
+            header("location: bedrag_invoeren.php");
             break;
     }
 }
 
 $_SESSION["bedrag"] = NULL;
 
-switch ($_SESSION["taal"]){
+switch ($_SESSION["taal"]) {
     case "Nederlands":
         $keuze = "Maak uw keuze:";
         $anders = "../Pictures/nederlands/anders.png";
@@ -59,7 +79,7 @@ switch ($_SESSION["taal"]){
     <section>
         <h1>Batbank</h1>
         <br>
-        <h2><?php echo $keuze?></h2>
+        <h2><?php echo $keuze ?></h2>
         <br><br><br>
 
         <button class="keuze">
@@ -86,7 +106,7 @@ switch ($_SESSION["taal"]){
         </button>
 
         <button class="keuze">
-            <a href="bedrag_invoeren.php"> <img src="<?php echo $anders?>"
+            <a href="bedrag_invoeren.php"> <img src="<?php echo $anders ?>"
                                                 class="keuze_button"> </a>
             <h3>5</h3>
         </button>

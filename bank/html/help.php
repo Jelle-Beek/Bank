@@ -8,7 +8,7 @@ if (ctype_alnum($_SESSION["key"])) {
             break;
 
         case 'D':
-            header("location: ../../index.php");
+            header("location: ../index.php");
             break;
     }
 }

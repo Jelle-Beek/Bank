@@ -1,6 +1,5 @@
 <?php
 include "../php/var.php";
-
 if (ctype_alnum($_SESSION["key"]) || $_SESSION["key"] == '#' || $_SESSION["key"] == '*') {
     switch ($_SESSION["key"]) {
         case '*':
@@ -12,7 +11,7 @@ if (ctype_alnum($_SESSION["key"]) || $_SESSION["key"] == '#' || $_SESSION["key"]
             break;
 
         case 'D':
-            header("location: ../../index.php");
+            header("location: ../index.php");
             break;
 
         case '0':

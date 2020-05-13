@@ -2,9 +2,9 @@
 session_id('batbank');
 session_start();
 
-//if ($_SESSION['pasnummer'] != "..........." && $_SESSION['pasnummer'] != "") {
-//    header("location: html/pin_invoeren.php");
-//}
+if ($_SESSION['pasnummer'] != "..........." && $_SESSION['pasnummer'] != "") {
+    header("location: html/pin_invoeren.php");
+}
 
 $_SESSION["pin"] = NULL;
 $_SESSION["error"] = NULL;
