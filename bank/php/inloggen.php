@@ -18,6 +18,7 @@ if (mysqli_connect_error()) {
         echo "Gebruiker gevonden";
         header("location: ../html/menu.php");
     } else {
+
         switch ($_SESSION["taal"]) {
             case "Nederlands":
                 $_SESSION["error"] = "Verkeerde pincode";

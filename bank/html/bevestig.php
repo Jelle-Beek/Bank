@@ -4,11 +4,13 @@ include "../php/var.php";
 if (ctype_alnum($_SESSION["key"])) {
     switch ($_SESSION["key"]) {
         case '1':
+            $_SESSION["key"] = NULL;
             header("location: bonprinten.php");
             break;
 
         case 'C':
         case '2':
+            $_SESSION["key"] = NULL;
             header("location: opnemen.php");
             break;
 
@@ -17,22 +19,20 @@ if (ctype_alnum($_SESSION["key"])) {
             break;
     }
 }
-$_SESSION["taal"] = "Duits";
-$_SESSION["bedrag"] = 100;
 
 switch ($_SESSION["taal"]) {
     case "Nederlands":
-        $keuze = "Weet u het zeker dat u $" . $_SESSION["bedrag"] . " wilt pinnen?";
+        $keuze = "Weet u het zeker dat u &euro;" . $_SESSION["bedrag"] . " wilt pinnen?";
         $ja = "../Pictures/nederlands/ja.png";
         $nee = "../Pictures/nederlands/nee.png";
         break;
     case "Engels":
-        $keuze = "Are you sure you want to withraw $" . $_SESSION["bedrag"] . "?";
+        $keuze = "Are you sure you want to withraw &euro;" . $_SESSION["bedrag"] . "?";
         $ja = "../Pictures/engels/yes.png";
         $nee = "../Pictures/engels/no.png";
         break;
     case "Duits":
-        $keuze = "Sind Sie sicher, dass Sie $" . $_SESSION["bedrag"] . " abheben möchten?";
+        $keuze = "Sind Sie sicher, dass Sie &euro;" . $_SESSION["bedrag"] . " abheben möchten?";
         $ja = "../Pictures/duits/ja.png";
         $nee = "../Pictures/duits/nein.png";
         break;
@@ -78,7 +78,7 @@ switch ($_SESSION["taal"]) {
 
         <button class="keuze">
             <a href="opnemen.php"> <img src="<?php echo $nee ?>"
-                                     class="keuze_button"> </a>
+                                        class="keuze_button"> </a>
 
             <h3>2</h3>
         </button>

@@ -1,6 +1,9 @@
 <?php
 include "var.php";
 
+$pasnummer = $_SESSION["pasnummer"];
+$pincode = $_SESSION["pin"];
+
 //check connection
 if (mysqli_connect_error()) {
     die('Connect Error(' . mysqli_connect_errno() . ')' . mysqli_connect_error());
@@ -17,7 +20,7 @@ if (mysqli_connect_error()) {
         $_SESSION['saldo'] = $row["saldo"];
         header("location: ../html/saldo.php");
     } else {
-        echo "geen gebruiker gevonden! [salo_opvragen.php]";
+        echo "geen gebruiker gevonden! [saldo_opvragen.php]";
         echo "<br> pasnummer =" . $pasnummer;
         echo "<br> pincode =" . $pincode;
     }

@@ -78,7 +78,7 @@ if ($tempBedrag == 0){
     $r20 = $row_20["Aantal"];
     $r50 = $row_50["Aantal"];
 
-    $pasnummer = "0984223";
+    $pasnummer = $_SESSION["pasnummer"];
     $Bedrag = $_SESSION["bedrag"];
 
     if (mysqli_connect_error()) {
@@ -98,6 +98,9 @@ if ($tempBedrag == 0){
 
         $sql_rekening_updaten = "UPDATE rekeningen SET Saldo = Saldo - '$Bedrag' WHERE rekeningen.Pasnummer = '$pasnummer'";
         mysqli_query($conn, $sql_rekening_updaten);
+
+        $sql_transactie = "INSERT INTO bij_en_afschriften (Pasnummer, Verandering, Tijdstip) VALUES ('$pasnummer', '$Bedrag', CURRENT_TIMESTAMP)";
+        mysqli_query($conn, $sql_transactie);
     }
 }
 

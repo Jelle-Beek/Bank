@@ -1,7 +1,7 @@
 <?php
 include "../php/var.php";
 
-if (ctype_alnum($_SESSION["key"])) {
+if (ctype_alnum($_SESSION["key"]) || $_SESSION["key"] == '#' || $_SESSION["key"] == '*') {
     switch ($_SESSION["key"]) {
         case '*':
             header("location: bevestig.php");
@@ -12,6 +12,7 @@ if (ctype_alnum($_SESSION["key"])) {
             break;
 
         case 'C':
+            $_SESSION["key"] = NULL;
             header("location: opnemen.php");
             break;
 
@@ -31,6 +32,7 @@ if (ctype_alnum($_SESSION["key"])) {
         case 8:
         case 9:
             $_SESSION["bedrag"] = $_SESSION["bedrag"] . $_SESSION["key"];
+            $_SESSION["key"] = NULL;
             break;
     }
 }
@@ -79,9 +81,10 @@ switch ($_SESSION["taal"]) {
         <h2><?php echo $invoeren ?></h2>
         <br>
         <form>
-            <input type="text" class="input_bedrag" name="Bedrag" placeholder="<?php echo $bedrag ?>" maxlength="4"/>
+            <input type="text" class="input_bedrag" name="Bedrag" placeholder="<?php echo $bedrag ?>"
+                   value="<?php echo $_SESSION["bedrag"] ?>"/>
             <br>
-            <input type="submit" class="input_ok" value="*   OK">
+            <input type="submit" class="input_ok" value="&#10033   OK">
             <input type="reset" class="input_corr" value="#   CORR">
         </form>
         <br><br><br><br><br><br><br><br>

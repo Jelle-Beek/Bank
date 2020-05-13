@@ -12,28 +12,33 @@ if (ctype_alnum($_SESSION["key"])) {
             break;
 
         case '1':
+            $_SESSION["key"] = NULL;
             $_SESSION["bedrag"] = 5;
             header("location: bevestig.php");
             break;
         case '2':
+            $_SESSION["key"] = NULL;
             $_SESSION["bedrag"] = 10;
             header("location: bevestig.php");
             break;
         case '3':
+            $_SESSION["key"] = NULL;
             $_SESSION["bedrag"] = 20;
             header("location: bevestig.php");
             break;
         case '4':
+            $_SESSION["key"] = NULL;
             $_SESSION["bedrag"] = 50;
             header("location: bevestig.php");
             break;
         case '5':
+            $_SESSION["key"] = NULL;
+            $_SESSION["bedrag"] = NULL;
             header("location: bedrag_invoeren.php");
             break;
     }
 }
 
-$_SESSION["bedrag"] = NULL;
 
 switch ($_SESSION["taal"]) {
     case "Nederlands":
