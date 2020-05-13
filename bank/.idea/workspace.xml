@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3dfe9a6-f9fc-4457-b689-b78444ff284d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/html/afsluit.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/afsluit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/var.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/var.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,7 +264,7 @@
       <workItem from="1589361680861" duration="930000" />
       <workItem from="1589362632222" duration="7634000" />
       <workItem from="1589370642433" duration="570000" />
-      <workItem from="1589371228932" duration="7191000" />
+      <workItem from="1589371228932" duration="7853000" />
     </task>
     <servers />
   </component>
