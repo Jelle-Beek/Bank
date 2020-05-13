@@ -3,16 +3,16 @@ include "../php/var.php";
 
 switch ($_SESSION["taal"]) {
     case "Nederlands":
-        $terug = "Terug:";
-        $afbreken = "Afbreken:";
+        $tekst = "Bedankt voor het pinnen bij Batbank";
+        $tekst2 = "U kunt uw pas pakken";
         break;
     case "Engels":
-        $terug = "Back:";
-        $afbreken = "Abort:";
+        $tekst = "Back:";
+        $tekst2 = "Abort:";
         break;
     case "Duits":
-        $terug = "Zur&uuml;ck:";
-        $afbreken = "Abbrechen:";
+        $tekst = "Zur&uuml;ck:";
+        $tekst2 = "Abbrechen:";
         break;
 }
 
@@ -31,9 +31,9 @@ switch ($_SESSION["taal"]) {
     <section class="background"></section>
     <section>
         <h1>Batbank</h1>
-        <h2>Bedankt voor het pinnen bij Batbank</h2>
-        <img src="../Pictures/algemeen/logo.png" alt="Pathman" style="width: 70%">
-        <h2 style="color: orangered">U kunt uw pas pakken</h2>
+        <h2><?php echo $tekst ?></h2>
+        <img src="../Pictures/algemeen/logo.png" style="width: 70%">
+        <h2 style="color: orangered"><?php echo $tekst2 ?></h2>
 
     </section>
 </div>
