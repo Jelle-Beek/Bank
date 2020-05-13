@@ -1,0 +1,121 @@
+-- phpMyAdmin SQL Dump
+-- version 5.0.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Gegenereerd op: 13 mei 2020 om 18:59
+-- Serverversie: 10.4.11-MariaDB
+-- PHP-versie: 7.4.2
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+--
+-- Database: `batbank`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `bij_en_afschriften`
+--
+
+CREATE TABLE `bij_en_afschriften` (
+  `Pasnummer` varchar(15) NOT NULL,
+  `Verandering` varchar(100) NOT NULL,
+  `Tijdstip` datetime NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `gebruiker`
+--
+
+CREATE TABLE `gebruiker` (
+  `GebruikersID` int(10) NOT NULL,
+  `Naam` varchar(50) NOT NULL,
+  `Tussenvoegsel` varchar(20) DEFAULT NULL,
+  `Achternaam` varchar(50) NOT NULL,
+  `Geboorte_datum` date NOT NULL,
+  `Geslacht` varchar(1) NOT NULL,
+  `Telefoonnummer` varchar(15) NOT NULL,
+  `Emailadres` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `opslag`
+--
+
+CREATE TABLE `opslag` (
+  `Soort` varchar(5) NOT NULL,
+  `Aantal` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `opslag`
+--
+
+INSERT INTO `opslag` (`Soort`, `Aantal`) VALUES
+('10', 100),
+('20', 100),
+('5', 100),
+('50', 100);
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `rekeningen`
+--
+
+CREATE TABLE `rekeningen` (
+  `GebruikersID` int(10) NOT NULL,
+  `Pasnummer` varchar(12) NOT NULL,
+  `Rekeningnummer` varchar(15) NOT NULL,
+  `Pincode` varchar(4) NOT NULL,
+  `Saldo` double(20,2) NOT NULL DEFAULT 0.00,
+  `fout_pogingen` int(1) NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Indexen voor geëxporteerde tabellen
+--
+
+--
+-- Indexen voor tabel `bij_en_afschriften`
+--
+ALTER TABLE `bij_en_afschriften`
+  ADD PRIMARY KEY (`Pasnummer`);
+
+--
+-- Indexen voor tabel `gebruiker`
+--
+ALTER TABLE `gebruiker`
+  ADD PRIMARY KEY (`GebruikersID`);
+
+--
+-- Indexen voor tabel `opslag`
+--
+ALTER TABLE `opslag`
+  ADD PRIMARY KEY (`Soort`);
+
+--
+-- Indexen voor tabel `rekeningen`
+--
+ALTER TABLE `rekeningen`
+  ADD PRIMARY KEY (`Rekeningnummer`);
+
+--
+-- AUTO_INCREMENT voor geëxporteerde tabellen
+--
+
+--
+-- AUTO_INCREMENT voor een tabel `gebruiker`
+--
+ALTER TABLE `gebruiker`
+  MODIFY `GebruikersID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
+COMMIT;
