@@ -20,7 +20,6 @@ if (ctype_alnum($_SESSION["key"])) {
     }
 }
 
-
 ?>
 
 <!DOCTYPE html>

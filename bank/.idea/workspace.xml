@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3dfe9a6-f9fc-4457-b689-b78444ff284d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/php/inloggen.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/inloggen.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSS/tekort.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/tekort.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pictures/saldo.psd" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/saldo.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/afsluit.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/afsluit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/bevestig.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/bevestig.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/arduino.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/arduino.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/duits.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/duits.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/engels.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/engels.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/nederlands.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/nederlands.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/var.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/var.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +74,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/CSS" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -73,19 +83,19 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\CSS" />
+      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\php" />
+      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank" />
+      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\Test" />
+      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\html\nederlands" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\Test" />
       <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\php" />
       <recent name="C:\Users\jelle\Desktop\HR\jaar 1\Periode 3\Project 3-4\Github\bank\html" />
       <recent name="C:\Users\ziwez\Desktop\school\Projecten\Project 34 - Bank\project bank\php" />
       <recent name="C:\Users\ziwez\Desktop\school\Projecten\Project 34 - Bank\project bank" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\php" />
-      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank" />
-      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\Test" />
-      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\html\nederlands" />
-      <recent name="C:\Users\ziwez\Desktop\school\Projecten\Project 34 - Bank\project bank\html" />
     </key>
   </component>
   <component name="RunManager">
@@ -267,7 +277,7 @@
       <workItem from="1589370642433" duration="570000" />
       <workItem from="1589371228932" duration="14612000" />
       <workItem from="1589790020240" duration="3319000" />
-      <workItem from="1589793362415" duration="2089000" />
+      <workItem from="1589793362415" duration="4819000" />
     </task>
     <servers />
   </component>
@@ -355,10 +365,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="331" y="518" key="NewPhpClassDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589198962637" />
-    <state x="476" y="627" key="NewPhpFileDialog" timestamp="1589374595098">
+    <state x="476" y="627" key="NewPhpFileDialog" timestamp="1589795814507">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="476" y="627" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589374595098" />
+    <state x="476" y="627" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589795814507" />
     <state x="512" y="463" key="SettingsEditor" timestamp="1588703159973">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

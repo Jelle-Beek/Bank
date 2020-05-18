@@ -35,8 +35,10 @@ switch ($_SESSION["taal"]) {
         $nee_bevestigen = "../Pictures/nederlands/nee.png";
         $invoeren_bedrag = "Voer het bedrag in.";
         $bedrag = "Bedrag";
-        $tekst = "Bedankt voor het pinnen bij Batbank";
-        $tekst2 = "U kunt uw pas pakken";
+        $bedankt = "Bedankt voor het pinnen bij Batbank";
+        $pas_pakken = "U kunt uw pas pakken";
+        $tekort = "U heeft niet genoeg saldo om &euro;" . $_SESSION['bedrag'] . " te pinnen";
+        $doorgaan = "../Pictures/nederlands/doorgaan.png";
         break;
     case "Engels":
         $pas = "Please insert your card.";
@@ -62,8 +64,10 @@ switch ($_SESSION["taal"]) {
         $nee_bevestigen = "../Pictures/engels/no.png";
         $invoeren_bedrag = "Enter the amount.";
         $bedrag = "Amount";
-        $tekst = "Back:";
-        $tekst2 = "Abort:";
+        $bedankt = "Thanks for using Batbank";
+        $pas_pakken = "You can take your card";
+        $tekort = "You don't have enough balance to withdraw &euro;" . $_SESSION['bedrag'];
+        $doorgaan = "../Pictures/engels/continue.png";
         break;
     case "Duits":
         $pas = "Bitte geben Sie Ihre Karte ein.";
@@ -89,8 +93,10 @@ switch ($_SESSION["taal"]) {
         $nee_bevestigen = "../Pictures/duits/nein.png";
         $invoeren_bedrag = "Geben Sie den Betrag ein.";
         $bedrag = "Betrag";
-        $tekst = "Zur&uuml;ck:";
-        $tekst2 = "Abbrechen:";
+        $bedankt = "Danke, dass du bei Batbank gepinnt hast";
+        $pas_pakken = "Sie können Ihre Karte nehmen";
+        $tekort = "Sie haben nicht genug Gleichgewicht, um &euro;" . $_SESSION['bedrag'] . " auf zu nehmen";
+        $doorgaan = "../Pictures/duits/fortsetzen.png";
         break;
 }
 
