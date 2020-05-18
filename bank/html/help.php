@@ -13,23 +13,7 @@ if (ctype_alnum($_SESSION["key"])) {
     }
 }
 
-switch ($_SESSION["taal"]){
-    case "Nederlands":
-        $hulp = "Voor hulp kunt u:";
-        $mail = "Het volgende emailadress mailen:  0984233@hr.nl";
-        $telnr = "Het volgende nummer bellen: 0681757734";
-        break;
-    case "Engels":
-        $hulp = "For help, contact us by:";
-        $mail = "Mailing to:  0984233@hr.nl";
-        $telnr = "Calling the number:   0681757734";
-        break;
-    case "Duits":
-        $hulp = "F&uumlr Hilfe k&oumlnnen Sie:";
-        $mail = "Die folgende E-Mail-Adresse e-mailen: <br>0984233@hr.nl";
-        $telnr = "Die folgende Nummer anrufen: <br>0681757734";
-        break;
-}
+
 
 ?>
 

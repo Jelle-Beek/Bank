@@ -36,21 +36,6 @@ if (ctype_alnum($_SESSION["key"]) || $_SESSION["key"] == '#' || $_SESSION["key"]
             break;
     }
 }
-
-switch ($_SESSION["taal"]) {
-    case "Nederlands":
-        $invoeren = "Voer het bedrag in.";
-        $bedrag = "Bedrag";
-        break;
-    case "Engels":
-        $invoeren = "Enter the amount.";
-        $bedrag = "Amount";
-        break;
-    case "Duits":
-        $invoeren = "Geben Sie den Betrag ein.";
-        $bedrag = "Betrag";
-        break;
-}
 ?>
 <!DOCTYPE html>
 <html>
@@ -78,7 +63,7 @@ switch ($_SESSION["taal"]) {
     <section class="background"></section>
     <section>
         <h1>Batbank</h1>
-        <h2><?php echo $invoeren ?></h2>
+        <h2><?php echo $invoeren_bedrag ?></h2>
         <br>
         <form>
             <input type="text" class="input_bedrag" name="Bedrag" placeholder="<?php echo $bedrag ?>"

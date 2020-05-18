@@ -20,23 +20,6 @@ if (ctype_alnum($_SESSION["key"])) {
     }
 }
 
-switch ($_SESSION["taal"]) {
-    case "Nederlands":
-        $keuze = "Weet u het zeker dat u &euro;" . $_SESSION["bedrag"] . " wilt pinnen?";
-        $ja = "../Pictures/nederlands/ja.png";
-        $nee = "../Pictures/nederlands/nee.png";
-        break;
-    case "Engels":
-        $keuze = "Are you sure you want to withraw &euro;" . $_SESSION["bedrag"] . "?";
-        $ja = "../Pictures/engels/yes.png";
-        $nee = "../Pictures/engels/no.png";
-        break;
-    case "Duits":
-        $keuze = "Sind Sie sicher, dass Sie &euro;" . $_SESSION["bedrag"] . " abheben möchten?";
-        $ja = "../Pictures/duits/ja.png";
-        $nee = "../Pictures/duits/nein.png";
-        break;
-}
 
 ?>
 
@@ -67,17 +50,17 @@ switch ($_SESSION["taal"]) {
     <section>
         <h1>Batbank</h1>
         <br>
-        <h2><?php echo $keuze ?></h2>
+        <h2><?php echo $keuze_bevestigen ?></h2>
         <br><br><br><br><br>
 
         <button class="keuze">
-            <a href="bonprinten.php"> <img src="<?php echo $ja ?>"
+            <a href="bonprinten.php"> <img src="<?php echo $ja_bevestigen ?>"
                                            class="keuze_button"> </a>
             <h3>1</h3>
         </button>
 
         <button class="keuze">
-            <a href="opnemen.php"> <img src="<?php echo $nee ?>"
+            <a href="opnemen.php"> <img src="<?php echo $nee_bevestigen ?>"
                                         class="keuze_button"> </a>
 
             <h3>2</h3>

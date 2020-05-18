@@ -40,20 +40,7 @@ if (ctype_alnum($_SESSION["key"])) {
 }
 
 
-switch ($_SESSION["taal"]) {
-    case "Nederlands":
-        $keuze = "Maak uw keuze:";
-        $anders = "../Pictures/nederlands/anders.png";
-        break;
-    case "Engels":
-        $keuze = "Make your choice:";
-        $anders = "../Pictures/engels/otherwise.png";
-        break;
-    case "Duits":
-        $keuze = "Treffen Sie Ihre Wahl:";
-        $anders = "../Pictures/duits/sonst.png";
-        break;
-}
+
 
 ?>
 

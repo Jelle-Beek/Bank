@@ -4,7 +4,7 @@ include "var.php";
 $pasnummer= $_SESSION['pasnummer'];
 $pincode  = $_SESSION["pin"];
 
-$_SESSION["error"] = "";
+$_SESSION["error"] = NULL;
 
 // Check connection
 if (mysqli_connect_error()) {

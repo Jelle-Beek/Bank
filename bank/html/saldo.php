@@ -12,19 +12,6 @@ if (ctype_alnum($_SESSION["key"])) {
             break;
     }
 }
-
-switch ($_SESSION["taal"]){
-    case "Nederlands":
-        $uwSaldo = "Uw saldo is:";
-        break;
-    case "Engels":
-        $uwSaldo = "Your balance is:";
-        break;
-    case "Duits":
-        $uwSaldo = "Ihr Gleichgewicht ist:";
-        break;
-}
-
 ?>
 
 

@@ -1,20 +1,6 @@
 <?php
 include "../php/var.php";
 
-switch ($_SESSION["taal"]) {
-    case "Nederlands":
-        $tekst = "Bedankt voor het pinnen bij Batbank";
-        $tekst2 = "U kunt uw pas pakken";
-        break;
-    case "Engels":
-        $tekst = "Back:";
-        $tekst2 = "Abort:";
-        break;
-    case "Duits":
-        $tekst = "Zur&uuml;ck:";
-        $tekst2 = "Abbrechen:";
-        break;
-}
 
 $_SESSION["pasnummer"] = NULL;
 
