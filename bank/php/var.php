@@ -94,14 +94,4 @@ switch ($_SESSION["taal"]) {
         break;
 }
 
-switch ($_SESSION["taal"]) {
-    case "Nederlands":
-        break;
-    case "Engels":
-        break;
-    case "Duits":
-        break;
-}
-
-
 ?>
