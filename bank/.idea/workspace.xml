@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3dfe9a6-f9fc-4457-b689-b78444ff284d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/bevestig.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/bevestig.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/arduino_get.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/arduino_get.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/inloggen.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/inloggen.php" afterDir="false" />
-    </list>
+    <list default="true" id="e3dfe9a6-f9fc-4457-b689-b78444ff284d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -271,7 +266,7 @@
       <workItem from="1589371228932" duration="14612000" />
       <workItem from="1589790020240" duration="3319000" />
       <workItem from="1589793362415" duration="5954000" />
-      <workItem from="1589800172007" duration="2950000" />
+      <workItem from="1589800172007" duration="3561000" />
     </task>
     <task id="LOCAL-00001" summary="bank">
       <created>1589798433979</created>
