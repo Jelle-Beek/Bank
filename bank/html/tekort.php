@@ -5,7 +5,7 @@ if (ctype_alnum($_SESSION["key"])) {
     switch ($_SESSION["key"]) {
         case 'A':
             $_SESSION["key"] = NULL;
-            header("location: opnemen.php");
+            header("location: menu.php");
             break;
     }
 }
@@ -54,7 +54,7 @@ if (mysqli_connect_error()) {
 
 
         <button class="keuze">
-            <a href="opnemen.php"> <img src="<?php echo $doorgaan ?>"
+            <a href="menu.php"> <img src="<?php echo $doorgaan ?>"
                                         class="keuze_button"> </a>
 
             <h3>A</h3>

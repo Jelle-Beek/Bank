@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3dfe9a6-f9fc-4457-b689-b78444ff284d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CSS/tekort.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/tekort.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/saldo.psd" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/saldo.psd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/afsluit.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/afsluit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/bevestig.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/bevestig.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/arduino.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/arduino.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/duits.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/duits.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/engels.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/engels.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/nederlands.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/nederlands.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/tekort.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/tekort.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/var.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/var.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -277,8 +270,16 @@
       <workItem from="1589370642433" duration="570000" />
       <workItem from="1589371228932" duration="14612000" />
       <workItem from="1589790020240" duration="3319000" />
-      <workItem from="1589793362415" duration="4819000" />
+      <workItem from="1589793362415" duration="5844000" />
     </task>
+    <task id="LOCAL-00001" summary="bank">
+      <created>1589798433979</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589798433979</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,6 +296,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="bank" />
+    <option name="LAST_COMMIT_MESSAGE" value="bank" />
   </component>
   <component name="WindowStateProjectService">
     <state x="354" y="294" key="#CLI_Interpreters" timestamp="1588681654560">
@@ -321,10 +326,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="97" y="419" key="#Project_Structure/0.0.2560.1400@0.0.2560.1400" timestamp="1588681430173" />
-    <state x="240" y="359" key="#SQL_Dialects" timestamp="1589791048063">
+    <state x="240" y="359" key="#SQL_Dialects" timestamp="1589798532336">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="240" y="359" key="#SQL_Dialects/0.0.2560.1400@0.0.2560.1400" timestamp="1589791048063" />
+    <state x="240" y="359" key="#SQL_Dialects/0.0.2560.1400@0.0.2560.1400" timestamp="1589798532336" />
     <state x="72" y="481" width="1089" height="725" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588681528025">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -341,26 +346,30 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1011" y="448" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589199092755" />
+    <state x="1543" y="272" key="CommitChangelistDialog2" timestamp="1589798433147">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1543" y="272" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1589798433147" />
     <state x="473" y="436" key="FileChooserDialogImpl" timestamp="1586168862219">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="473" y="436" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1586168862219" />
-    <state width="844" height="369" key="GridCell.Tab.0.bottom" timestamp="1589370617275">
+    <state width="843" height="366" key="GridCell.Tab.0.bottom" timestamp="1589799028559">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="844" height="369" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1589370617275" />
-    <state width="844" height="369" key="GridCell.Tab.0.center" timestamp="1589370617275">
+    <state width="843" height="366" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1589799028559" />
+    <state width="843" height="366" key="GridCell.Tab.0.center" timestamp="1589799028558">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="844" height="369" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1589370617275" />
-    <state width="844" height="369" key="GridCell.Tab.0.left" timestamp="1589370617275">
+    <state width="843" height="366" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1589799028558" />
+    <state width="843" height="366" key="GridCell.Tab.0.left" timestamp="1589799028558">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="844" height="369" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1589370617275" />
-    <state width="844" height="369" key="GridCell.Tab.0.right" timestamp="1589370617275">
+    <state width="843" height="366" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1589799028558" />
+    <state width="843" height="366" key="GridCell.Tab.0.right" timestamp="1589799028558">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="844" height="369" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1589370617275" />
+    <state width="843" height="366" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1589799028558" />
     <state x="331" y="518" key="NewPhpClassDialog" timestamp="1589198962637">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

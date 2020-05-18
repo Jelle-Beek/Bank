@@ -99,5 +99,4 @@ switch ($_SESSION["taal"]) {
         $doorgaan = "../Pictures/duits/fortsetzen.png";
         break;
 }
-
 ?>
