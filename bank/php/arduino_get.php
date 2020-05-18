@@ -102,6 +102,7 @@ if ($tempBedrag == 0){
         $sql_transactie = "INSERT INTO bij_en_afschriften (Pasnummer, Verandering, Tijdstip) VALUES ('$pasnummer', '$Bedrag', CURRENT_TIMESTAMP)";
         mysqli_query($conn, $sql_transactie);
     }
+    header("location: ../html/afsluit.php");
 }
 
 echo "<br><br> 5 = " . $row_5["Aantal"];
@@ -113,7 +114,6 @@ echo "<br> 50 = " . $row_50["Aantal"] . "<br>";
 
 
 
-header("location: ../html/afsluit.php");
 
 
 //UPDATE opslag SET Aantal = 100 WHERE opslag.Soort = '5';

@@ -43,7 +43,7 @@ if (mysqli_connect_error()) {
                     $_SESSION["error"] = "Falsche PIN";
                     break;
             }
-
+            $_SESSION["pin"] = NULL;
             header("location: ../html/pin_invoeren.php");
         }
     } else {
@@ -58,7 +58,7 @@ if (mysqli_connect_error()) {
                 $_SESSION["error"] = "Karte gesperrt, kontaktieren Sie Ihre Bank!";
                 break;
         }
-
+        $_SESSION["pin"] =NULL;
         header("location: ../html/pin_invoeren.php");
     }
 }
