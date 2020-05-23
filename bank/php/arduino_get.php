@@ -68,6 +68,7 @@ while ($tempBedrag > 0) {
 }
 
 $briefjes = $briefjes . "..";
+$_SESSION["briefjes"] = $briefjes;
 
 echo "<br><br>" . $briefjes;
 
@@ -109,16 +110,5 @@ echo "<br><br> 5 = " . $row_5["Aantal"];
 echo "<br> 10 = " . $row_10["Aantal"];
 echo "<br> 20 = " . $row_20["Aantal"];
 echo "<br> 50 = " . $row_50["Aantal"] . "<br>";
-
-//stuur naar arduino
-
-
-
-
-
-//UPDATE opslag SET Aantal = 100 WHERE opslag.Soort = '5';
-//UPDATE opslag SET Aantal = 100 WHERE opslag.Soort = '10';
-//UPDATE opslag SET Aantal = 100 WHERE opslag.Soort = '20';
-//UPDATE opslag SET Aantal = 100 WHERE opslag.Soort = '50';
 
 ?>

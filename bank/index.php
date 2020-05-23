@@ -32,7 +32,7 @@ if (ctype_alnum($_SESSION["key"])) {
 <head>
     <title>home</title>
     <link href="CSS/index.css" rel="stylesheet" type="text/css"/>
-    <meta http-equiv="refresh" content="2">
+    <meta http-equiv="refresh" content="0.2">
 </head>
 <body>
 <div class="buttons">

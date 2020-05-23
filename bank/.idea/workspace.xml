@@ -267,6 +267,7 @@
       <workItem from="1589790020240" duration="3319000" />
       <workItem from="1589793362415" duration="5954000" />
       <workItem from="1589800172007" duration="3561000" />
+      <workItem from="1589893301817" duration="540000" />
     </task>
     <task id="LOCAL-00001" summary="bank">
       <created>1589798433979</created>
@@ -350,22 +351,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="473" y="436" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1586168862219" />
-    <state width="843" height="366" key="GridCell.Tab.0.bottom" timestamp="1589799323140">
+    <state width="1741" height="366" key="GridCell.Tab.0.bottom" timestamp="1589893841482">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="843" height="366" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1589799323140" />
-    <state width="843" height="366" key="GridCell.Tab.0.center" timestamp="1589799323140">
+    <state width="1741" height="366" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1589893841482" />
+    <state width="1741" height="366" key="GridCell.Tab.0.center" timestamp="1589893841482">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="843" height="366" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1589799323140" />
-    <state width="843" height="366" key="GridCell.Tab.0.left" timestamp="1589799323140">
+    <state width="1741" height="366" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1589893841482" />
+    <state width="1741" height="366" key="GridCell.Tab.0.left" timestamp="1589893841482">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="843" height="366" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1589799323140" />
-    <state width="843" height="366" key="GridCell.Tab.0.right" timestamp="1589799323140">
+    <state width="1741" height="366" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1589893841482" />
+    <state width="1741" height="366" key="GridCell.Tab.0.right" timestamp="1589893841482">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="843" height="366" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1589799323140" />
+    <state width="1741" height="366" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1589893841482" />
     <state x="331" y="518" key="NewPhpClassDialog" timestamp="1589198962637">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
