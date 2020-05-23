@@ -3,8 +3,8 @@
 #include <ESP8266WiFi.h>
 
 //connection stuff
-const char* ssid     = "REVELATION-3";
-const char* password = "SalvadoR2205";
+const char* ssid     = "Ziggo94EB696";
+const char* password = "d6yehVs4xned";
 
 const char* host = "145.24.222.43";
 
@@ -14,7 +14,9 @@ String pasnummer;
 String postVariableKey = "key=";
 char key;
 
-String printInformatie = "85:n:50,20,10,05,..";
+boolean bezig = false;
+String printInformatie = "";
+
 
 
 void setup() {
@@ -37,11 +39,49 @@ void setup() {
 void loop() {
   informatie();
   post();
-  printen();
 
+
+  if(bezig && pasnummer == "...........") {
+    getBedrag();
+    Serial.println(printInformatie.length());
+    if(printInformatie.length() > 5){
+      Serial.println("iets");
+      printen();
+    }
+  }
   delay(200);
 }
 
+void getBedrag()  {
+  WiFiClient client;
+  String line;
+  const int httpPort = 80;
+  if (!client.connect(host, httpPort)) {
+    Serial.println("connection failed");
+    return;
+  }
+  String url = "/php/arduino_opgevraagd.php"; //alallaala
+  client.print(String("GET ") + url + " HTTP/1.1\r\n" +
+               "Host: " + host + "\r\n" + 
+               "Connection: close\r\n\r\n");
+  unsigned long timeout = millis();
+  while (client.available() == 0) {
+    if (millis() - timeout > 5000) {
+      Serial.println(">>> Client Timeout !");
+      client.stop();
+      return;
+    }
+  }
+  while(client.available()){
+    line = client.readStringUntil('\r');
+  }
+
+  printInformatie = line;
+  Serial.println();
+  Serial.println(printInformatie);
+  Serial.println();
+  bezig = false;
+}
 
 void post(){
   WiFiClient client;
@@ -52,15 +92,15 @@ void post(){
   }
 
   client.println("POST /php/arduino.php HTTP/1.1");
-  client.print("Host: ");
+  client.print  ("Host: ");
   client.println(host);
   client.println("User-Agent: Arduino/1.0");
   client.println("Connection: close");
   client.println("Content-Type: application/x-www-form-urlencoded");
-  client.print("Content-Length: ");
+  client.print  ("Content-Length: ");
   client.println(data.length());
   client.println();
-  client.print(data);
+  client.print  (data);
 
   unsigned long timeout = millis();
   while (client.available() == 0) {
@@ -70,8 +110,8 @@ void post(){
       return;
     }
   }
+  Serial.println();
 }
-
 
 void printen(){
   int bedrag = printInformatie.substring(0,2).toInt();
@@ -81,26 +121,27 @@ void printen(){
     Wire.endTransmission();
   }
 
- 
   for(int positie = 5; printInformatie.substring(positie,positie+2) != ".."; positie += 3){
     String biljet = printInformatie.substring(positie,positie+2);
     if(biljet == "50"){
       //zet motor van 50 aan
+      Serial.println("50");
     } else if(biljet == "20"){
-      
+      Serial.println("20");
     } else if(biljet == "10"){
-      
+      Serial.println("10");
     } else if(biljet == "05"){
-      
+      Serial.println("05");
     }    
+    yield();
   }  
+  printInformatie = "";
 }
-
 
 void informatie(){
   Wire.requestFrom(13,12);
-   key = Wire.read();
-   pasnummer = "";
+  key = Wire.read();
+  pasnummer = "";
 
    while(Wire.available() > 0){ // loop through all but the last
       char c = Wire.read(); // receive byte as a character
@@ -108,6 +149,9 @@ void informatie(){
       pasnummer.concat(c);
       } else pasnummer.concat('.');
       delay(10);
+   }
+   if(pasnummer != "...........") {
+    bezig = true;
    }
 
   data = postVariableCard + pasnummer + "&" + postVariableKey + key;
