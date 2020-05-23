@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3dfe9a6-f9fc-4457-b689-b78444ff284d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/algemeen/bon.png" beforeDir="false" afterPath="$PROJECT_DIR$/Pictures/algemeen/bon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/afsluit.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/afsluit.php" afterDir="false" />
-    </list>
+    <list default="true" id="e3dfe9a6-f9fc-4457-b689-b78444ff284d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,33 +55,35 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/CSS" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\CSS" />
+      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\php" />
+      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank" />
+      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\Test" />
+      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\html\nederlands" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\Test" />
       <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\php" />
       <recent name="C:\Users\jelle\Desktop\HR\jaar 1\Periode 3\Project 3-4\Github\bank\html" />
       <recent name="C:\Users\ziwez\Desktop\school\Projecten\Project 34 - Bank\project bank\php" />
       <recent name="C:\Users\ziwez\Desktop\school\Projecten\Project 34 - Bank\project bank" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\php" />
-      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank" />
-      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\Test" />
-      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\html\nederlands" />
-      <recent name="C:\Users\ziwez\Desktop\school\Projecten\Project 34 - Bank\project bank\html" />
     </key>
   </component>
   <component name="RunManager">
@@ -265,8 +263,20 @@
       <workItem from="1589361680861" duration="930000" />
       <workItem from="1589362632222" duration="7634000" />
       <workItem from="1589370642433" duration="570000" />
-      <workItem from="1589371228932" duration="6871000" />
+      <workItem from="1589371228932" duration="14612000" />
+      <workItem from="1589790020240" duration="3319000" />
+      <workItem from="1589793362415" duration="5954000" />
+      <workItem from="1589800172007" duration="3561000" />
+      <workItem from="1589893301817" duration="540000" />
     </task>
+    <task id="LOCAL-00001" summary="bank">
+      <created>1589798433979</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589798433979</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,6 +293,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="bank" />
+    <option name="LAST_COMMIT_MESSAGE" value="bank" />
   </component>
   <component name="WindowStateProjectService">
     <state x="354" y="294" key="#CLI_Interpreters" timestamp="1588681654560">
@@ -309,10 +323,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="97" y="419" key="#Project_Structure/0.0.2560.1400@0.0.2560.1400" timestamp="1588681430173" />
-    <state x="240" y="359" key="#SQL_Dialects" timestamp="1589366571858">
+    <state x="240" y="359" key="#SQL_Dialects" timestamp="1589803124126">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="240" y="359" key="#SQL_Dialects/0.0.2560.1400@0.0.2560.1400" timestamp="1589366571858" />
+    <state x="240" y="359" key="#SQL_Dialects/0.0.2560.1400@0.0.2560.1400" timestamp="1589803124125" />
     <state x="72" y="481" width="1089" height="725" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588681528025">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -329,34 +343,38 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1011" y="448" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589199092755" />
+    <state x="1543" y="272" key="CommitChangelistDialog2" timestamp="1589798433147">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1543" y="272" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1589798433147" />
     <state x="473" y="436" key="FileChooserDialogImpl" timestamp="1586168862219">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="473" y="436" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1586168862219" />
-    <state width="844" height="369" key="GridCell.Tab.0.bottom" timestamp="1589370617275">
+    <state width="1741" height="366" key="GridCell.Tab.0.bottom" timestamp="1589893841482">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="844" height="369" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1589370617275" />
-    <state width="844" height="369" key="GridCell.Tab.0.center" timestamp="1589370617275">
+    <state width="1741" height="366" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1589893841482" />
+    <state width="1741" height="366" key="GridCell.Tab.0.center" timestamp="1589893841482">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="844" height="369" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1589370617275" />
-    <state width="844" height="369" key="GridCell.Tab.0.left" timestamp="1589370617275">
+    <state width="1741" height="366" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1589893841482" />
+    <state width="1741" height="366" key="GridCell.Tab.0.left" timestamp="1589893841482">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="844" height="369" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1589370617275" />
-    <state width="844" height="369" key="GridCell.Tab.0.right" timestamp="1589370617275">
+    <state width="1741" height="366" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1589893841482" />
+    <state width="1741" height="366" key="GridCell.Tab.0.right" timestamp="1589893841482">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="844" height="369" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1589370617275" />
+    <state width="1741" height="366" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1589893841482" />
     <state x="331" y="518" key="NewPhpClassDialog" timestamp="1589198962637">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="331" y="518" key="NewPhpClassDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589198962637" />
-    <state x="476" y="627" key="NewPhpFileDialog" timestamp="1589374595098">
+    <state x="476" y="627" key="NewPhpFileDialog" timestamp="1589802478574">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="476" y="627" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589374595098" />
+    <state x="476" y="627" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589802478574" />
     <state x="512" y="463" key="SettingsEditor" timestamp="1588703159973">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -369,10 +387,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="0" y="0" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1586172108460" />
-    <state x="305" y="333" key="run.anything.popup" timestamp="1588071006028">
+    <state x="305" y="333" key="run.anything.popup" timestamp="1589379116129">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="305" y="333" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1588071006028" />
+    <state x="305" y="333" key="run.anything.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1589379116129" />
     <state x="303" y="319" width="672" height="678" key="search.everywhere.popup" timestamp="1588760882675">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

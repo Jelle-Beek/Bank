@@ -1,6 +1,5 @@
 <?php
-session_id('batbank');
-session_start();
+include "var.php";
 
 $_SESSION["taal"] = "Duits";
 

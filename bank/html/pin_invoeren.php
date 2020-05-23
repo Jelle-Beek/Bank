@@ -32,21 +32,6 @@ if (ctype_alnum($_SESSION["key"]) || $_SESSION["key"] == '#' || $_SESSION["key"]
 }
 
 $_SESSION["key"] = NULL;
-
-switch ($_SESSION["taal"]) {
-    case "Nederlands":
-        $invoeren = "Voer uw pincode in a.u.b.";
-        $geheim = "Houd uw pincode geheim. Laat niemand meekijken.";
-        break;
-    case "Engels":
-        $invoeren = "Please enter your pincode.";
-        $geheim = "Keep your pincode secret. Don't let anyone watch.";
-        break;
-    case "Duits":
-        $invoeren = "Bitte geben Sie Ihren PIN-Code ein.";
-        $geheim = "Halten Sie Ihre PIN geheim. Lass niemanden zuschauen.";
-        break;
-}
 ?>
 
 <!DOCTYPE html>
@@ -70,12 +55,12 @@ switch ($_SESSION["taal"]) {
     <section>
         <h1>Batbank</h1>
 
-        <h2><?php echo $invoeren ?></h2>
+        <h2><?php echo $invoeren_pin ?></h2>
 
-        <h2 style="color: orangered"><?php echo $_SESSION["error"] ?></h2>
+        <h2 style="color: orangered; font-size: 40px"><?php echo $_SESSION["error"] ?></h2>
 
         <form action="../php/inloggen.php" method="post">
-            <input type="text" class="input_pin" name="pincode" placeholder="Pincode" pattern="[0-9]{4}"
+            <input type="password" class="input_pin" name="pincode" placeholder="Pincode" pattern="[0-9]{4}"
                    maxlength="4" value="<?php echo $_SESSION["pin"] ?>"/>
             <br>
             <input type="submit" class="input_ok" value="&#10033   OK">

@@ -1,14 +1,43 @@
 <?php
 include "../php/var.php";
 
+$pasnummer = $_SESSION["pasnummer"];
+$pincode = $_SESSION["pin"];
+
+//check connection
+if (mysqli_connect_error()) {
+    die('Connect Error(' . mysqli_connect_errno() . ')' . mysqli_connect_error());
+} else {
+    $sql = "SELECT Saldo FROM rekeningen WHERE Pasnummer = '$pasnummer' AND Pincode = '$pincode'";
+
+    $result = mysqli_query($conn, $sql);
+
+    if (mysqli_num_rows($result) == 1) {
+        $row = mysqli_fetch_assoc($result)["Saldo"];
+
+        if ($_SESSION["bedrag"] > $row) {
+            $location = "location: ../html/tekort.php";
+        } else {
+            $location = "location: ../html/bonprinten.php";
+        }
+
+    } else {
+        echo "geen gebruiker gevonden! [tekort.php]";
+        echo "<br> pasnummer =" . $pasnummer;
+        echo "<br> pincode =" . $pincode;
+    }
+}
+
 if (ctype_alnum($_SESSION["key"])) {
     switch ($_SESSION["key"]) {
         case '1':
-            header("location: bonprinten.php");
+            $_SESSION["key"] = NULL;
+            header($location);
             break;
 
         case 'C':
         case '2':
+            $_SESSION["key"] = NULL;
             header("location: opnemen.php");
             break;
 
@@ -17,26 +46,8 @@ if (ctype_alnum($_SESSION["key"])) {
             break;
     }
 }
-$_SESSION["taal"] = "Duits";
-$_SESSION["bedrag"] = 100;
 
-switch ($_SESSION["taal"]) {
-    case "Nederlands":
-        $keuze = "Weet u het zeker dat u $" . $_SESSION["bedrag"] . " wilt pinnen?";
-        $ja = "../Pictures/nederlands/ja.png";
-        $nee = "../Pictures/nederlands/nee.png";
-        break;
-    case "Engels":
-        $keuze = "Are you sure you want to withraw $" . $_SESSION["bedrag"] . "?";
-        $ja = "../Pictures/engels/yes.png";
-        $nee = "../Pictures/engels/no.png";
-        break;
-    case "Duits":
-        $keuze = "Sind Sie sicher, dass Sie $" . $_SESSION["bedrag"] . " abheben möchten?";
-        $ja = "../Pictures/duits/ja.png";
-        $nee = "../Pictures/duits/nein.png";
-        break;
-}
+echo $_SESSION["bedrag"] . " " . $row["Saldo"]
 
 ?>
 
@@ -67,18 +78,18 @@ switch ($_SESSION["taal"]) {
     <section>
         <h1>Batbank</h1>
         <br>
-        <h2><?php echo $keuze ?></h2>
+        <h2><?php echo $keuze_bevestigen ?></h2>
         <br><br><br><br><br>
 
         <button class="keuze">
-            <a href="bonprinten.php"> <img src="<?php echo $ja ?>"
+            <a href="bonprinten.php"> <img src="<?php echo $ja_bevestigen ?>"
                                            class="keuze_button"> </a>
             <h3>1</h3>
         </button>
 
         <button class="keuze">
-            <a href="opnemen.php"> <img src="<?php echo $nee ?>"
-                                     class="keuze_button"> </a>
+            <a href="opnemen.php"> <img src="<?php echo $nee_bevestigen ?>"
+                                        class="keuze_button"> </a>
 
             <h3>2</h3>
         </button>

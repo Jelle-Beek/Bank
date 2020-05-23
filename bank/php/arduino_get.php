@@ -68,6 +68,7 @@ while ($tempBedrag > 0) {
 }
 
 $briefjes = $briefjes . "..";
+$_SESSION["briefjes"] = $briefjes;
 
 echo "<br><br>" . $briefjes;
 
@@ -78,7 +79,7 @@ if ($tempBedrag == 0){
     $r20 = $row_20["Aantal"];
     $r50 = $row_50["Aantal"];
 
-    $pasnummer = "0984223";
+    $pasnummer = $_SESSION["pasnummer"];
     $Bedrag = $_SESSION["bedrag"];
 
     if (mysqli_connect_error()) {
@@ -98,24 +99,16 @@ if ($tempBedrag == 0){
 
         $sql_rekening_updaten = "UPDATE rekeningen SET Saldo = Saldo - '$Bedrag' WHERE rekeningen.Pasnummer = '$pasnummer'";
         mysqli_query($conn, $sql_rekening_updaten);
+
+        $sql_transactie = "INSERT INTO bij_en_afschriften (Pasnummer, Verandering, Tijdstip) VALUES ('$pasnummer', '$Bedrag', CURRENT_TIMESTAMP)";
+        mysqli_query($conn, $sql_transactie);
     }
+    header("location: ../html/afsluit.php");
 }
 
 echo "<br><br> 5 = " . $row_5["Aantal"];
 echo "<br> 10 = " . $row_10["Aantal"];
 echo "<br> 20 = " . $row_20["Aantal"];
 echo "<br> 50 = " . $row_50["Aantal"] . "<br>";
-
-//stuur naar arduino
-
-
-
-header("location: ../html/afsluit.php");
-
-
-//UPDATE opslag SET Aantal = 100 WHERE opslag.Soort = '5';
-//UPDATE opslag SET Aantal = 100 WHERE opslag.Soort = '10';
-//UPDATE opslag SET Aantal = 100 WHERE opslag.Soort = '20';
-//UPDATE opslag SET Aantal = 100 WHERE opslag.Soort = '50';
 
 ?>

@@ -11,23 +11,7 @@ if (ctype_alnum($_SESSION["key"])) {
 }
 
 
-switch ($_SESSION["taal"]) {
-    case "Nederlands":
-        $keuze = "Wilt u de transactiebon?";
-        $ja = "../Pictures/nederlands/ja.png";
-        $nee = "../Pictures/nederlands/nee.png";
-        break;
-    case "Engels":
-        $keuze = "Would you like the transaction receipt?";
-        $ja = "../Pictures/engels/yes.png";
-        $nee = "../Pictures/engels/no.png";
-        break;
-    case "Duits":
-        $keuze = "Möchten Sie den Transaktionsbeleg?";
-        $ja = "../Pictures/duits/ja.png";
-        $nee = "../Pictures/duits/nein.png";
-        break;
-}
+
 
 ?>
 
@@ -45,7 +29,7 @@ switch ($_SESSION["taal"]) {
     <section>
         <h1>Batbank</h1>
         <br>
-        <h2><?php echo $keuze ?></h2>
+        <h2><?php echo $keuze_bon ?></h2>
         <a href="menu.php"><img src="../Pictures/algemeen/bon.png" style="width: 40%"></a>
         <br>
 

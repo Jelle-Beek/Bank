@@ -1,6 +1,5 @@
 <?php
-session_id('batbank');
-session_start();
+include "php/var.php";
 
 if ($_SESSION['pasnummer'] != "..........." && $_SESSION['pasnummer'] != "") {
     header("location: html/pin_invoeren.php");
@@ -25,17 +24,6 @@ if (ctype_alnum($_SESSION["key"])) {
     }
 }
 
-switch ($_SESSION["taal"]) {
-    case "Nederlands":
-        $pas = "Pas invoegen a.u.b.";
-        break;
-    case "Engels":
-        $pas = "Please insert your card.";
-        break;
-    case "Duits":
-        $pas = "Bitte geben Sie Ihre Karte ein.";
-        break;
-}
 
 ?>
 
@@ -44,7 +32,7 @@ switch ($_SESSION["taal"]) {
 <head>
     <title>home</title>
     <link href="CSS/index.css" rel="stylesheet" type="text/css"/>
-    <meta http-equiv="refresh" content="2">
+    <meta http-equiv="refresh" content="0.2">
 </head>
 <body>
 <div class="buttons">

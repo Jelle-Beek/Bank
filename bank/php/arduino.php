@@ -1,6 +1,5 @@
 <?php
-session_id('batbank');
-session_start();
+include "var.php";
 
 $pasnummer = $_POST["pasnummer"];
 $key = $_POST["key"];

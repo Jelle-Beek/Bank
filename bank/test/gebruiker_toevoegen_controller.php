@@ -1,4 +1,6 @@
 <?php
+include "../php/var.php";
+
 $voornaam = ucfirst($_POST["voornaam"]);
 $tussenvoegsel = $_POST["tussenvoegsel"];
 $achternaam = ucfirst($_POST["achternaam"]);
@@ -10,13 +12,6 @@ $telefoonnummer = $landcode . " " . $nummer;
 $emailadres = $_POST["emailadres"];
 
 if (!empty($voornaam) || !empty($tussenvoegsel) || !empty($achternaam) || !empty($gebroorte_datum) || !empty($geslacht) || !empty($telefoonnummer) || !empty($emailadres)) {
-    $host = "localhost";
-    $dbUsername = "root";
-    $dbPassword = "Bank@Y44n72";
-    $dbName = "batbank";
-
-    //create connection
-    $conn = new mysqli($host, $dbUsername, $dbPassword, $dbName);
 
     //check connection
     if (mysqli_connect_error()) {
