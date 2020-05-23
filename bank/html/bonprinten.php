@@ -4,7 +4,11 @@ include "../php/var.php";
 if (ctype_alnum($_SESSION["key"])) {
     switch ($_SESSION["key"]) {
         case '1':
+            $_SESSION['bonKeuze'] = "j";
+            header("location: ../php/arduino_get.php");
+            break;
         case '2':
+            $_SESSION['bonKeuze'] = "n";
             header("location: ../php/arduino_get.php");
             break;
     }

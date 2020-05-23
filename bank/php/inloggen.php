@@ -37,10 +37,10 @@ if (mysqli_connect_error()) {
                     $_SESSION["error"] = "Verkeerde pincode, aantal fout pogingen: " . $fout_pogingen;
                     break;
                 case "Engels":
-                    $_SESSION["error"] = "Wrong PIN";
+                    $_SESSION["error"] = "Wrong PIN, number of wrong attempts: " . $fout_pogingen;
                     break;
                 case "Duits":
-                    $_SESSION["error"] = "Falsche PIN";
+                    $_SESSION["error"] = "Falsche PIN, aantal fout pogingen: " . $fout_pogingen;
                     break;
             }
             $_SESSION["pin"] = NULL;

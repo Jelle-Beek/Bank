@@ -24,7 +24,6 @@ if (mysqli_connect_error()) {
     if (mysqli_num_rows($result) == 1) {
         $row = mysqli_fetch_assoc($result);
 
-        echo "saldo = " . $row["saldo"];
         $_SESSION['saldo'] = $row["saldo"];
     } else {
         echo "geen gebruiker gevonden! [tekort.php]";
