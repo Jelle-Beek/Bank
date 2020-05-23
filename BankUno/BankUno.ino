@@ -15,8 +15,8 @@
 MFRC522 mfrc522(SS_PIN, RST_PIN);
 
 //printer stuff (TX = blue(6)(RX printer), RX = green(5)(TX printer))
-#define TX_PIN 2
-#define RX_PIN 8
+#define TX_PIN 8
+#define RX_PIN 2
 
 SoftwareSerial mySerial(RX_PIN, TX_PIN);
 Adafruit_Thermal printer(&mySerial);
@@ -44,6 +44,8 @@ char pasnummer[11];
 boolean boolPrint = false;
 int bedrag = 0;
 
+long lastTime;
+
 void setup() {
   Wire.begin(13); 
   Wire.onRequest(requestEvent);
@@ -53,6 +55,7 @@ void setup() {
   SPI.begin();
   mfrc522.PCD_Init();
 
+  mySerial.begin(9600);
   printer.begin();
 
   attachInterrupt(digitalPinToInterrupt(3), keypadLezen, RISING);
@@ -64,12 +67,16 @@ void loop() {
   if(content == ""){
     RFID();
     content.substring(1).toCharArray(pasnummer, 12);
-  } else{
+    lastTime = millis();
+  } 
+  else{
     keypadLezen();
   }
-  
 
-//  if (boolPrint) printBon();
+  if (millis() - lastTime > 4000){
+    content = "";
+  }
+
   Serial.println(content);
   Serial.println(key);
   delay(100);
@@ -77,7 +84,7 @@ void loop() {
 
 void receiveEvent(int bytes) {
   bedrag = Wire.read();
-  boolPrint = true;
+  printBon();
 }
 
 
