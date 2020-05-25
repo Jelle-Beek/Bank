@@ -41,7 +41,7 @@ void loop() {
   post();
 
 
-  if(bezig && pasnummer == "...........") {
+  if(bezig && pasnummer == "................") {
     getBedrag();
     if(printInformatie.length() > 5){
       printen();
@@ -137,18 +137,18 @@ void printen(){
 }
 
 void informatie(){
-  Wire.requestFrom(13,12);
+  Wire.requestFrom(13,17);
   key = Wire.read();
   pasnummer = "";
 
    while(Wire.available() > 0){ // loop through all but the last
       char c = Wire.read(); // receive byte as a character
-      if(isAlphaNumeric(c) || c == ' '){
+      if(isAlphaNumeric(c) || c == '-'){
       pasnummer.concat(c);
       } else pasnummer.concat('.');
       delay(10);
    }
-   if(pasnummer != "...........") {
+   if(pasnummer != "................") {
     bezig = true;
    }
 

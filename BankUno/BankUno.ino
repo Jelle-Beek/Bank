@@ -39,7 +39,7 @@ Keypad myKeypad = Keypad( makeKeymap(keyMap), rowPins, colPins, ROWS, COLS);
 
 String content = "";
 char key = '\0';
-char pasnummer[11];
+char pasnummer[16];
 
 boolean boolPrint = false;
 int bedrag = 0;
@@ -66,7 +66,7 @@ void setup() {
 void loop() {
   if(content == ""){
     RFID();
-    content.substring(1).toCharArray(pasnummer, 12);
+    content.toCharArray(pasnummer, 17);
     lastTime = millis();
   } 
   else{
@@ -83,7 +83,7 @@ void loop() {
 
   Serial.println(content);
   Serial.println(key);
-  delay(100);
+  delay(10);
 }
 
 void receiveEvent() {
@@ -113,24 +113,44 @@ void keypadLezen(){
 }
 
 void RFID(){
+  // Prepare key - all keys are set to FFFFFFFFFFFFh at chip delivery from the factory.
+  MFRC522::MIFARE_Key key;
+  for (byte i = 0; i < 6; i++) key.keyByte[i] = 0xFF;
+
+  MFRC522::StatusCode status;
+  
   if (!mfrc522.PICC_IsNewCardPresent()) {
     return;
   }
   if (!mfrc522.PICC_ReadCardSerial()){
     return;
   }
-  
-  Serial.print("UID tag :");
-  byte letter;
-  for (byte i = 0; i < mfrc522.uid.size; i++){
-     Serial.print(mfrc522.uid.uidByte[i] < 0x10 ? " 0" : " ");
-     Serial.print(mfrc522.uid.uidByte[i], HEX);
-     Serial.println();
-     content.concat(String(mfrc522.uid.uidByte[i] < 0x10 ? " 0" : " "));
-     content.concat(String(mfrc522.uid.uidByte[i], HEX));
+
+  byte len = 18;
+  byte buffer2[18];
+  byte block = 1;
+
+  status = mfrc522.PCD_Authenticate(MFRC522::PICC_CMD_MF_AUTH_KEY_A, 1, &key, &(mfrc522.uid)); //line 834
+  if (status != MFRC522::STATUS_OK) {
+    Serial.print(F("Authentication failed: "));
+    Serial.println(mfrc522.GetStatusCodeName(status));
+    return;
   }
-  content.toUpperCase();
-  Serial.flush();
+
+  status = mfrc522.MIFARE_Read(block, buffer2, &len);
+  if (status != MFRC522::STATUS_OK) {
+    Serial.print(F("Reading failed: "));
+    Serial.println(mfrc522.GetStatusCodeName(status));
+    return;
+  }
+
+  for (uint8_t i = 0; i < 16; i++) {
+    char letter = char(buffer2[i]);
+    content += letter;
+  }
+
+  mfrc522.PICC_HaltA();
+  mfrc522.PCD_StopCrypto1();
 }
 
 
