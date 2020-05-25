@@ -73,6 +73,10 @@ void loop() {
     keypadLezen();
   }
 
+  if(boolPrint){
+    printBon();
+  }
+
   if (millis() - lastTime > 4000){
     content = "";
   }
@@ -82,9 +86,10 @@ void loop() {
   delay(100);
 }
 
-void receiveEvent(int bytes) {
+void receiveEvent() {
+  Serial.println("hij komt ");
   bedrag = Wire.read();
-  printBon();
+  boolPrint = true;
 }
 
 
@@ -103,6 +108,7 @@ void keypadLezen(){
       content = "";
     }
     key = whichKey;
+    Serial.println(key);
   }
 }
 
@@ -124,6 +130,7 @@ void RFID(){
      content.concat(String(mfrc522.uid.uidByte[i], HEX));
   }
   content.toUpperCase();
+  Serial.flush();
 }
 
 

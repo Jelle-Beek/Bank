@@ -43,9 +43,7 @@ void loop() {
 
   if(bezig && pasnummer == "...........") {
     getBedrag();
-    Serial.println(printInformatie.length());
     if(printInformatie.length() > 5){
-      Serial.println("iets");
       printen();
     }
   }
@@ -77,8 +75,8 @@ void getBedrag()  {
   }
 
   printInformatie = line;
-  Serial.println();
-  Serial.println(printInformatie);
+  Serial.print("printinformatie is:");
+  Serial.print(printInformatie);
   Serial.println();
   bezig = false;
 }
@@ -114,14 +112,14 @@ void post(){
 }
 
 void printen(){
-  int bedrag = printInformatie.substring(0,2).toInt();
-  if (printInformatie.substring(3,4) == "j"){
+  int bedrag = printInformatie.substring(1,3).toInt();
+  if (printInformatie.substring(4,5) == "j"){
     Wire.beginTransmission(13);
     Wire.write(bedrag);
     Wire.endTransmission();
   }
-
-  for(int positie = 5; printInformatie.substring(positie,positie+2) != ".."; positie += 3){
+  
+  for(int positie = 6; printInformatie.substring(positie,positie+2) != ".."; positie += 3){
     String biljet = printInformatie.substring(positie,positie+2);
     if(biljet == "50"){
       //zet motor van 50 aan
@@ -133,8 +131,8 @@ void printen(){
     } else if(biljet == "05"){
       Serial.println("05");
     }    
-    yield();
-  }  
+    delay(100);
+  }
   printInformatie = "";
 }
 
