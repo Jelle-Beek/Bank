@@ -1,27 +1,28 @@
+/*----------- I2C library ----------- */
+#include <Wire.h>
+
+/*----------- RFID libraries en setup ----------- */
 #include <SPI.h>
 #include <MFRC522.h>
 
-#include <Keypad.h>
-
-#include <Wire.h>
-
-#include "Adafruit_Thermal.h"
-#include "SoftwareSerial.h"
-#include "RTClib.h"
-
-//RFID stuff
 #define SS_PIN 10
 #define RST_PIN 9
 MFRC522 mfrc522(SS_PIN, RST_PIN);
 
-//printer stuff (TX = blue(6)(RX printer), RX = green(5)(TX printer))
-#define TX_PIN 8
-#define RX_PIN 2
+/*----------- Printer libraries en setup ----------- */
+#include "Adafruit_Thermal.h"
+#include "SoftwareSerial.h"
+#include "RTClib.h"
+
+#define TX_PIN 8  //RX op printer (blauwe kabel(6))
+#define RX_PIN 2  //TX op printer (groene kabel(5))
 
 SoftwareSerial mySerial(RX_PIN, TX_PIN);
 Adafruit_Thermal printer(&mySerial);
 RTC_Millis rtc;
 
+/*----------- Keypad library en setup ----------- */
+#include <Keypad.h>
 
 const byte ROWS = 4; 
 const byte COLS = 4;
@@ -37,57 +38,77 @@ char keyMap [ROWS] [COLS] = {
 
 Keypad myKeypad = Keypad( makeKeymap(keyMap), rowPins, colPins, ROWS, COLS);
 
+
+/*----------- Variabele ----------- */
 String content = "";
 char key = '\0';
-char pasnummer[11];
+char pasnummer[16];
 
 boolean boolPrint = false;
 int bedrag = 0;
 
 long lastTime;
 
+
+
+
 void setup() {
+  //Begin de seriële monitor
+  Serial.begin(9600);
+  
+  //Setup voor de I2C verbinding met de arduino UNO
   Wire.begin(13); 
   Wire.onRequest(requestEvent);
   Wire.onReceive(receiveEvent);
   
-  Serial.begin(9600);
+  //Setup voor de RFID reader
   SPI.begin();
   mfrc522.PCD_Init();
 
+  //Setup voor de printer
   mySerial.begin(9600);
   printer.begin();
 
+  //Interrupt om deel van de keypad te laten werken voordat er een pas gescanned is
   attachInterrupt(digitalPinToInterrupt(3), keypadLezen, RISING);
-  
 }
+
 
 
 void loop() {
+  //Als er geen kaart is, wordt er gezocht naar een kaart en deze in een char array gezet voor I2C. De tijd wordt ook opgeslagen
   if(content == ""){
     RFID();
-    content.substring(1).toCharArray(pasnummer, 12);
+    content.toCharArray(pasnummer, 17);
     lastTime = millis();
-  } 
-  else{
-    keypadLezen();
+  } else {                                  
+    keypadLezen();                                //Als er wel een kaart is, lees de keypad af
   }
 
-  if (millis() - lastTime > 4000){
+  //Als boolPrint aan staat moet er een bon geprint worden
+  if(boolPrint){
+    printBon();
+  }
+
+  //Als er meer dan 5 seconden voorbij zijn na het scannen van de kaart, reset de kaart-variabele
+  if (millis() - lastTime > 5000){
     content = "";
   }
 
-  Serial.println(content);
-  Serial.println(key);
   delay(100);
 }
 
-void receiveEvent(int bytes) {
+
+
+
+
+/*Het opgenomen bedrag opslaan en de bonprint variabele op true zetten om bon te printen*/
+void receiveEvent() {
   bedrag = Wire.read();
-  printBon();
+  boolPrint = true;
 }
 
-
+/*Pasnummer en ingedrukte toets opsturen wanneer er om informatie wordt gevraagd en key resetten om dubbele toetsen te voorkomen*/
 void requestEvent() {
   Wire.write(key);
   Wire.write(pasnummer);
@@ -96,7 +117,10 @@ void requestEvent() {
 
 
 
+
+
 void keypadLezen(){
+  //Sla de toets op als er één wordt ingedrukt. Reset de kaart-variabele als D ingedrukt wordt (terug naar hoofdpagina)
   char whichKey = myKeypad.getKey(); 
   if(whichKey){
     if(whichKey == 'D'){
@@ -106,40 +130,68 @@ void keypadLezen(){
   }
 }
 
+
+
+
+
 void RFID(){
-  if (!mfrc522.PICC_IsNewCardPresent()) {
-    return;
-  }
-  if (!mfrc522.PICC_ReadCardSerial()){
-    return;
-  }
+  //Een aantal benodigde variabele
+  byte len = 18;
+  byte buffer2[18];
+  byte block = 1;
+  MFRC522::StatusCode status;
+
+  MFRC522::MIFARE_Key key;
+  for (byte i = 0; i < 6; i++) key.keyByte[i] = 0xFF;                     //Maak de key FFFFFFFFFFFFh (standaardwaarde)
   
-  Serial.print("UID tag :");
-  byte letter;
-  for (byte i = 0; i < mfrc522.uid.size; i++){
-     Serial.print(mfrc522.uid.uidByte[i] < 0x10 ? " 0" : " ");
-     Serial.print(mfrc522.uid.uidByte[i], HEX);
-     Serial.println();
-     content.concat(String(mfrc522.uid.uidByte[i] < 0x10 ? " 0" : " "));
-     content.concat(String(mfrc522.uid.uidByte[i], HEX));
+
+  if (!mfrc522.PICC_IsNewCardPresent()) return;
+  if (!mfrc522.PICC_ReadCardSerial()) return;
+
+  //Valideren van de key
+  status = mfrc522.PCD_Authenticate(MFRC522::PICC_CMD_MF_AUTH_KEY_A, 1, &key, &(mfrc522.uid)); //line 834
+  if (status != MFRC522::STATUS_OK) {
+    Serial.print(F("Authentication failed: "));
+    Serial.println(mfrc522.GetStatusCodeName(status));
+    return;
   }
-  content.toUpperCase();
+
+  //Het lezen van het eerste blok op de kaart
+  status = mfrc522.MIFARE_Read(block, buffer2, &len);
+  if (status != MFRC522::STATUS_OK) {
+    Serial.print(F("Reading failed: "));
+    Serial.println(mfrc522.GetStatusCodeName(status));
+    return;
+  }
+
+  //zet de informatie om van bytes naar een string
+  for (uint8_t i = 0; i < 16; i++) {
+    char letter = char(buffer2[i]);
+    content += letter;
+  }
+
+  mfrc522.PICC_HaltA();
+  mfrc522.PCD_StopCrypto1();
 }
 
 
+
+
+
 void printBon(){
+  //De tijd en datum van dit tijdstip bepalen voor later gebruik op de bon
   rtc.begin(DateTime(F(__DATE__), F(__TIME__)));
   DateTime now = rtc.now();
 
   
-  // NAAM BANK
+  //De naam van onze bank
   printer.justify('C');
   printer.setSize('L');
   printer.println(F("BATBANK\n"));  
   printer.justify('L');
   printer.setSize('S');
 
-  // DATUM
+  //De datum van het opnemen
   printer.print(F("Datum : "));
   printer.print(now.day(), DEC);
   printer.print('/');
@@ -147,7 +199,7 @@ void printBon(){
   printer.print('/');
   printer.println(now.year(), DEC);
 
-  // TIJD
+  //De tijd van het opnemen
   printer.print(F("Tijd : "));
   printer.print(now.hour(), DEC);
   printer.print(':');
@@ -159,18 +211,19 @@ void printBon(){
   // REKENING NUMMER
 //  printer.println("Kaart nummer : *********\n");
 
-  // HOEVEELHEID GELD
+  //Het opgenomen bedrag
   printer.setSize('M');
   printer.print("Opgenomen bedrag : ");
   printer.println(bedrag);
   printer.println();
   
-  // BEDANKT ...
+  //Het bedankt bericht
   printer.justify('C');
   printer.setSize('M');
   printer.println(F("Bedankt voor het gebruiken van"));
   printer.println(F("onze bank!\n"));
 
+
+  //Zet de variabele voor het bonprinten weer op false om de bon niet te blijven printen
   boolPrint = false; 
-  
 }

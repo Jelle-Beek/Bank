@@ -5,7 +5,7 @@ if ($_SESSION["taal"] == null){
     $_SESSION["taal"] = "Nederlands";
 }
 
-if ($_SESSION['pasnummer'] != "..........." && $_SESSION['pasnummer'] != "") {
+if ($_SESSION['pasnummer'] != "................" && $_SESSION['pasnummer'] != "") {
     header("location: html/pin_invoeren.php");
 }
 
