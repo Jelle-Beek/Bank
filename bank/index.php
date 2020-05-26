@@ -1,7 +1,7 @@
 <?php
 include "php/var.php";
 
-if ($_SESSION['pasnummer'] != "..........." && $_SESSION['pasnummer'] != "") {
+if ($_SESSION['pasnummer'] != "................" && $_SESSION['pasnummer'] != "") {
     header("location: html/pin_invoeren.php");
 }
 
