@@ -74,8 +74,7 @@ INSERT INTO `opslag` (`Soort`, `Aantal`) VALUES
 
 CREATE TABLE `rekeningen` (
   `GebruikersID` int(10) NOT NULL,
-  `Pasnummer` varchar(12) NOT NULL,
-  `Rekeningnummer` varchar(15) NOT NULL,
+  `Pasnummer` varchar(16) NOT NULL,
   `Pincode` varchar(4) NOT NULL,
   `Saldo` double(20,2) NOT NULL DEFAULT 0.00,
   `fout_pogingen` int(1) NOT NULL DEFAULT 0
