@@ -27,7 +27,7 @@ use batbank;
 
 CREATE TABLE `bij_en_afschriften` (
   `Transactie_nummer` int(11) NOT NULL,
-  `Pasnummer` varchar(15) NOT NULL,
+  `Pasnummer` varchar(16) NOT NULL,
   `Verandering` varchar(100) NOT NULL,
   `Tijdstip` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
