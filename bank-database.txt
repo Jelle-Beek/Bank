@@ -112,7 +112,7 @@ ALTER TABLE `opslag`
 --
 ALTER TABLE `rekeningen`
   ADD PRIMARY KEY (`Pasnummer`),
-  ADD UNIQUE KEY `GebruikersID` (`GebruikersID`);
+  ADD KEY `GebruikersID` (`GebruikersID`);
 
 --
 -- AUTO_INCREMENT voor geëxporteerde tabellen
