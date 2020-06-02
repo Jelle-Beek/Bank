@@ -16,6 +16,9 @@ SET time_zone = "+00:00";
 -- Database: `batbank`
 --
 
+create database batbank;
+use batbank;
+
 -- --------------------------------------------------------
 
 --
@@ -23,6 +26,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `bij_en_afschriften` (
+  `Transactie_nummer` int(11) NOT NULL,
   `Pasnummer` varchar(15) NOT NULL,
   `Verandering` varchar(100) NOT NULL,
   `Tijdstip` datetime NOT NULL DEFAULT current_timestamp()
@@ -88,7 +92,8 @@ CREATE TABLE `rekeningen` (
 -- Indexen voor tabel `bij_en_afschriften`
 --
 ALTER TABLE `bij_en_afschriften`
-  ADD PRIMARY KEY (`Pasnummer`);
+  ADD PRIMARY KEY (`Transactie_nummer`),
+  ADD KEY `Pasnummer` (`Pasnummer`);
 
 --
 -- Indexen voor tabel `gebruiker`
@@ -106,15 +111,38 @@ ALTER TABLE `opslag`
 -- Indexen voor tabel `rekeningen`
 --
 ALTER TABLE `rekeningen`
-  ADD PRIMARY KEY (`Rekeningnummer`);
+  ADD PRIMARY KEY (`Pasnummer`),
+  ADD UNIQUE KEY `GebruikersID` (`GebruikersID`);
 
 --
 -- AUTO_INCREMENT voor geëxporteerde tabellen
 --
 
 --
+-- AUTO_INCREMENT voor een tabel `bij_en_afschriften`
+--
+ALTER TABLE `bij_en_afschriften`
+  MODIFY `Transactie_nummer` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT voor een tabel `gebruiker`
 --
 ALTER TABLE `gebruiker`
-  MODIFY `GebruikersID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
+  MODIFY `GebruikersID` int(10) NOT NULL AUTO_INCREMENT;
+
+--
+-- Beperkingen voor geëxporteerde tabellen
+--
+
+--
+-- Beperkingen voor tabel `bij_en_afschriften`
+--
+ALTER TABLE `bij_en_afschriften`
+  ADD CONSTRAINT `bij_en_afschriften_ibfk_1` FOREIGN KEY (`Pasnummer`) REFERENCES `rekeningen` (`Pasnummer`);
+
+--
+-- Beperkingen voor tabel `rekeningen`
+--
+ALTER TABLE `rekeningen`
+  ADD CONSTRAINT `rekeningen_ibfk_1` FOREIGN KEY (`GebruikersID`) REFERENCES `gebruiker` (`GebruikersID`);
 COMMIT;

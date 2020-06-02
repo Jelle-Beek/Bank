@@ -1,6 +1,11 @@
 <?php
 include "var.php";
 
+$_SESSION["bonKeuze"] = "j";
+$_SESSION["bedrag"] = 75;
+$_SESSION["pasnummer"] = "1A FD F3 0B";
+
+
 $tempBedrag = $_SESSION["bedrag"];
 $briefjes = $_SESSION["bedrag"] . ":" . $_SESSION["bonKeuze"] . ":";
 
@@ -9,7 +14,7 @@ $briefjes = $_SESSION["bedrag"] . ":" . $_SESSION["bonKeuze"] . ":";
 if (mysqli_connect_error()) {
     die('Connect Error(' . mysqli_connect_errno() . ')' . mysqli_connect_error());
 } else {
-    $sql_5 =  "SELECT * FROM opslag WHERE Soort = 5";
+    $sql_5 = "SELECT * FROM opslag WHERE Soort = 5";
     $sql_10 = "SELECT * FROM opslag WHERE Soort = 10";
     $sql_20 = "SELECT * FROM opslag WHERE Soort = 20";
     $sql_50 = "SELECT * FROM opslag WHERE Soort = 50";
@@ -72,7 +77,7 @@ $_SESSION["briefjes"] = $briefjes;
 
 echo "<br><br>" . $briefjes;
 
-if ($tempBedrag == 0){
+if ($tempBedrag == 0) {
     //database updaten
     $r5 = $row_5["Aantal"];
     $r10 = $row_10["Aantal"];
@@ -81,6 +86,8 @@ if ($tempBedrag == 0){
 
     $pasnummer = $_SESSION["pasnummer"];
     $Bedrag = $_SESSION["bedrag"];
+
+    echo "<br><br>" . $Bedrag;
 
     if (mysqli_connect_error()) {
         die('Connect Error(' . mysqli_connect_errno() . ')' . mysqli_connect_error());
@@ -100,7 +107,7 @@ if ($tempBedrag == 0){
         $sql_rekening_updaten = "UPDATE rekeningen SET Saldo = Saldo - '$Bedrag' WHERE rekeningen.Pasnummer = '$pasnummer'";
         mysqli_query($conn, $sql_rekening_updaten);
 
-        $sql_transactie = "INSERT INTO bij_en_afschriften (Pasnummer, Verandering, Tijdstip) VALUES ('$pasnummer', '$Bedrag', CURRENT_TIMESTAMP)";
+        $sql_transactie = "INSERT INTO bij_en_afschriften (Transactie_nummer, Pasnummer, Verandering, Tijdstip) VALUES (NULL, '$pasnummer', '-$Bedrag', CURRENT_TIMESTAMP)";
         mysqli_query($conn, $sql_transactie);
     }
     header("location: ../html/afsluit.php");
