@@ -24,23 +24,14 @@ if (mysqli_connect_error()) {
     if (mysqli_num_rows($result) == 1) {
         $row = mysqli_fetch_assoc($result);
 
+        $GebruikersID = $row["GebruikersID"];
 
-        $sql_rekening = "SELECT Pincode FROM rekeningen WHERE Pasnummer = '$pasnummer'";
+        $sql_rekening = "INSERT INTO rekeningen (GebruikersID, Pasnummer, Pincode, Saldo, fout_pogingen) VALUES ('$GebruikersID', '$pasnummer', '$pincode', '0.00', '0');";
 
-        $result2 = mysqli_query($conn, $sql_rekening);
+        mysqli_query($conn, $sql_rekening);
 
-        if (mysqli_num_rows($result2) == 1) {
-            $row2 = mysqli_fetch_assoc($result2);
+        echo "rekening aangemaakt!";
 
-            if (password_verify('1234', $pincode)) {
-                echo "Success! <br>";
-            } else {
-                echo "Invalid credentials";
-            }
-
-        } else {
-            echo "rekening niet gevonden!";
-        }
     } else {
         echo "Gebruiker niet gevonden!";
     }

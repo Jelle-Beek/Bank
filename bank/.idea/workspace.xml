@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3dfe9a6-f9fc-4457-b689-b78444ff284d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/rekening_aanmaken.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/rekening_aanmaken_controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bank-database.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../bank-database.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/arduino_get.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/arduino_get.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/inloggen.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/inloggen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/gebruiker_toevoegen.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/gebruiker_toevoegen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/gebruiker_toevoegen_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/gebruiker_toevoegen_controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/rekening_aanmaken_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/rekening_aanmaken_controller.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,6 +281,7 @@
       <workItem from="1591104119751" duration="616000" />
       <workItem from="1591120790760" duration="6355000" />
       <workItem from="1591127182178" duration="22000" />
+      <workItem from="1591127845863" duration="639000" />
     </task>
     <task id="LOCAL-00001" summary="bank">
       <created>1589798433979</created>
