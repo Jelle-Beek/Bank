@@ -1,11 +1,6 @@
 <?php
 include "var.php";
 
-$_SESSION["bonKeuze"] = "j";
-$_SESSION["bedrag"] = 75;
-$_SESSION["pasnummer"] = "1A FD F3 0B";
-
-
 $tempBedrag = $_SESSION["bedrag"];
 $briefjes = $_SESSION["bedrag"] . ":" . $_SESSION["bonKeuze"] . ":";
 
@@ -25,7 +20,7 @@ if (mysqli_connect_error()) {
     $result_50 = mysqli_query($conn, $sql_50);
 
     if (mysqli_num_rows($result_5) == 1 && mysqli_num_rows($result_10) == 1 && mysqli_num_rows($result_20) == 1 && mysqli_num_rows($result_50) == 1) {
-        $row_5 = mysqli_fetch_assoc($result_5);;
+        $row_5 = mysqli_fetch_assoc($result_5);
         $row_10 = mysqli_fetch_assoc($result_10);
         $row_20 = mysqli_fetch_assoc($result_20);
         $row_50 = mysqli_fetch_assoc($result_50);
