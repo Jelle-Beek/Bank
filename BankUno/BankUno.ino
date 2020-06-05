@@ -218,6 +218,9 @@ void printBon(){
   printer.setSize('M');
   printer.println(F("Bedankt voor het gebruiken van"));
   printer.println(F("onze bank!\n"));
+  printer.println();
+  printer.println();
+  printer.println();
 
 
   //Zet de variabele voor het bonprinten weer op false om de bon niet te blijven printen
