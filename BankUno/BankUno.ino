@@ -20,7 +20,7 @@ MFRC522 mfrc522(SS_PIN, RST_PIN);
 SoftwareSerial mySerial(RX_PIN, TX_PIN);
 Adafruit_Thermal printer(&mySerial);
 RTC_Millis rtc;
-
+ 
 /*----------- Keypad library en setup ----------- */
 #include <Keypad.h>
 
@@ -47,7 +47,7 @@ char pasnummer[16];
 boolean boolPrint = false;
 int bedrag = 0;
 
-long lastTime;
+unsigned long lastTime;
 
 
 
@@ -76,12 +76,11 @@ void setup() {
 
 
 void loop() {
-  //Als er geen kaart is, wordt er gezocht naar een kaart en deze in een char array gezet voor I2C. De tijd wordt ook opgeslagen
+  //Als er geen kaart is, wordt er gezocht naar een kaart en deze in een char array gezet voor I2C.
   if(content == ""){
     RFID();
     content.toCharArray(pasnummer, 17);
-    lastTime = millis();
-  } else {                                  
+  } else {                    
     keypadLezen();                                //Als er wel een kaart is, lees de keypad af
   }
 
@@ -89,12 +88,7 @@ void loop() {
   if(boolPrint){
     printBon();
   }
-
-  //Als er meer dan 5 seconden voorbij zijn na het scannen van de kaart, reset de kaart-variabele
-  if (millis() - lastTime > 5000){
-    content = "";
-  }
-
+  
   delay(100);
 }
 
@@ -111,7 +105,8 @@ void receiveEvent() {
 /*Pasnummer en ingedrukte toets opsturen wanneer er om informatie wordt gevraagd en key resetten om dubbele toetsen te voorkomen*/
 void requestEvent() {
   Wire.write(key);
-  Wire.write(pasnummer);
+  Wire.write(pasnummer);  
+  if(key == 'A') content = "";
   key = 0;
 }
 
@@ -146,6 +141,7 @@ void RFID(){
   
 
   if (!mfrc522.PICC_IsNewCardPresent()) return;
+ 
   if (!mfrc522.PICC_ReadCardSerial()) return;
 
   //Valideren van de key
