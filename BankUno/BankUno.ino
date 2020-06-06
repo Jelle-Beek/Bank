@@ -53,10 +53,10 @@ unsigned long lastTime;
 
 
 void setup() {
-  //Begin de seriële monitor
+  //Start de seriële monitor
   Serial.begin(9600);
   
-  //Setup voor de I2C verbinding met de arduino UNO
+  //Setup voor de I2C verbinding met de ESP
   Wire.begin(13); 
   Wire.onRequest(requestEvent);
   Wire.onReceive(receiveEvent);
