@@ -13,7 +13,7 @@ if (ctype_alnum($_SESSION["key"])) {
 
         case '1':
             $_SESSION["key"] = NULL;
-            $_SESSION["bedrag"] = 5;
+            $_SESSION["bedrag"] = 05;
             header("location: bevestig.php");
             break;
         case '2':

@@ -1,15 +1,19 @@
 <?php
+//session zodat alle pagina's de variables kan gebruiken die aangepast kunnen worden
 session_id("batbank");
 session_start();
 
+//database informatie
 $host = "localhost";
 $dbUsername = "root";
 $dbPassword = "Bank@Y44n72";
 $dbName = "batbank";
 
-// Create connection
+// Creeert connectie met database
 $conn = new mysqli($host, $dbUsername, $dbPassword, $dbName);
 
+
+// alle tekst in de webpagina's + vertalingen
 switch ($_SESSION["taal"]) {
     case "Nederlands":
         $pas = "Pas invoegen a.u.b.";
@@ -36,9 +40,10 @@ switch ($_SESSION["taal"]) {
         $invoeren_bedrag = "Voer het bedrag in.";
         $bedrag = "Bedrag";
         $bedankt = "Bedankt voor het pinnen bij Batbank";
-        $pas_pakken = "U kunt uw pas pakken";
+        $pas_pakken = "U kunt uw pas pakken <br> Klik vervolgens op 'A' om door te gaan";
         $tekort = "U heeft niet genoeg saldo om &euro;" . $_SESSION['bedrag'] . " te pinnen";
         $doorgaan = "../Pictures/nederlands/doorgaan.png";
+        $error_briefjes = "Op dit moment kunt u dit bedrag niet pinnen <br> Excuses voor het ongemak";
         break;
     case "Engels":
         $pas = "Please insert your card.";
@@ -65,9 +70,10 @@ switch ($_SESSION["taal"]) {
         $invoeren_bedrag = "Enter the amount.";
         $bedrag = "Amount";
         $bedankt = "Thanks for using Batbank";
-        $pas_pakken = "You can take your card";
+        $pas_pakken = "You can take your card <br> Then click 'A' to continue";
         $tekort = "You don't have enough balance to withdraw &euro;" . $_SESSION['bedrag'];
         $doorgaan = "../Pictures/engels/continue.png";
+        $error_briefjes = "You can't withdraw this amount at the moment <br> Sorry for the inconvenience";
         break;
     case "Duits":
         $pas = "Bitte geben Sie Ihre Karte ein.";
@@ -94,9 +100,10 @@ switch ($_SESSION["taal"]) {
         $invoeren_bedrag = "Geben Sie den Betrag ein.";
         $bedrag = "Betrag";
         $bedankt = "Danke, dass du bei Batbank gepinnt hast";
-        $pas_pakken = "Sie können Ihre Karte nehmen";
+        $pas_pakken = "Sie können Ihre Karte nehmen <br> Klicken Sie dann auf 'A', um fortzufahren";
         $tekort = "Sie haben nicht genug Gleichgewicht, um &euro;" . $_SESSION['bedrag'] . " auf zu nehmen";
         $doorgaan = "../Pictures/duits/fortsetzen.png";
+        $error_briefjes = "Sie können diesen Betrag derzeit nicht abheben <br> Entschuldigung für die Unannehmlichkeiten";
         break;
 }
 ?>

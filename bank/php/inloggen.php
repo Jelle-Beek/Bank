@@ -80,27 +80,38 @@ if (mysqli_connect_error()) {
     die('Connect Error(' . mysqli_connect_errno() . ')' . mysqli_connect_error());
 } else {
 //connectie goed
+    echo "connectie goed";
+
+    // alle queries
     $sql = "SELECT Pincode FROM rekeningen WHERE Pasnummer = '$pasnummer'";
     $sql_fout = "SELECT fout_pogingen FROM rekeningen WHERE Pasnummer = '$pasnummer'";
 
     $sql_update = "UPDATE rekeningen SET fout_pogingen = fout_pogingen + 1 WHERE rekeningen.Pasnummer = '$pasnummer'";
     $sql_reset = "UPDATE rekeningen SET fout_pogingen = 0 WHERE rekeningen.Pasnummer = '$pasnummer'";
 
+    // queries uitvoeren
     $result = mysqli_query($conn, $sql);
     $result_fout = mysqli_query($conn, $sql_fout);
 
     $fout_pogingen = mysqli_fetch_assoc($result_fout)["fout_pogingen"];
 
+    //als aantal foutpogingen lager zijn dan 3
     if ($fout_pogingen < 3) {
         if (mysqli_num_rows($result) == 1) {
+            // Er is 1 resultaat bij de pas
             $row = mysqli_fetch_assoc($result);
             $hashed_pincode = $row["Pincode"];
 
+            echo "1 result gevonden";
+
+            // checkt of pincode goed is
             if (password_verify($pincode, $hashed_pincode)) {
+                //als die goed is wordt je doorgestuurd naar menu
                 echo "Gebruiker gevonden";
                 mysqli_query($conn, $sql_reset);
-                // header("location: ../html/menu.php");
+                header("location: ../html/menu.php");
             } else {
+                // pincode is fout, aantal foutpogingen wordt verhoogd met 1
                 mysqli_query($conn, $sql_update);
 
                 $result_fout = mysqli_query($conn, $sql_fout);
