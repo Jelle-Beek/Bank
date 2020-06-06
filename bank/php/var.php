@@ -4,7 +4,7 @@ session_start();
 
 $host = "localhost";
 $dbUsername = "root";
-$dbPassword = "";
+$dbPassword = "Bank@Y44n72";
 $dbName = "batbank";
 
 // Create connection
@@ -25,8 +25,8 @@ switch ($_SESSION["taal"]) {
         $zeventig = "../Pictures/nederlands/70_euro.png";
         $help = "../Pictures/nederlands/Help.png";
         $hulp = "Voor hulp kunt u:";
-        $mail = "Het volgende emailadress mailen:  0984233@hr.nl";
-        $telnr = "Het volgende nummer bellen: +31 681757734";
+        $mail = "Het volgende e-mailadress mailen:  0984233@hr.nl";
+        $telnr = "Het volgende nummer bellen:<br> +31 681757734";
         $keuze_bon = "Wilt u de transactiebon?";
         $ja = "../Pictures/nederlands/ja.png";
         $nee = "../Pictures/nederlands/nee.png";
@@ -53,9 +53,9 @@ switch ($_SESSION["taal"]) {
         $opnemen = "../Pictures/engels/withdraw.png";
         $zeventig = "../Pictures/engels/withdraw_70_euro.png";
         $help = "../Pictures/engels/Help.png";
-        $hulp = "For help, contact us by:";
-        $mail = "Mailing to: 0984233@hr.nl";
-        $telnr = "Calling the number: +31 681757734";
+        $hulp = "For help, you can:";
+        $mail = "Email the following email address: 0984233@hr.nl";
+        $telnr = "Call the following number:<br> +31 681757734";
         $keuze_bon = "Would you like the transaction receipt?";
         $ja = "../Pictures/engels/yes.png";
         $nee = "../Pictures/engels/no.png";
@@ -83,7 +83,7 @@ switch ($_SESSION["taal"]) {
         $zeventig = "../Pictures/duits/70_Euro_aufnehmen.png";
         $help = "../Pictures/duits/helfe.png";
         $hulp = "F&uumlr Hilfe k&oumlnnen Sie:";
-        $mail = "Die folgende E-Mail-Adresse e-mailen: <br>0984233@hr.nl";
+        $mail = "Die folgende E-Mail-Adresse <br> e-mailen: 0984233@hr.nl";
         $telnr = "Die folgende Nummer anrufen: <br>+31 681757734";
         $keuze_bon = "Möchten Sie den Transaktionsbeleg?";
         $ja = "../Pictures/duits/ja.png";

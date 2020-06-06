@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e3dfe9a6-f9fc-4457-b689-b78444ff284d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/arduino_opvragen.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/arduino_opgevraagd.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/rekening_aanmaken_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/rekening_aanmaken_controller.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +71,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -273,6 +273,15 @@
       <workItem from="1589893301817" duration="540000" />
       <workItem from="1590263153134" duration="2866000" />
       <workItem from="1590399424919" duration="1464000" />
+      <workItem from="1590409086980" duration="1397000" />
+      <workItem from="1590668555371" duration="40000" />
+      <workItem from="1590669386591" duration="639000" />
+      <workItem from="1591101182540" duration="2318000" />
+      <workItem from="1591103866722" duration="27000" />
+      <workItem from="1591104119751" duration="616000" />
+      <workItem from="1591120790760" duration="6355000" />
+      <workItem from="1591127182178" duration="22000" />
+      <workItem from="1591127845863" duration="639000" />
     </task>
     <task id="LOCAL-00001" summary="bank">
       <created>1589798433979</created>
@@ -376,14 +385,14 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="331" y="518" key="NewPhpClassDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589198962637" />
-    <state x="476" y="627" key="NewPhpFileDialog" timestamp="1590263169030">
+    <state x="476" y="627" key="NewPhpFileDialog" timestamp="1591122998658">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="476" y="627" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1590263169030" />
-    <state x="512" y="463" key="SettingsEditor" timestamp="1588703159973">
+    <state x="476" y="627" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1591122998658" />
+    <state x="512" y="463" key="SettingsEditor" timestamp="1590670356697">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="512" y="463" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1588703159973" />
+    <state x="512" y="463" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1590670356697" />
     <state x="489" y="618" key="VCS.ChangelistChooser" timestamp="1589365585494">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -392,6 +401,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="0" y="0" key="com.jetbrains.php.config.phpInfo.PhpInfo.PhpInfoDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1586172108460" />
+    <state x="97" y="321" key="new project wizard" timestamp="1590669403834">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="97" y="321" key="new project wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1590669403834" />
     <state x="305" y="333" key="run.anything.popup" timestamp="1589379116129">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

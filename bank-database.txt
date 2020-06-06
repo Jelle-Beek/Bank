@@ -16,6 +16,9 @@ SET time_zone = "+00:00";
 -- Database: `batbank`
 --
 
+create database batbank;
+use batbank;
+
 -- --------------------------------------------------------
 
 --
@@ -23,7 +26,8 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `bij_en_afschriften` (
-  `Pasnummer` varchar(15) NOT NULL,
+  `Transactie_nummer` int(11) NOT NULL,
+  `Pasnummer` varchar(16) NOT NULL,
   `Verandering` varchar(100) NOT NULL,
   `Tijdstip` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -74,9 +78,8 @@ INSERT INTO `opslag` (`Soort`, `Aantal`) VALUES
 
 CREATE TABLE `rekeningen` (
   `GebruikersID` int(10) NOT NULL,
-  `Pasnummer` varchar(12) NOT NULL,
-  `Rekeningnummer` varchar(15) NOT NULL,
-  `Pincode` varchar(4) NOT NULL,
+  `Pasnummer` varchar(16) NOT NULL,
+  `Pincode` varchar(255) NOT NULL,
   `Saldo` double(20,2) NOT NULL DEFAULT 0.00,
   `fout_pogingen` int(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -89,7 +92,8 @@ CREATE TABLE `rekeningen` (
 -- Indexen voor tabel `bij_en_afschriften`
 --
 ALTER TABLE `bij_en_afschriften`
-  ADD PRIMARY KEY (`Pasnummer`);
+  ADD PRIMARY KEY (`Transactie_nummer`),
+  ADD KEY `Pasnummer` (`Pasnummer`);
 
 --
 -- Indexen voor tabel `gebruiker`
@@ -107,15 +111,38 @@ ALTER TABLE `opslag`
 -- Indexen voor tabel `rekeningen`
 --
 ALTER TABLE `rekeningen`
-  ADD PRIMARY KEY (`Rekeningnummer`);
+  ADD PRIMARY KEY (`Pasnummer`),
+  ADD KEY `GebruikersID` (`GebruikersID`);
 
 --
 -- AUTO_INCREMENT voor geëxporteerde tabellen
 --
 
 --
+-- AUTO_INCREMENT voor een tabel `bij_en_afschriften`
+--
+ALTER TABLE `bij_en_afschriften`
+  MODIFY `Transactie_nummer` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT voor een tabel `gebruiker`
 --
 ALTER TABLE `gebruiker`
-  MODIFY `GebruikersID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=0;
+  MODIFY `GebruikersID` int(10) NOT NULL AUTO_INCREMENT;
+
+--
+-- Beperkingen voor geëxporteerde tabellen
+--
+
+--
+-- Beperkingen voor tabel `bij_en_afschriften`
+--
+ALTER TABLE `bij_en_afschriften`
+  ADD CONSTRAINT `bij_en_afschriften_ibfk_1` FOREIGN KEY (`Pasnummer`) REFERENCES `rekeningen` (`Pasnummer`);
+
+--
+-- Beperkingen voor tabel `rekeningen`
+--
+ALTER TABLE `rekeningen`
+  ADD CONSTRAINT `rekeningen_ibfk_1` FOREIGN KEY (`GebruikersID`) REFERENCES `gebruiker` (`GebruikersID`);
 COMMIT;

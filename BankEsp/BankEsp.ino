@@ -2,9 +2,13 @@
 #include <Wire.h>
 #include <ESP8266WiFi.h>
 
+int enA = 13;
+int in1 = 12;
+int in2 = 14;
+
 //connection stuff
-const char* ssid     = "Ziggo94EB696";
-const char* password = "d6yehVs4xned";
+const char* ssid     = "Het was maar een...";
+const char* password = "SalvadoR2205";
 
 const char* host = "145.24.222.43";
 
@@ -22,6 +26,14 @@ String printInformatie = "";
 void setup() {
   Wire.begin(4,5); 
   Serial.begin(115200);
+
+  // Set all the motor control pins to outputs
+  pinMode(enA, OUTPUT);
+  pinMode(in1, OUTPUT);
+  pinMode(in2, OUTPUT);
+  
+  // Turn off motors - Initial state
+  motor1Uit();
 
   //connect esp to wifi
   WiFi.begin(ssid, password);
@@ -124,8 +136,12 @@ void printen(){
     if(biljet == "50"){
       //zet motor van 50 aan
       Serial.println("50");
+      
     } else if(biljet == "20"){
       Serial.println("20");
+      motor1Aan();
+      delay(1500);
+      motor1Uit();
     } else if(biljet == "10"){
       Serial.println("10");
     } else if(biljet == "05"){
@@ -155,4 +171,17 @@ void informatie(){
   data = postVariableCard + pasnummer + "&" + postVariableKey + key;
   Serial.println("----------------------------------------");
   Serial.println(data);
+}
+
+
+
+void motor1Aan(){
+  digitalWrite(enA, HIGH);
+  digitalWrite(in1, HIGH);
+  digitalWrite(in2, LOW);
+}
+
+void motor1Uit(){
+  digitalWrite(in1, LOW);
+  digitalWrite(in2, LOW);
 }
