@@ -80,10 +80,16 @@ void getBedrag()  {
     Serial.println("connection failed");
     return;
   }
-  String url = "/php/arduino_opgevraagd.php";
-  client.print(String("GET ") + url + " HTTP/1.1\r\n" +
-               "Host: " + host + "\r\n" + 
-               "Connection: close\r\n\r\n");
+//  String url = "/php/arduino_opgevraagd.php";
+//  client.print(String("GET ") + url + " HTTP/1.1\r\n" +
+//               "Host: " + host + "\r\n" + 
+//               "Connection: close\r\n\r\n");
+
+  client.println("GET /php/arduino_opgevraagd.php HTTP/1.1");
+  client.print  ("Host: ");
+  client.println(host);
+  client.println("Connection: close");
+  client.println()
                
   unsigned long timeout = millis();
   while (client.available() == 0) {
