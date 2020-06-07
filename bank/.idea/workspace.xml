@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3dfe9a6-f9fc-4457-b689-b78444ff284d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/html/briefjes_tekort.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socket/receive.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socket/send.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socket/test.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/socket/test2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/afsluit.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/afsluit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/bevestig.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/bevestig.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/opnemen.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/opnemen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/tekort.php" beforeDir="false" afterPath="$PROJECT_DIR$/html/tekort.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/arduino_get.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/arduino_get.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/duits.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/engels.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/inloggen.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/inloggen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/nederlands.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/saldo_opvragen.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/saldo_opvragen.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/var.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/var.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_inloggen.php" beforeDir="false" />
-    </list>
+    <list default="true" id="e3dfe9a6-f9fc-4457-b689-b78444ff284d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -320,7 +298,7 @@
       <workItem from="1591452481580" duration="268000" />
       <workItem from="1591452767085" duration="7002000" />
       <workItem from="1591468675299" duration="1532000" />
-      <workItem from="1591470235542" duration="4219000" />
+      <workItem from="1591470235542" duration="4691000" />
     </task>
     <task id="LOCAL-00001" summary="bank">
       <created>1589798433979</created>

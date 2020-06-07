@@ -1,7 +1,7 @@
 <?php
 include "../php/var.php";
 
-/*$pasnummer = $_SESSION["pasnummer"];
+$pasnummer = $_SESSION["pasnummer"];
 
 //check connection
 if (mysqli_connect_error()) {
@@ -43,7 +43,7 @@ if (ctype_alnum($_SESSION["key"])) {
             header("location: ../index.php");
             break;
     }
-}*/
+}
 
 ?>
 
