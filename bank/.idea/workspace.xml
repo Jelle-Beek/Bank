@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e3dfe9a6-f9fc-4457-b689-b78444ff284d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/rekening_aanmaken_controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/test/rekening_aanmaken_controller.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,7 +12,8 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/phpsocket.io-master/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="DatabaseView">
@@ -33,8 +33,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -62,6 +63,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
@@ -82,11 +84,11 @@
       <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\html\nederlands" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\socket\public" />
+      <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\socket" />
       <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\Test" />
       <recent name="C:\Users\ziwez\Documents\GitHub\Bank\bank\php" />
       <recent name="C:\Users\jelle\Desktop\HR\jaar 1\Periode 3\Project 3-4\Github\bank\html" />
-      <recent name="C:\Users\ziwez\Desktop\school\Projecten\Project 34 - Bank\project bank\php" />
-      <recent name="C:\Users\ziwez\Desktop\school\Projecten\Project 34 - Bank\project bank" />
     </key>
   </component>
   <component name="RunManager">
@@ -282,6 +284,24 @@
       <workItem from="1591120790760" duration="6355000" />
       <workItem from="1591127182178" duration="22000" />
       <workItem from="1591127845863" duration="639000" />
+      <workItem from="1591274345536" duration="1631000" />
+      <workItem from="1591276075641" duration="2988000" />
+      <workItem from="1591279099942" duration="60000" />
+      <workItem from="1591279189287" duration="951000" />
+      <workItem from="1591283371997" duration="2105000" />
+      <workItem from="1591286383999" duration="4387000" />
+      <workItem from="1591293362715" duration="167000" />
+      <workItem from="1591293698537" duration="603000" />
+      <workItem from="1591361866811" duration="1066000" />
+      <workItem from="1591362957470" duration="2597000" />
+      <workItem from="1591394189617" duration="88000" />
+      <workItem from="1591394472087" duration="1055000" />
+      <workItem from="1591433467937" duration="1581000" />
+      <workItem from="1591452481580" duration="268000" />
+      <workItem from="1591452767085" duration="7002000" />
+      <workItem from="1591468675299" duration="1532000" />
+      <workItem from="1591470235542" duration="4691000" />
+      <workItem from="1591520745308" duration="804000" />
     </task>
     <task id="LOCAL-00001" summary="bank">
       <created>1589798433979</created>
@@ -349,14 +369,14 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="377" y="484" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1586168448486" />
-    <state x="343" y="469" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1588682279561">
+    <state x="343" y="469" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1591452417160">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="343" y="469" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1588682279561" />
-    <state x="1011" y="448" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589199092755">
+    <state x="343" y="469" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1591452417160" />
+    <state x="1011" y="448" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591473653218">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1011" y="448" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589199092755" />
+    <state x="1011" y="448" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1591473653218" />
     <state x="1543" y="272" key="CommitChangelistDialog2" timestamp="1589798433147">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -365,30 +385,30 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="473" y="436" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1586168862219" />
-    <state width="1741" height="366" key="GridCell.Tab.0.bottom" timestamp="1589893841482">
+    <state width="843" height="364" key="GridCell.Tab.0.bottom" timestamp="1591275985331">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1741" height="366" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1589893841482" />
-    <state width="1741" height="366" key="GridCell.Tab.0.center" timestamp="1589893841482">
+    <state width="843" height="364" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1591275985331" />
+    <state width="843" height="364" key="GridCell.Tab.0.center" timestamp="1591275985331">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1741" height="366" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1589893841482" />
-    <state width="1741" height="366" key="GridCell.Tab.0.left" timestamp="1589893841482">
+    <state width="843" height="364" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1591275985331" />
+    <state width="843" height="364" key="GridCell.Tab.0.left" timestamp="1591275985331">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1741" height="366" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1589893841482" />
-    <state width="1741" height="366" key="GridCell.Tab.0.right" timestamp="1589893841482">
+    <state width="843" height="364" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1591275985331" />
+    <state width="843" height="364" key="GridCell.Tab.0.right" timestamp="1591275985331">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1741" height="366" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1589893841482" />
+    <state width="843" height="364" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1591275985331" />
     <state x="331" y="518" key="NewPhpClassDialog" timestamp="1589198962637">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="331" y="518" key="NewPhpClassDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1589198962637" />
-    <state x="476" y="627" key="NewPhpFileDialog" timestamp="1591122998658">
+    <state x="476" y="627" key="NewPhpFileDialog" timestamp="1591471758116">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="476" y="627" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1591122998658" />
+    <state x="476" y="627" key="NewPhpFileDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1591471758116" />
     <state x="512" y="463" key="SettingsEditor" timestamp="1590670356697">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

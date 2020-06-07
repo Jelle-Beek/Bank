@@ -2,13 +2,12 @@
 include "../php/var.php";
 
 $pasnummer = $_SESSION["pasnummer"];
-$pincode = $_SESSION["pin"];
 
 //check connection
 if (mysqli_connect_error()) {
     die('Connect Error(' . mysqli_connect_errno() . ')' . mysqli_connect_error());
 } else {
-    $sql = "SELECT Saldo FROM rekeningen WHERE Pasnummer = '$pasnummer' AND Pincode = '$pincode'";
+    $sql = "SELECT Saldo FROM rekeningen WHERE Pasnummer = '$pasnummer'";
 
     $result = mysqli_query($conn, $sql);
 
@@ -24,7 +23,6 @@ if (mysqli_connect_error()) {
     } else {
         echo "geen gebruiker gevonden! [tekort.php]";
         echo "<br> pasnummer =" . $pasnummer;
-        echo "<br> pincode =" . $pincode;
     }
 }
 
@@ -46,8 +44,6 @@ if (ctype_alnum($_SESSION["key"])) {
             break;
     }
 }
-
-echo $_SESSION["bedrag"] . " " . $row["Saldo"]
 
 ?>
 

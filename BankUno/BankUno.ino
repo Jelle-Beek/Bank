@@ -106,7 +106,6 @@ void receiveEvent() {
 void requestEvent() {
   Wire.write(key);
   Wire.write(pasnummer);  
-  if(key == 'A') content = "";
   key = 0;
 }
 
@@ -118,7 +117,7 @@ void keypadLezen(){
   //Sla de toets op als er één wordt ingedrukt. Reset de kaart-variabele als D ingedrukt wordt (terug naar hoofdpagina)
   char whichKey = myKeypad.getKey(); 
   if(whichKey){
-    if(whichKey == 'D'){
+    if(whichKey == 'D' || whichKey == 'A'){
       content = "";
     }
     key = whichKey;
@@ -221,7 +220,7 @@ void printBon(){
   printer.println();
   printer.println();
   printer.println();
-
+  printer.println();
 
   //Zet de variabele voor het bonprinten weer op false om de bon niet te blijven printen
   boolPrint = false; 

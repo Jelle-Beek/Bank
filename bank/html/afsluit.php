@@ -4,6 +4,14 @@ include "../php/var.php";
 
 $_SESSION["pasnummer"] = NULL;
 
+if (ctype_alnum($_SESSION["key"])) {
+    switch ($_SESSION["key"]) {
+        case 'A':
+            header("location: ../index.php");
+            break;
+    }
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -11,7 +19,7 @@ $_SESSION["pasnummer"] = NULL;
 <head>
     <title>Afsluiten</title>
     <link href="../CSS/saldo.css" rel="stylesheet" type="text/css"/>
-    <meta http-equiv="refresh" content="10;../index.php">
+    <meta http-equiv="refresh" content="0.2">
 </head>
 <body>
 
