@@ -2,7 +2,7 @@
 #include <Wire.h>
 
 /*----------- WIFI library en setup ----------- */
-#include <ESP8266WiFi.h>\
+#include <ESP8266WiFi.h>
 
 const char* ssid     = "Het was maar een...";
 const char* password = "SalvadoR2205";
@@ -80,10 +80,6 @@ void getBedrag()  {
     Serial.println("connection failed");
     return;
   }
-//  String url = "/php/arduino_opgevraagd.php";
-//  client.print(String("GET ") + url + " HTTP/1.1\r\n" +
-//               "Host: " + host + "\r\n" + 
-//               "Connection: close\r\n\r\n");
 
   client.println("GET /php/arduino_opgevraagd.php HTTP/1.1");
   client.print  ("Host: ");
