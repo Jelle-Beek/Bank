@@ -1,0 +1,85 @@
+body {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    background-image: url("../Pictures/algemeen/test.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff500;
+}
+
+.buttons {
+    height: 15vh;
+}
+
+.main {
+    height: 85vh;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+h3 {
+    font-size: 25px;
+    color: red;
+}
+
+section {
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 900px;
+}
+
+.background  {
+    background-color: black;
+    opacity: 50%;
+    height: 1000px;
+    width: 900px;
+    border-radius: 10%;
+}
+
+.home_button {
+    height: 100%;
+    float: right;
+}
+
+button {
+    height: 70%;
+    float: right;
+    background-color: Transparent;
+    border: none;
+}
+
+.input_pin {
+    height: 50px;
+    width: 500px;
+    font-size: 30px;
+    text-align: center;
+    border: none;
+    background: lightgrey;
+}
+
+.input_ok {
+    height: 50px;
+    width: 250px;
+    font-size: 30px;
+    text-align: left;
+    border: none;
+    background: forestgreen;
+    margin-left: 200px;
+    float: left;
+}
+
+.input_corr {
+    height: 50px;
+    width: 250px;
+    font-size: 30px;
+    text-align: left;
+    border: none;
+    background: orange;
+    float: left;
+}
