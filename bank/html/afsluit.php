@@ -19,6 +19,7 @@ if (ctype_alnum($_SESSION["key"])) {
 <head>
     <title>Afsluiten</title>
     <link href="../CSS/saldo.css" rel="stylesheet" type="text/css"/>
+    <meta http-equiv="refresh" content="0.2">
 </head>
 <body>
 
