@@ -89,7 +89,7 @@ void getBedrag()  {
   client.print  ("Host: ");
   client.println(host);
   client.println("Connection: close");
-  client.println()
+  client.println();
                
   unsigned long timeout = millis();
   while (client.available() == 0) {
@@ -161,7 +161,7 @@ void printen(){
     } else if(biljet == "20"){
       Serial.println("20");
       motor1Aan();
-      delay(1500);
+      delay(1000);
       motor1Uit();
     } else if(biljet == "10"){
       Serial.println("10");

@@ -220,7 +220,7 @@ void printBon(){
   printer.println();
   printer.println();
   printer.println();
-
+  printer.println();
 
   //Zet de variabele voor het bonprinten weer op false om de bon niet te blijven printen
   boolPrint = false; 
