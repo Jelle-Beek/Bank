@@ -2,7 +2,7 @@
 include "../php/var.php";
 if (ctype_alnum($_SESSION["key"])) {
     switch ($_SESSION["key"]) {
-        case 'A':
+        case 'C':
             $_SESSION["key"] = NULL;
             header("location: menu.php");
             break;
@@ -32,7 +32,7 @@ if (ctype_alnum($_SESSION["key"])) {
             <a href="menu.php"> <img src="<?php echo $doorgaan ?>"
                                      class="keuze_button"> </a>
 
-            <h3>A</h3>
+            <h3>C</h3>
         </button>
     </section>
 </div>
