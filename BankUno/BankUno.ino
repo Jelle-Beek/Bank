@@ -114,7 +114,7 @@ void requestEvent() {
 
 
 void keypadLezen(){
-  //Sla de toets op als er één wordt ingedrukt. Reset de kaart-variabele als D ingedrukt wordt (terug naar hoofdpagina)
+  //Sla de toets op als er één wordt ingedrukt. Reset de kaart-variabele als D of A ingedrukt wordt (terug naar hoofdpagina)
   char whichKey = myKeypad.getKey(); 
   if(whichKey){
     if(whichKey == 'D' || whichKey == 'A'){
