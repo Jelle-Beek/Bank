@@ -68,6 +68,7 @@ while ($tempBedrag > 0) {
 
     } else {
         // als er niet genoeg briefjees zijn in het ATM
+        $_SESSION['briefjes'] = "";
         header("location: ../html/briefjes_tekort.php");
         break;
     }
